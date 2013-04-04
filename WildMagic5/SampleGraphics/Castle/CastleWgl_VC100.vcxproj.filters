@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Data Files">
+      <UniqueIdentifier>{68289e64-cc35-403d-97ac-82781140ce9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Geometry">
+      <UniqueIdentifier>{19d0af42-f9b6-4c4b-b4ea-898ff1e1ddaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Shaders">
+      <UniqueIdentifier>{61b43cc7-4210-49d4-bb74-78294d8b74d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Textures">
+      <UniqueIdentifier>{bfe3cba7-7639-4935-aadb-d14f65a4e37c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Castle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateMeshes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DLitMatTexEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Castle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DLitMatTexEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Geometry\Barrel01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\BarrelRack01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\BarrelRack03.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Bench01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Box01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Box02.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Bridge.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Bunk01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\CeilingLight01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\ChestBottom01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\ChestTop01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Cylinder02.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Cylinder02NCL.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Cylinder03.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Cylinder06.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Door.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\DoorFrame01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\DoorFrame53.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\DoorFrame61.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\DoorFrame62.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\DrawBridge.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Exterior.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\FrontHall.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\FrontRamp.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\LargePort.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\MainGate.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\MainGate01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Mug.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\QuadPatch01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Rope.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\SimpleChair01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\SkyDome.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\SmallPort.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Sphere01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\SquareTable01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Table01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Terrain.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Tube01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Wall01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Wall02.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\WallTurret01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\WallTurret02.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Water.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\Water2.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Geometry\WoodShield01.txt">
+      <Filter>Data Files\Geometry</Filter>
+    </None>
+    <None Include="Shaders\DLitMatTex.fx">
+      <Filter>Data Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\DLitMatTex.wmfx">
+      <Filter>Data Files\Shaders</Filter>
+    </None>
+    <None Include="Textures\barrel.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\barrelbase.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\blanket.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\bunkwood.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\chest01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\door.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\doorframe.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\floor02.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel_cap_ne.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel_cap_nw.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel_corner_ne.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel_corner_nw.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel_corner_se.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel_corner_sw.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel_side_n.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel_side_s.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel_side_w.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\gravel02.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\hugestone01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\hugestone02.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\keystone.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\largerstone01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\largerstone02.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\largestone01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\largeststone01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\largeststone02.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\metal01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\mug.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\outwall03.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\port.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\ramp03.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\river01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\river02.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\rooftemp.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\rope.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\shield01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\skyline.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\steps.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\stone01.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\stone02.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\stone03.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\tileplanks.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\torchhead.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\torchwood.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\wall02.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\walllightmap.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Textures\woodceiling.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+  </ItemGroup>
+</Project>

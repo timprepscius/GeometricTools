@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Data Files">
+      <UniqueIdentifier>{272757ac-763c-43dc-9dc3-cfbb6ff9847f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SkinnedBiped.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SkinnedBiped.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Biped.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Face.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Face.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Hair.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Hair.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Head.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Ankle.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Ankle.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Arm.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Arm.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Calf.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Clavicle.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Foot.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Forearm.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Hand.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Leg.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Leg.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Shoe.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Shoe.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Thigh.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_Toe.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\L_UpperArm.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Neck.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Pants.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Pants.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Pelvis.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Ankle.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Ankle.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Arm.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Arm.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Calf.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Clavicle.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Foot.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Forearm.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Hand.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Leg.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Leg.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Shoe.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Shoe.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Thigh.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_Toe.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\R_UpperArm.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Shirt.skin.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Shirt.triangle.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\SkinnedBipedLayout.txt">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Spine.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Spine1.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Spine2.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Spine3.keyf.raw">
+      <Filter>Data Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

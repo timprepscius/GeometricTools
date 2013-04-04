@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Data Files">
+      <UniqueIdentifier>{e63b7f39-a455-43bc-90b7-67f75511079e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Shaders">
+      <UniqueIdentifier>{a05400bf-b19a-452d-9930-3816bd23d5e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Textures">
+      <UniqueIdentifier>{e92df592-2f66-4750-a6a1-e098ac8495e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CubeMaps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeMapEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CubeMaps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeMapEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\CubeMap.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\XmFace.bmp">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\XmFace.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\XpFace.bmp">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\XpFace.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\YmFace.bmp">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\YmFace.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\YpFace.bmp">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\YpFace.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\ZmFace.bmp">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\ZmFace.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\ZpFace.bmp">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Data\ZpFace.wmtf">
+      <Filter>Data Files\Textures</Filter>
+    </None>
+    <None Include="Shaders\CubeMap.fx">
+      <Filter>Data Files\Shaders</Filter>
+    </None>
+    <None Include="Shaders\CubeMap.wmfx">
+      <Filter>Data Files\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

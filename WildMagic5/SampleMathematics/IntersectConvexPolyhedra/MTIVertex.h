@@ -1,0 +1,27 @@
+// Geometric Tools, LLC
+// Copyright (c) 1998-2012
+// Distributed under the Boost Software License, Version 1.0.
+// http://www.boost.org/LICENSE_1_0.txt
+// http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
+//
+// File Version: 5.0.0 (2010/01/01)
+
+#ifndef MTIVERTEX_H
+#define MTIVERTEX_H
+
+class MTIVertex
+{
+public:
+    MTIVertex (int label);
+
+    bool operator< (const MTIVertex& vertex) const;
+    bool operator== (const MTIVertex& vertex) const;
+    bool operator!= (const MTIVertex& vertex) const;
+
+    int GetLabel () const;
+
+protected:
+    int mLabel;
+};
+
+#endif

@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C64D2AD1256D1F200F4B0B0 /* NonlocalBlowup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* NonlocalBlowup.cpp */; };
+		3C64D2B11256D20F00F4B0B0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C64D2B81256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B21256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib */; };
+		3C64D2B91256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B31256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib */; };
+		3C64D2BA1256D24F00F4B0B0 /* libWm5Cored.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B41256D24F00F4B0B0 /* libWm5Cored.dylib */; };
+		3C64D2BB1256D24F00F4B0B0 /* libWm5Imagicsd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B51256D24F00F4B0B0 /* libWm5Imagicsd.dylib */; };
+		3C64D2BC1256D24F00F4B0B0 /* libWm5Mathematicsd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B61256D24F00F4B0B0 /* libWm5Mathematicsd.dylib */; };
+		3C64D2BD1256D24F00F4B0B0 /* libWm5Physicsd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B71256D24F00F4B0B0 /* libWm5Physicsd.dylib */; };
+		3C64D38C1256D99B00F4B0B0 /* NonlocalBlowup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* NonlocalBlowup.cpp */; };
+		3C64D3991256D9C400F4B0B0 /* libWm5GlutApplication.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3931256D9C400F4B0B0 /* libWm5GlutApplication.dylib */; };
+		3C64D39A1256D9C400F4B0B0 /* libWm5GlutGraphics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3941256D9C400F4B0B0 /* libWm5GlutGraphics.dylib */; };
+		3C64D39B1256D9C400F4B0B0 /* libWm5Core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3951256D9C400F4B0B0 /* libWm5Core.dylib */; };
+		3C64D39C1256D9C400F4B0B0 /* libWm5Imagics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3961256D9C400F4B0B0 /* libWm5Imagics.dylib */; };
+		3C64D39D1256D9C400F4B0B0 /* libWm5Mathematics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3971256D9C400F4B0B0 /* libWm5Mathematics.dylib */; };
+		3C64D39E1256D9C400F4B0B0 /* libWm5Physics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3981256D9C400F4B0B0 /* libWm5Physics.dylib */; };
+		3C64D3A21256D9CF00F4B0B0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C6FBC6C083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C6FBC6D083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C8A0B9215CEF94D003CD160 /* CpuLocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5215CEF94D003CD160 /* CpuLocalSolver1.cpp */; };
+		3C8A0B9315CEF94D003CD160 /* CpuLocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5215CEF94D003CD160 /* CpuLocalSolver1.cpp */; };
+		3C8A0B9415CEF94D003CD160 /* CpuLocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5215CEF94D003CD160 /* CpuLocalSolver1.cpp */; };
+		3C8A0B9515CEF94D003CD160 /* CpuLocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5215CEF94D003CD160 /* CpuLocalSolver1.cpp */; };
+		3C8A0B9615CEF94D003CD160 /* CpuLocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5415CEF94D003CD160 /* CpuLocalSolver2.cpp */; };
+		3C8A0B9715CEF94D003CD160 /* CpuLocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5415CEF94D003CD160 /* CpuLocalSolver2.cpp */; };
+		3C8A0B9815CEF94D003CD160 /* CpuLocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5415CEF94D003CD160 /* CpuLocalSolver2.cpp */; };
+		3C8A0B9915CEF94D003CD160 /* CpuLocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5415CEF94D003CD160 /* CpuLocalSolver2.cpp */; };
+		3C8A0B9A15CEF94D003CD160 /* CpuLocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5615CEF94D003CD160 /* CpuLocalSolver3.cpp */; };
+		3C8A0B9B15CEF94D003CD160 /* CpuLocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5615CEF94D003CD160 /* CpuLocalSolver3.cpp */; };
+		3C8A0B9C15CEF94D003CD160 /* CpuLocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5615CEF94D003CD160 /* CpuLocalSolver3.cpp */; };
+		3C8A0B9D15CEF94D003CD160 /* CpuLocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5615CEF94D003CD160 /* CpuLocalSolver3.cpp */; };
+		3C8A0B9E15CEF94D003CD160 /* CpuNonlocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5815CEF94D003CD160 /* CpuNonlocalSolver1.cpp */; };
+		3C8A0B9F15CEF94D003CD160 /* CpuNonlocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5815CEF94D003CD160 /* CpuNonlocalSolver1.cpp */; };
+		3C8A0BA015CEF94D003CD160 /* CpuNonlocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5815CEF94D003CD160 /* CpuNonlocalSolver1.cpp */; };
+		3C8A0BA115CEF94D003CD160 /* CpuNonlocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5815CEF94D003CD160 /* CpuNonlocalSolver1.cpp */; };
+		3C8A0BA215CEF94D003CD160 /* CpuNonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5A15CEF94D003CD160 /* CpuNonlocalSolver2.cpp */; };
+		3C8A0BA315CEF94D003CD160 /* CpuNonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5A15CEF94D003CD160 /* CpuNonlocalSolver2.cpp */; };
+		3C8A0BA415CEF94D003CD160 /* CpuNonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5A15CEF94D003CD160 /* CpuNonlocalSolver2.cpp */; };
+		3C8A0BA515CEF94D003CD160 /* CpuNonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5A15CEF94D003CD160 /* CpuNonlocalSolver2.cpp */; };
+		3C8A0BA615CEF94D003CD160 /* CpuNonlocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5C15CEF94D003CD160 /* CpuNonlocalSolver3.cpp */; };
+		3C8A0BA715CEF94D003CD160 /* CpuNonlocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5C15CEF94D003CD160 /* CpuNonlocalSolver3.cpp */; };
+		3C8A0BA815CEF94D003CD160 /* CpuNonlocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5C15CEF94D003CD160 /* CpuNonlocalSolver3.cpp */; };
+		3C8A0BA915CEF94D003CD160 /* CpuNonlocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5C15CEF94D003CD160 /* CpuNonlocalSolver3.cpp */; };
+		3C8A0BAA15CEF94D003CD160 /* GpuLocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5E15CEF94D003CD160 /* GpuLocalSolver1.cpp */; };
+		3C8A0BAB15CEF94D003CD160 /* GpuLocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5E15CEF94D003CD160 /* GpuLocalSolver1.cpp */; };
+		3C8A0BAC15CEF94D003CD160 /* GpuLocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5E15CEF94D003CD160 /* GpuLocalSolver1.cpp */; };
+		3C8A0BAD15CEF94D003CD160 /* GpuLocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B5E15CEF94D003CD160 /* GpuLocalSolver1.cpp */; };
+		3C8A0BAE15CEF94D003CD160 /* GpuLocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6015CEF94D003CD160 /* GpuLocalSolver2.cpp */; };
+		3C8A0BAF15CEF94D003CD160 /* GpuLocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6015CEF94D003CD160 /* GpuLocalSolver2.cpp */; };
+		3C8A0BB015CEF94D003CD160 /* GpuLocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6015CEF94D003CD160 /* GpuLocalSolver2.cpp */; };
+		3C8A0BB115CEF94D003CD160 /* GpuLocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6015CEF94D003CD160 /* GpuLocalSolver2.cpp */; };
+		3C8A0BB215CEF94D003CD160 /* GpuLocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6215CEF94D003CD160 /* GpuLocalSolver3.cpp */; };
+		3C8A0BB315CEF94D003CD160 /* GpuLocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6215CEF94D003CD160 /* GpuLocalSolver3.cpp */; };
+		3C8A0BB415CEF94D003CD160 /* GpuLocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6215CEF94D003CD160 /* GpuLocalSolver3.cpp */; };
+		3C8A0BB515CEF94D003CD160 /* GpuLocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6215CEF94D003CD160 /* GpuLocalSolver3.cpp */; };
+		3C8A0BB615CEF94D003CD160 /* GpuNonlocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6415CEF94D003CD160 /* GpuNonlocalSolver1.cpp */; };
+		3C8A0BB715CEF94D003CD160 /* GpuNonlocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6415CEF94D003CD160 /* GpuNonlocalSolver1.cpp */; };
+		3C8A0BB815CEF94D003CD160 /* GpuNonlocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6415CEF94D003CD160 /* GpuNonlocalSolver1.cpp */; };
+		3C8A0BB915CEF94D003CD160 /* GpuNonlocalSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6415CEF94D003CD160 /* GpuNonlocalSolver1.cpp */; };
+		3C8A0BBA15CEF94D003CD160 /* GpuNonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6615CEF94D003CD160 /* GpuNonlocalSolver2.cpp */; };
+		3C8A0BBB15CEF94D003CD160 /* GpuNonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6615CEF94D003CD160 /* GpuNonlocalSolver2.cpp */; };
+		3C8A0BBC15CEF94D003CD160 /* GpuNonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6615CEF94D003CD160 /* GpuNonlocalSolver2.cpp */; };
+		3C8A0BBD15CEF94D003CD160 /* GpuNonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6615CEF94D003CD160 /* GpuNonlocalSolver2.cpp */; };
+		3C8A0BBE15CEF94D003CD160 /* GpuNonlocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6815CEF94D003CD160 /* GpuNonlocalSolver3.cpp */; };
+		3C8A0BBF15CEF94D003CD160 /* GpuNonlocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6815CEF94D003CD160 /* GpuNonlocalSolver3.cpp */; };
+		3C8A0BC015CEF94D003CD160 /* GpuNonlocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6815CEF94D003CD160 /* GpuNonlocalSolver3.cpp */; };
+		3C8A0BC115CEF94D003CD160 /* GpuNonlocalSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6815CEF94D003CD160 /* GpuNonlocalSolver3.cpp */; };
+		3C8A0BC215CEF94D003CD160 /* RunConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6A15CEF94D003CD160 /* RunConsole.cpp */; };
+		3C8A0BC315CEF94D003CD160 /* RunConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6A15CEF94D003CD160 /* RunConsole.cpp */; };
+		3C8A0BC415CEF94D003CD160 /* RunConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6A15CEF94D003CD160 /* RunConsole.cpp */; };
+		3C8A0BC515CEF94D003CD160 /* RunConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6A15CEF94D003CD160 /* RunConsole.cpp */; };
+		3C8A0BC615CEF94D003CD160 /* CpuPdeSolver1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6C15CEF94D003CD160 /* CpuPdeSolver1.inl */; };
+		3C8A0BC715CEF94D003CD160 /* CpuPdeSolver1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6C15CEF94D003CD160 /* CpuPdeSolver1.inl */; };
+		3C8A0BC815CEF94D003CD160 /* CpuPdeSolver1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6C15CEF94D003CD160 /* CpuPdeSolver1.inl */; };
+		3C8A0BC915CEF94D003CD160 /* CpuPdeSolver1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6C15CEF94D003CD160 /* CpuPdeSolver1.inl */; };
+		3C8A0BCA15CEF94D003CD160 /* CpuPdeSolver2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6E15CEF94D003CD160 /* CpuPdeSolver2.inl */; };
+		3C8A0BCB15CEF94D003CD160 /* CpuPdeSolver2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6E15CEF94D003CD160 /* CpuPdeSolver2.inl */; };
+		3C8A0BCC15CEF94D003CD160 /* CpuPdeSolver2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6E15CEF94D003CD160 /* CpuPdeSolver2.inl */; };
+		3C8A0BCD15CEF94D003CD160 /* CpuPdeSolver2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B6E15CEF94D003CD160 /* CpuPdeSolver2.inl */; };
+		3C8A0BCE15CEF94D003CD160 /* CpuPdeSolver3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7015CEF94D003CD160 /* CpuPdeSolver3.inl */; };
+		3C8A0BCF15CEF94D003CD160 /* CpuPdeSolver3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7015CEF94D003CD160 /* CpuPdeSolver3.inl */; };
+		3C8A0BD015CEF94D003CD160 /* CpuPdeSolver3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7015CEF94D003CD160 /* CpuPdeSolver3.inl */; };
+		3C8A0BD115CEF94D003CD160 /* CpuPdeSolver3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7015CEF94D003CD160 /* CpuPdeSolver3.inl */; };
+		3C8A0BD215CEF94D003CD160 /* DisplacementEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7115CEF94D003CD160 /* DisplacementEffect.cpp */; };
+		3C8A0BD315CEF94D003CD160 /* DisplacementEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7115CEF94D003CD160 /* DisplacementEffect.cpp */; };
+		3C8A0BD415CEF94D003CD160 /* DisplacementEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7115CEF94D003CD160 /* DisplacementEffect.cpp */; };
+		3C8A0BD515CEF94D003CD160 /* DisplacementEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7115CEF94D003CD160 /* DisplacementEffect.cpp */; };
+		3C8A0BD615CEF94D003CD160 /* GpuAvrPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7415CEF94D003CD160 /* GpuAvrPyramid2.cpp */; };
+		3C8A0BD715CEF94D003CD160 /* GpuAvrPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7415CEF94D003CD160 /* GpuAvrPyramid2.cpp */; };
+		3C8A0BD815CEF94D003CD160 /* GpuAvrPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7415CEF94D003CD160 /* GpuAvrPyramid2.cpp */; };
+		3C8A0BD915CEF94D003CD160 /* GpuAvrPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7415CEF94D003CD160 /* GpuAvrPyramid2.cpp */; };
+		3C8A0BDA15CEF94D003CD160 /* GpuEvaluate2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7615CEF94D003CD160 /* GpuEvaluate2.cpp */; };
+		3C8A0BDB15CEF94D003CD160 /* GpuEvaluate2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7615CEF94D003CD160 /* GpuEvaluate2.cpp */; };
+		3C8A0BDC15CEF94D003CD160 /* GpuEvaluate2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7615CEF94D003CD160 /* GpuEvaluate2.cpp */; };
+		3C8A0BDD15CEF94D003CD160 /* GpuEvaluate2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7615CEF94D003CD160 /* GpuEvaluate2.cpp */; };
+		3C8A0BDE15CEF94D003CD160 /* GpuMaxPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7815CEF94D003CD160 /* GpuMaxPyramid2.cpp */; };
+		3C8A0BDF15CEF94D003CD160 /* GpuMaxPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7815CEF94D003CD160 /* GpuMaxPyramid2.cpp */; };
+		3C8A0BE015CEF94D003CD160 /* GpuMaxPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7815CEF94D003CD160 /* GpuMaxPyramid2.cpp */; };
+		3C8A0BE115CEF94D003CD160 /* GpuMaxPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7815CEF94D003CD160 /* GpuMaxPyramid2.cpp */; };
+		3C8A0BE215CEF94D003CD160 /* GpuPdeSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7A15CEF94D003CD160 /* GpuPdeSolver1.cpp */; };
+		3C8A0BE315CEF94D003CD160 /* GpuPdeSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7A15CEF94D003CD160 /* GpuPdeSolver1.cpp */; };
+		3C8A0BE415CEF94D003CD160 /* GpuPdeSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7A15CEF94D003CD160 /* GpuPdeSolver1.cpp */; };
+		3C8A0BE515CEF94D003CD160 /* GpuPdeSolver1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7A15CEF94D003CD160 /* GpuPdeSolver1.cpp */; };
+		3C8A0BE615CEF94D003CD160 /* GpuPdeSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7C15CEF94D003CD160 /* GpuPdeSolver2.cpp */; };
+		3C8A0BE715CEF94D003CD160 /* GpuPdeSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7C15CEF94D003CD160 /* GpuPdeSolver2.cpp */; };
+		3C8A0BE815CEF94D003CD160 /* GpuPdeSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7C15CEF94D003CD160 /* GpuPdeSolver2.cpp */; };
+		3C8A0BE915CEF94D003CD160 /* GpuPdeSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7C15CEF94D003CD160 /* GpuPdeSolver2.cpp */; };
+		3C8A0BEA15CEF94D003CD160 /* GpuPdeSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7E15CEF94D003CD160 /* GpuPdeSolver3.cpp */; };
+		3C8A0BEB15CEF94D003CD160 /* GpuPdeSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7E15CEF94D003CD160 /* GpuPdeSolver3.cpp */; };
+		3C8A0BEC15CEF94D003CD160 /* GpuPdeSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7E15CEF94D003CD160 /* GpuPdeSolver3.cpp */; };
+		3C8A0BED15CEF94D003CD160 /* GpuPdeSolver3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B7E15CEF94D003CD160 /* GpuPdeSolver3.cpp */; };
+		3C8A0BEE15CEF94D003CD160 /* GpuPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8015CEF94D003CD160 /* GpuPyramid2.cpp */; };
+		3C8A0BEF15CEF94D003CD160 /* GpuPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8015CEF94D003CD160 /* GpuPyramid2.cpp */; };
+		3C8A0BF015CEF94D003CD160 /* GpuPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8015CEF94D003CD160 /* GpuPyramid2.cpp */; };
+		3C8A0BF115CEF94D003CD160 /* GpuPyramid2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8015CEF94D003CD160 /* GpuPyramid2.cpp */; };
+		3C8A0BF215CEF94D003CD160 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8215CEF94D003CD160 /* Image.cpp */; };
+		3C8A0BF315CEF94D003CD160 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8215CEF94D003CD160 /* Image.cpp */; };
+		3C8A0BF415CEF94D003CD160 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8215CEF94D003CD160 /* Image.cpp */; };
+		3C8A0BF515CEF94D003CD160 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8215CEF94D003CD160 /* Image.cpp */; };
+		3C8A0BF615CEF94D003CD160 /* Image.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8415CEF94D003CD160 /* Image.inl */; };
+		3C8A0BF715CEF94D003CD160 /* Image.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8415CEF94D003CD160 /* Image.inl */; };
+		3C8A0BF815CEF94D003CD160 /* Image.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8415CEF94D003CD160 /* Image.inl */; };
+		3C8A0BF915CEF94D003CD160 /* Image.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8415CEF94D003CD160 /* Image.inl */; };
+		3C8A0BFA15CEF94D003CD160 /* Image1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8615CEF94D003CD160 /* Image1.inl */; };
+		3C8A0BFB15CEF94D003CD160 /* Image1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8615CEF94D003CD160 /* Image1.inl */; };
+		3C8A0BFC15CEF94D003CD160 /* Image1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8615CEF94D003CD160 /* Image1.inl */; };
+		3C8A0BFD15CEF94D003CD160 /* Image1.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8615CEF94D003CD160 /* Image1.inl */; };
+		3C8A0BFE15CEF94D003CD160 /* Image2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8815CEF94D003CD160 /* Image2.inl */; };
+		3C8A0BFF15CEF94D003CD160 /* Image2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8815CEF94D003CD160 /* Image2.inl */; };
+		3C8A0C0015CEF94D003CD160 /* Image2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8815CEF94D003CD160 /* Image2.inl */; };
+		3C8A0C0115CEF94D003CD160 /* Image2.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8815CEF94D003CD160 /* Image2.inl */; };
+		3C8A0C0215CEF94D003CD160 /* Image3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8A15CEF94D003CD160 /* Image3.inl */; };
+		3C8A0C0315CEF94D003CD160 /* Image3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8A15CEF94D003CD160 /* Image3.inl */; };
+		3C8A0C0415CEF94D003CD160 /* Image3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8A15CEF94D003CD160 /* Image3.inl */; };
+		3C8A0C0515CEF94D003CD160 /* Image3.inl in Resources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8A15CEF94D003CD160 /* Image3.inl */; };
+		3C8A0C0615CEF94D003CD160 /* NonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8B15CEF94D003CD160 /* NonlocalSolver2.cpp */; };
+		3C8A0C0715CEF94D003CD160 /* NonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8B15CEF94D003CD160 /* NonlocalSolver2.cpp */; };
+		3C8A0C0815CEF94D003CD160 /* NonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8B15CEF94D003CD160 /* NonlocalSolver2.cpp */; };
+		3C8A0C0915CEF94D003CD160 /* NonlocalSolver2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8B15CEF94D003CD160 /* NonlocalSolver2.cpp */; };
+		3C8A0C0A15CEF94D003CD160 /* OpenGLHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8D15CEF94D003CD160 /* OpenGLHelper.cpp */; };
+		3C8A0C0B15CEF94D003CD160 /* OpenGLHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8D15CEF94D003CD160 /* OpenGLHelper.cpp */; };
+		3C8A0C0C15CEF94D003CD160 /* OpenGLHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8D15CEF94D003CD160 /* OpenGLHelper.cpp */; };
+		3C8A0C0D15CEF94D003CD160 /* OpenGLHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B8D15CEF94D003CD160 /* OpenGLHelper.cpp */; };
+		3C8A0C0E15CEF94D003CD160 /* SaveBMP32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B9015CEF94D003CD160 /* SaveBMP32.cpp */; };
+		3C8A0C0F15CEF94D003CD160 /* SaveBMP32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B9015CEF94D003CD160 /* SaveBMP32.cpp */; };
+		3C8A0C1015CEF94D003CD160 /* SaveBMP32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B9015CEF94D003CD160 /* SaveBMP32.cpp */; };
+		3C8A0C1115CEF94D003CD160 /* SaveBMP32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C8A0B9015CEF94D003CD160 /* SaveBMP32.cpp */; };
+		3CB4F4A813DCF47000C74DF4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F4A713DCF47000C74DF4 /* GLUT.framework */; };
+		3CB4F4A913DCF47000C74DF4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F4A713DCF47000C74DF4 /* GLUT.framework */; };
+		3CB4F4AA13DCF47000C74DF4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F4A713DCF47000C74DF4 /* GLUT.framework */; };
+		3CB4F4AB13DCF47000C74DF4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F4A713DCF47000C74DF4 /* GLUT.framework */; };
+		3CC4FE4910FD1F4900C42DBB /* libWm5Cored.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4310FD1F4900C42DBB /* libWm5Cored.a */; };
+		3CC4FE4A10FD1F4900C42DBB /* libWm5Physicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4410FD1F4900C42DBB /* libWm5Physicsd.a */; };
+		3CC4FE4B10FD1F4900C42DBB /* libWm5GlutGraphicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4510FD1F4900C42DBB /* libWm5GlutGraphicsd.a */; };
+		3CC4FE4C10FD1F4900C42DBB /* libWm5Mathematicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4610FD1F4900C42DBB /* libWm5Mathematicsd.a */; };
+		3CC4FE4D10FD1F4900C42DBB /* libWm5Imagicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4710FD1F4900C42DBB /* libWm5Imagicsd.a */; };
+		3CC4FE4E10FD1F4900C42DBB /* libWm5GlutApplicationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4810FD1F4900C42DBB /* libWm5GlutApplicationd.a */; };
+		3CC4FE6110FD1F6600C42DBB /* libWm5GlutApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5510FD1F6600C42DBB /* libWm5GlutApplication.a */; };
+		3CC4FE6210FD1F6600C42DBB /* libWm5GlutGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5610FD1F6600C42DBB /* libWm5GlutGraphics.a */; };
+		3CC4FE6310FD1F6600C42DBB /* libWm5Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5710FD1F6600C42DBB /* libWm5Core.a */; };
+		3CC4FE6410FD1F6600C42DBB /* libWm5Imagics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */; };
+		3CC4FE6510FD1F6600C42DBB /* libWm5Mathematics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */; };
+		3CC4FE6610FD1F6600C42DBB /* libWm5Physics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */; };
+		748AA51107F465B300486586 /* NonlocalBlowup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* NonlocalBlowup.cpp */; };
+		748AA51307F465B300486586 /* NonlocalBlowup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* NonlocalBlowup.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C64D2A81256D1CD00F4B0B0 /* NonlocalBlowupGlutDebDyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonlocalBlowupGlutDebDyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C64D2B21256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5GlutApplicationd.dylib; path = ../../SDK/Library/DebugDLL/libWm5GlutApplicationd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B31256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5GlutGraphicsd.dylib; path = ../../SDK/Library/DebugDLL/libWm5GlutGraphicsd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B41256D24F00F4B0B0 /* libWm5Cored.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Cored.dylib; path = ../../SDK/Library/DebugDLL/libWm5Cored.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B51256D24F00F4B0B0 /* libWm5Imagicsd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Imagicsd.dylib; path = ../../SDK/Library/DebugDLL/libWm5Imagicsd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B61256D24F00F4B0B0 /* libWm5Mathematicsd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Mathematicsd.dylib; path = ../../SDK/Library/DebugDLL/libWm5Mathematicsd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B71256D24F00F4B0B0 /* libWm5Physicsd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Physicsd.dylib; path = ../../SDK/Library/DebugDLL/libWm5Physicsd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3871256D98E00F4B0B0 /* NonlocalBlowupGlutRelDyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonlocalBlowupGlutRelDyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C64D3931256D9C400F4B0B0 /* libWm5GlutApplication.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5GlutApplication.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5GlutApplication.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3941256D9C400F4B0B0 /* libWm5GlutGraphics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5GlutGraphics.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5GlutGraphics.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3951256D9C400F4B0B0 /* libWm5Core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Core.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5Core.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3961256D9C400F4B0B0 /* libWm5Imagics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Imagics.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5Imagics.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3971256D9C400F4B0B0 /* libWm5Mathematics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Mathematics.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5Mathematics.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3981256D9C400F4B0B0 /* libWm5Physics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Physics.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5Physics.dylib; sourceTree = SOURCE_ROOT; };
+		3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		3C8A0B5215CEF94D003CD160 /* CpuLocalSolver1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CpuLocalSolver1.cpp; sourceTree = "<group>"; };
+		3C8A0B5315CEF94D003CD160 /* CpuLocalSolver1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuLocalSolver1.h; sourceTree = "<group>"; };
+		3C8A0B5415CEF94D003CD160 /* CpuLocalSolver2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CpuLocalSolver2.cpp; sourceTree = "<group>"; };
+		3C8A0B5515CEF94D003CD160 /* CpuLocalSolver2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuLocalSolver2.h; sourceTree = "<group>"; };
+		3C8A0B5615CEF94D003CD160 /* CpuLocalSolver3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CpuLocalSolver3.cpp; sourceTree = "<group>"; };
+		3C8A0B5715CEF94D003CD160 /* CpuLocalSolver3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuLocalSolver3.h; sourceTree = "<group>"; };
+		3C8A0B5815CEF94D003CD160 /* CpuNonlocalSolver1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CpuNonlocalSolver1.cpp; sourceTree = "<group>"; };
+		3C8A0B5915CEF94D003CD160 /* CpuNonlocalSolver1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuNonlocalSolver1.h; sourceTree = "<group>"; };
+		3C8A0B5A15CEF94D003CD160 /* CpuNonlocalSolver2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CpuNonlocalSolver2.cpp; sourceTree = "<group>"; };
+		3C8A0B5B15CEF94D003CD160 /* CpuNonlocalSolver2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuNonlocalSolver2.h; sourceTree = "<group>"; };
+		3C8A0B5C15CEF94D003CD160 /* CpuNonlocalSolver3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CpuNonlocalSolver3.cpp; sourceTree = "<group>"; };
+		3C8A0B5D15CEF94D003CD160 /* CpuNonlocalSolver3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuNonlocalSolver3.h; sourceTree = "<group>"; };
+		3C8A0B5E15CEF94D003CD160 /* GpuLocalSolver1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuLocalSolver1.cpp; sourceTree = "<group>"; };
+		3C8A0B5F15CEF94D003CD160 /* GpuLocalSolver1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuLocalSolver1.h; sourceTree = "<group>"; };
+		3C8A0B6015CEF94D003CD160 /* GpuLocalSolver2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuLocalSolver2.cpp; sourceTree = "<group>"; };
+		3C8A0B6115CEF94D003CD160 /* GpuLocalSolver2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuLocalSolver2.h; sourceTree = "<group>"; };
+		3C8A0B6215CEF94D003CD160 /* GpuLocalSolver3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuLocalSolver3.cpp; sourceTree = "<group>"; };
+		3C8A0B6315CEF94D003CD160 /* GpuLocalSolver3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuLocalSolver3.h; sourceTree = "<group>"; };
+		3C8A0B6415CEF94D003CD160 /* GpuNonlocalSolver1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuNonlocalSolver1.cpp; sourceTree = "<group>"; };
+		3C8A0B6515CEF94D003CD160 /* GpuNonlocalSolver1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuNonlocalSolver1.h; sourceTree = "<group>"; };
+		3C8A0B6615CEF94D003CD160 /* GpuNonlocalSolver2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuNonlocalSolver2.cpp; sourceTree = "<group>"; };
+		3C8A0B6715CEF94D003CD160 /* GpuNonlocalSolver2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuNonlocalSolver2.h; sourceTree = "<group>"; };
+		3C8A0B6815CEF94D003CD160 /* GpuNonlocalSolver3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuNonlocalSolver3.cpp; sourceTree = "<group>"; };
+		3C8A0B6915CEF94D003CD160 /* GpuNonlocalSolver3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuNonlocalSolver3.h; sourceTree = "<group>"; };
+		3C8A0B6A15CEF94D003CD160 /* RunConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RunConsole.cpp; sourceTree = "<group>"; };
+		3C8A0B6B15CEF94D003CD160 /* CpuPdeSolver1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuPdeSolver1.h; sourceTree = "<group>"; };
+		3C8A0B6C15CEF94D003CD160 /* CpuPdeSolver1.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CpuPdeSolver1.inl; sourceTree = "<group>"; };
+		3C8A0B6D15CEF94D003CD160 /* CpuPdeSolver2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuPdeSolver2.h; sourceTree = "<group>"; };
+		3C8A0B6E15CEF94D003CD160 /* CpuPdeSolver2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CpuPdeSolver2.inl; sourceTree = "<group>"; };
+		3C8A0B6F15CEF94D003CD160 /* CpuPdeSolver3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CpuPdeSolver3.h; sourceTree = "<group>"; };
+		3C8A0B7015CEF94D003CD160 /* CpuPdeSolver3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CpuPdeSolver3.inl; sourceTree = "<group>"; };
+		3C8A0B7115CEF94D003CD160 /* DisplacementEffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplacementEffect.cpp; sourceTree = "<group>"; };
+		3C8A0B7215CEF94D003CD160 /* DisplacementEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplacementEffect.h; sourceTree = "<group>"; };
+		3C8A0B7315CEF94D003CD160 /* FpuSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FpuSupport.h; sourceTree = "<group>"; };
+		3C8A0B7415CEF94D003CD160 /* GpuAvrPyramid2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuAvrPyramid2.cpp; sourceTree = "<group>"; };
+		3C8A0B7515CEF94D003CD160 /* GpuAvrPyramid2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuAvrPyramid2.h; sourceTree = "<group>"; };
+		3C8A0B7615CEF94D003CD160 /* GpuEvaluate2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuEvaluate2.cpp; sourceTree = "<group>"; };
+		3C8A0B7715CEF94D003CD160 /* GpuEvaluate2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuEvaluate2.h; sourceTree = "<group>"; };
+		3C8A0B7815CEF94D003CD160 /* GpuMaxPyramid2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuMaxPyramid2.cpp; sourceTree = "<group>"; };
+		3C8A0B7915CEF94D003CD160 /* GpuMaxPyramid2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuMaxPyramid2.h; sourceTree = "<group>"; };
+		3C8A0B7A15CEF94D003CD160 /* GpuPdeSolver1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuPdeSolver1.cpp; sourceTree = "<group>"; };
+		3C8A0B7B15CEF94D003CD160 /* GpuPdeSolver1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuPdeSolver1.h; sourceTree = "<group>"; };
+		3C8A0B7C15CEF94D003CD160 /* GpuPdeSolver2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuPdeSolver2.cpp; sourceTree = "<group>"; };
+		3C8A0B7D15CEF94D003CD160 /* GpuPdeSolver2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuPdeSolver2.h; sourceTree = "<group>"; };
+		3C8A0B7E15CEF94D003CD160 /* GpuPdeSolver3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuPdeSolver3.cpp; sourceTree = "<group>"; };
+		3C8A0B7F15CEF94D003CD160 /* GpuPdeSolver3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuPdeSolver3.h; sourceTree = "<group>"; };
+		3C8A0B8015CEF94D003CD160 /* GpuPyramid2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GpuPyramid2.cpp; sourceTree = "<group>"; };
+		3C8A0B8115CEF94D003CD160 /* GpuPyramid2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpuPyramid2.h; sourceTree = "<group>"; };
+		3C8A0B8215CEF94D003CD160 /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		3C8A0B8315CEF94D003CD160 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		3C8A0B8415CEF94D003CD160 /* Image.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Image.inl; sourceTree = "<group>"; };
+		3C8A0B8515CEF94D003CD160 /* Image1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image1.h; sourceTree = "<group>"; };
+		3C8A0B8615CEF94D003CD160 /* Image1.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Image1.inl; sourceTree = "<group>"; };
+		3C8A0B8715CEF94D003CD160 /* Image2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image2.h; sourceTree = "<group>"; };
+		3C8A0B8815CEF94D003CD160 /* Image2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Image2.inl; sourceTree = "<group>"; };
+		3C8A0B8915CEF94D003CD160 /* Image3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image3.h; sourceTree = "<group>"; };
+		3C8A0B8A15CEF94D003CD160 /* Image3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Image3.inl; sourceTree = "<group>"; };
+		3C8A0B8B15CEF94D003CD160 /* NonlocalSolver2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NonlocalSolver2.cpp; sourceTree = "<group>"; };
+		3C8A0B8C15CEF94D003CD160 /* NonlocalSolver2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonlocalSolver2.h; sourceTree = "<group>"; };
+		3C8A0B8D15CEF94D003CD160 /* OpenGLHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenGLHelper.cpp; sourceTree = "<group>"; };
+		3C8A0B8E15CEF94D003CD160 /* OpenGLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLHelper.h; sourceTree = "<group>"; };
+		3C8A0B8F15CEF94D003CD160 /* PixelBGRA8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PixelBGRA8.h; sourceTree = "<group>"; };
+		3C8A0B9015CEF94D003CD160 /* SaveBMP32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaveBMP32.cpp; sourceTree = "<group>"; };
+		3C8A0B9115CEF94D003CD160 /* SaveBMP32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveBMP32.h; sourceTree = "<group>"; };
+		3CB4F4A713DCF47000C74DF4 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = "<group>"; };
+		3CC4FE4310FD1F4900C42DBB /* libWm5Cored.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Cored.a; path = ../../SDK/Library/Debug/libWm5Cored.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4410FD1F4900C42DBB /* libWm5Physicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Physicsd.a; path = ../../SDK/Library/Debug/libWm5Physicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4510FD1F4900C42DBB /* libWm5GlutGraphicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5GlutGraphicsd.a; path = ../../SDK/Library/Debug/libWm5GlutGraphicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4610FD1F4900C42DBB /* libWm5Mathematicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Mathematicsd.a; path = ../../SDK/Library/Debug/libWm5Mathematicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4710FD1F4900C42DBB /* libWm5Imagicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Imagicsd.a; path = ../../SDK/Library/Debug/libWm5Imagicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4810FD1F4900C42DBB /* libWm5GlutApplicationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5GlutApplicationd.a; path = ../../SDK/Library/Debug/libWm5GlutApplicationd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5510FD1F6600C42DBB /* libWm5GlutApplication.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5GlutApplication.a; path = ../../SDK/Library/Release/libWm5GlutApplication.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5610FD1F6600C42DBB /* libWm5GlutGraphics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5GlutGraphics.a; path = ../../SDK/Library/Release/libWm5GlutGraphics.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5710FD1F6600C42DBB /* libWm5Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Core.a; path = ../../SDK/Library/Release/libWm5Core.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Imagics.a; path = ../../SDK/Library/Release/libWm5Imagics.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Mathematics.a; path = ../../SDK/Library/Release/libWm5Mathematics.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Physics.a; path = ../../SDK/Library/Release/libWm5Physics.a; sourceTree = SOURCE_ROOT; };
+		748AA4CC07F4624400486586 /* NonlocalBlowupdGlut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonlocalBlowupdGlut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748AA4DA07F4631800486586 /* NonlocalBlowupGlut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonlocalBlowupGlut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748AA50F07F465B300486586 /* NonlocalBlowup.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = NonlocalBlowup.cpp; sourceTree = SOURCE_ROOT; };
+		748AA51007F465B300486586 /* NonlocalBlowup.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = NonlocalBlowup.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C64D2A61256D1CD00F4B0B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C64D2B11256D20F00F4B0B0 /* OpenGL.framework in Frameworks */,
+				3C64D2B81256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib in Frameworks */,
+				3C64D2B91256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib in Frameworks */,
+				3C64D2BA1256D24F00F4B0B0 /* libWm5Cored.dylib in Frameworks */,
+				3C64D2BB1256D24F00F4B0B0 /* libWm5Imagicsd.dylib in Frameworks */,
+				3C64D2BC1256D24F00F4B0B0 /* libWm5Mathematicsd.dylib in Frameworks */,
+				3C64D2BD1256D24F00F4B0B0 /* libWm5Physicsd.dylib in Frameworks */,
+				3CB4F4AA13DCF47000C74DF4 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C64D3851256D98E00F4B0B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C64D3991256D9C400F4B0B0 /* libWm5GlutApplication.dylib in Frameworks */,
+				3C64D39A1256D9C400F4B0B0 /* libWm5GlutGraphics.dylib in Frameworks */,
+				3C64D39B1256D9C400F4B0B0 /* libWm5Core.dylib in Frameworks */,
+				3C64D39C1256D9C400F4B0B0 /* libWm5Imagics.dylib in Frameworks */,
+				3C64D39D1256D9C400F4B0B0 /* libWm5Mathematics.dylib in Frameworks */,
+				3C64D39E1256D9C400F4B0B0 /* libWm5Physics.dylib in Frameworks */,
+				3C64D3A21256D9CF00F4B0B0 /* OpenGL.framework in Frameworks */,
+				3CB4F4AB13DCF47000C74DF4 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4CA07F4624400486586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBC6C083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3CC4FE4910FD1F4900C42DBB /* libWm5Cored.a in Frameworks */,
+				3CC4FE4A10FD1F4900C42DBB /* libWm5Physicsd.a in Frameworks */,
+				3CC4FE4B10FD1F4900C42DBB /* libWm5GlutGraphicsd.a in Frameworks */,
+				3CC4FE4C10FD1F4900C42DBB /* libWm5Mathematicsd.a in Frameworks */,
+				3CC4FE4D10FD1F4900C42DBB /* libWm5Imagicsd.a in Frameworks */,
+				3CC4FE4E10FD1F4900C42DBB /* libWm5GlutApplicationd.a in Frameworks */,
+				3CB4F4A813DCF47000C74DF4 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D807F4631800486586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBC6D083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3CC4FE6110FD1F6600C42DBB /* libWm5GlutApplication.a in Frameworks */,
+				3CC4FE6210FD1F6600C42DBB /* libWm5GlutGraphics.a in Frameworks */,
+				3CC4FE6310FD1F6600C42DBB /* libWm5Core.a in Frameworks */,
+				3CC4FE6410FD1F6600C42DBB /* libWm5Imagics.a in Frameworks */,
+				3CC4FE6510FD1F6600C42DBB /* libWm5Mathematics.a in Frameworks */,
+				3CC4FE6610FD1F6600C42DBB /* libWm5Physics.a in Frameworks */,
+				3CB4F4A913DCF47000C74DF4 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C64D28E1256D12100F4B0B0 /* DebugDLL */ = {
+			isa = PBXGroup;
+			children = (
+				3C64D2B21256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib */,
+				3C64D2B31256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib */,
+				3C64D2B41256D24F00F4B0B0 /* libWm5Cored.dylib */,
+				3C64D2B51256D24F00F4B0B0 /* libWm5Imagicsd.dylib */,
+				3C64D2B61256D24F00F4B0B0 /* libWm5Mathematicsd.dylib */,
+				3C64D2B71256D24F00F4B0B0 /* libWm5Physicsd.dylib */,
+			);
+			name = DebugDLL;
+			sourceTree = "<group>";
+		};
+		3C64D2931256D12C00F4B0B0 /* ReleaseDLL */ = {
+			isa = PBXGroup;
+			children = (
+				3C64D3931256D9C400F4B0B0 /* libWm5GlutApplication.dylib */,
+				3C64D3941256D9C400F4B0B0 /* libWm5GlutGraphics.dylib */,
+				3C64D3951256D9C400F4B0B0 /* libWm5Core.dylib */,
+				3C64D3961256D9C400F4B0B0 /* libWm5Imagics.dylib */,
+				3C64D3971256D9C400F4B0B0 /* libWm5Mathematics.dylib */,
+				3C64D3981256D9C400F4B0B0 /* libWm5Physics.dylib */,
+			);
+			name = ReleaseDLL;
+			sourceTree = "<group>";
+		};
+		3C8A0B5115CEF94D003CD160 /* ConsoleSource */ = {
+			isa = PBXGroup;
+			children = (
+				3C8A0B5215CEF94D003CD160 /* CpuLocalSolver1.cpp */,
+				3C8A0B5315CEF94D003CD160 /* CpuLocalSolver1.h */,
+				3C8A0B5415CEF94D003CD160 /* CpuLocalSolver2.cpp */,
+				3C8A0B5515CEF94D003CD160 /* CpuLocalSolver2.h */,
+				3C8A0B5615CEF94D003CD160 /* CpuLocalSolver3.cpp */,
+				3C8A0B5715CEF94D003CD160 /* CpuLocalSolver3.h */,
+				3C8A0B5815CEF94D003CD160 /* CpuNonlocalSolver1.cpp */,
+				3C8A0B5915CEF94D003CD160 /* CpuNonlocalSolver1.h */,
+				3C8A0B5A15CEF94D003CD160 /* CpuNonlocalSolver2.cpp */,
+				3C8A0B5B15CEF94D003CD160 /* CpuNonlocalSolver2.h */,
+				3C8A0B5C15CEF94D003CD160 /* CpuNonlocalSolver3.cpp */,
+				3C8A0B5D15CEF94D003CD160 /* CpuNonlocalSolver3.h */,
+				3C8A0B5E15CEF94D003CD160 /* GpuLocalSolver1.cpp */,
+				3C8A0B5F15CEF94D003CD160 /* GpuLocalSolver1.h */,
+				3C8A0B6015CEF94D003CD160 /* GpuLocalSolver2.cpp */,
+				3C8A0B6115CEF94D003CD160 /* GpuLocalSolver2.h */,
+				3C8A0B6215CEF94D003CD160 /* GpuLocalSolver3.cpp */,
+				3C8A0B6315CEF94D003CD160 /* GpuLocalSolver3.h */,
+				3C8A0B6415CEF94D003CD160 /* GpuNonlocalSolver1.cpp */,
+				3C8A0B6515CEF94D003CD160 /* GpuNonlocalSolver1.h */,
+				3C8A0B6615CEF94D003CD160 /* GpuNonlocalSolver2.cpp */,
+				3C8A0B6715CEF94D003CD160 /* GpuNonlocalSolver2.h */,
+				3C8A0B6815CEF94D003CD160 /* GpuNonlocalSolver3.cpp */,
+				3C8A0B6915CEF94D003CD160 /* GpuNonlocalSolver3.h */,
+				3C8A0B6A15CEF94D003CD160 /* RunConsole.cpp */,
+			);
+			path = ConsoleSource;
+			sourceTree = "<group>";
+		};
+		7432C2B407F8766A00ABC141 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				3CC4FE4310FD1F4900C42DBB /* libWm5Cored.a */,
+				3CC4FE4410FD1F4900C42DBB /* libWm5Physicsd.a */,
+				3CC4FE4510FD1F4900C42DBB /* libWm5GlutGraphicsd.a */,
+				3CC4FE4610FD1F4900C42DBB /* libWm5Mathematicsd.a */,
+				3CC4FE4710FD1F4900C42DBB /* libWm5Imagicsd.a */,
+				3CC4FE4810FD1F4900C42DBB /* libWm5GlutApplicationd.a */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		7432C2B707F8767000ABC141 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				3CC4FE5510FD1F6600C42DBB /* libWm5GlutApplication.a */,
+				3CC4FE5610FD1F6600C42DBB /* libWm5GlutGraphics.a */,
+				3CC4FE5710FD1F6600C42DBB /* libWm5Core.a */,
+				3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */,
+				3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */,
+				3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */,
+			);
+			name = Release;
+			sourceTree = "<group>";
+		};
+		748AA4BE07F4621A00486586 = {
+			isa = PBXGroup;
+			children = (
+				748AA50C07F465A200486586 /* Sources */,
+				748AA4F707F4641600486586 /* Libraries */,
+				748AA4E207F463F300486586 /* Frameworks */,
+				748AA4CD07F4624400486586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		748AA4CD07F4624400486586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				748AA4CC07F4624400486586 /* NonlocalBlowupdGlut.app */,
+				748AA4DA07F4631800486586 /* NonlocalBlowupGlut.app */,
+				3C64D2A81256D1CD00F4B0B0 /* NonlocalBlowupGlutDebDyn.app */,
+				3C64D3871256D98E00F4B0B0 /* NonlocalBlowupGlutRelDyn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		748AA4E207F463F300486586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CB4F4A713DCF47000C74DF4 /* GLUT.framework */,
+				3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		748AA4F707F4641600486586 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7432C2B407F8766A00ABC141 /* Debug */,
+				3C64D28E1256D12100F4B0B0 /* DebugDLL */,
+				7432C2B707F8767000ABC141 /* Release */,
+				3C64D2931256D12C00F4B0B0 /* ReleaseDLL */,
+			);
+			name = Libraries;
+			sourceTree = SOURCE_ROOT;
+		};
+		748AA50C07F465A200486586 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3C8A0B5115CEF94D003CD160 /* ConsoleSource */,
+				3C8A0B6B15CEF94D003CD160 /* CpuPdeSolver1.h */,
+				3C8A0B6C15CEF94D003CD160 /* CpuPdeSolver1.inl */,
+				3C8A0B6D15CEF94D003CD160 /* CpuPdeSolver2.h */,
+				3C8A0B6E15CEF94D003CD160 /* CpuPdeSolver2.inl */,
+				3C8A0B6F15CEF94D003CD160 /* CpuPdeSolver3.h */,
+				3C8A0B7015CEF94D003CD160 /* CpuPdeSolver3.inl */,
+				3C8A0B7115CEF94D003CD160 /* DisplacementEffect.cpp */,
+				3C8A0B7215CEF94D003CD160 /* DisplacementEffect.h */,
+				3C8A0B7315CEF94D003CD160 /* FpuSupport.h */,
+				3C8A0B7415CEF94D003CD160 /* GpuAvrPyramid2.cpp */,
+				3C8A0B7515CEF94D003CD160 /* GpuAvrPyramid2.h */,
+				3C8A0B7615CEF94D003CD160 /* GpuEvaluate2.cpp */,
+				3C8A0B7715CEF94D003CD160 /* GpuEvaluate2.h */,
+				3C8A0B7815CEF94D003CD160 /* GpuMaxPyramid2.cpp */,
+				3C8A0B7915CEF94D003CD160 /* GpuMaxPyramid2.h */,
+				3C8A0B7A15CEF94D003CD160 /* GpuPdeSolver1.cpp */,
+				3C8A0B7B15CEF94D003CD160 /* GpuPdeSolver1.h */,
+				3C8A0B7C15CEF94D003CD160 /* GpuPdeSolver2.cpp */,
+				3C8A0B7D15CEF94D003CD160 /* GpuPdeSolver2.h */,
+				3C8A0B7E15CEF94D003CD160 /* GpuPdeSolver3.cpp */,
+				3C8A0B7F15CEF94D003CD160 /* GpuPdeSolver3.h */,
+				3C8A0B8015CEF94D003CD160 /* GpuPyramid2.cpp */,
+				3C8A0B8115CEF94D003CD160 /* GpuPyramid2.h */,
+				3C8A0B8215CEF94D003CD160 /* Image.cpp */,
+				3C8A0B8315CEF94D003CD160 /* Image.h */,
+				3C8A0B8415CEF94D003CD160 /* Image.inl */,
+				3C8A0B8515CEF94D003CD160 /* Image1.h */,
+				3C8A0B8615CEF94D003CD160 /* Image1.inl */,
+				3C8A0B8715CEF94D003CD160 /* Image2.h */,
+				3C8A0B8815CEF94D003CD160 /* Image2.inl */,
+				3C8A0B8915CEF94D003CD160 /* Image3.h */,
+				3C8A0B8A15CEF94D003CD160 /* Image3.inl */,
+				3C8A0B8B15CEF94D003CD160 /* NonlocalSolver2.cpp */,
+				3C8A0B8C15CEF94D003CD160 /* NonlocalSolver2.h */,
+				3C8A0B8D15CEF94D003CD160 /* OpenGLHelper.cpp */,
+				3C8A0B8E15CEF94D003CD160 /* OpenGLHelper.h */,
+				3C8A0B8F15CEF94D003CD160 /* PixelBGRA8.h */,
+				3C8A0B9015CEF94D003CD160 /* SaveBMP32.cpp */,
+				3C8A0B9115CEF94D003CD160 /* SaveBMP32.h */,
+				748AA50F07F465B300486586 /* NonlocalBlowup.cpp */,
+				748AA51007F465B300486586 /* NonlocalBlowup.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C64D2A71256D1CD00F4B0B0 /* Glut Debug Dynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C64D2AC1256D1CE00F4B0B0 /* Build configuration list for PBXNativeTarget "Glut Debug Dynamic" */;
+			buildPhases = (
+				3C64D2A41256D1CD00F4B0B0 /* Resources */,
+				3C64D2A51256D1CD00F4B0B0 /* Sources */,
+				3C64D2A61256D1CD00F4B0B0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glut Debug Dynamic";
+			productName = "Glut Debug Dynamic";
+			productReference = 3C64D2A81256D1CD00F4B0B0 /* NonlocalBlowupGlutDebDyn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C64D3861256D98E00F4B0B0 /* Glut Release Dynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C64D38B1256D98F00F4B0B0 /* Build configuration list for PBXNativeTarget "Glut Release Dynamic" */;
+			buildPhases = (
+				3C64D3831256D98E00F4B0B0 /* Resources */,
+				3C64D3841256D98E00F4B0B0 /* Sources */,
+				3C64D3851256D98E00F4B0B0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glut Release Dynamic";
+			productName = "Glut Release Dynamic";
+			productReference = 3C64D3871256D98E00F4B0B0 /* NonlocalBlowupGlutRelDyn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		748AA4CB07F4624400486586 /* Glut Debug Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4B939708674C10001A085C /* Build configuration list for PBXNativeTarget "Glut Debug Static" */;
+			buildPhases = (
+				748AA4C807F4624400486586 /* Resources */,
+				748AA4C907F4624400486586 /* Sources */,
+				748AA4CA07F4624400486586 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glut Debug Static";
+			productName = NonlocalBlowupStaDeb;
+			productReference = 748AA4CC07F4624400486586 /* NonlocalBlowupdGlut.app */;
+			productType = "com.apple.product-type.application";
+		};
+		748AA4D907F4631800486586 /* Glut Release Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4B939A08674C10001A085C /* Build configuration list for PBXNativeTarget "Glut Release Static" */;
+			buildPhases = (
+				748AA4D607F4631800486586 /* Resources */,
+				748AA4D707F4631800486586 /* Sources */,
+				748AA4D807F4631800486586 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glut Release Static";
+			productName = NonlocalBlowupStaRel;
+			productReference = 748AA4DA07F4631800486586 /* NonlocalBlowupGlut.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		748AA4C207F4621A00486586 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 3C4B93AC08674C10001A085C /* Build configuration list for PBXProject "NonlocalBlowup" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 748AA4BE07F4621A00486586;
+			productRefGroup = 748AA4CD07F4624400486586 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				748AA4CB07F4624400486586 /* Glut Debug Static */,
+				748AA4D907F4631800486586 /* Glut Release Static */,
+				3C64D2A71256D1CD00F4B0B0 /* Glut Debug Dynamic */,
+				3C64D3861256D98E00F4B0B0 /* Glut Release Dynamic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C64D2A41256D1CD00F4B0B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8A0BC815CEF94D003CD160 /* CpuPdeSolver1.inl in Resources */,
+				3C8A0BCC15CEF94D003CD160 /* CpuPdeSolver2.inl in Resources */,
+				3C8A0BD015CEF94D003CD160 /* CpuPdeSolver3.inl in Resources */,
+				3C8A0BF815CEF94D003CD160 /* Image.inl in Resources */,
+				3C8A0BFC15CEF94D003CD160 /* Image1.inl in Resources */,
+				3C8A0C0015CEF94D003CD160 /* Image2.inl in Resources */,
+				3C8A0C0415CEF94D003CD160 /* Image3.inl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C64D3831256D98E00F4B0B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8A0BC915CEF94D003CD160 /* CpuPdeSolver1.inl in Resources */,
+				3C8A0BCD15CEF94D003CD160 /* CpuPdeSolver2.inl in Resources */,
+				3C8A0BD115CEF94D003CD160 /* CpuPdeSolver3.inl in Resources */,
+				3C8A0BF915CEF94D003CD160 /* Image.inl in Resources */,
+				3C8A0BFD15CEF94D003CD160 /* Image1.inl in Resources */,
+				3C8A0C0115CEF94D003CD160 /* Image2.inl in Resources */,
+				3C8A0C0515CEF94D003CD160 /* Image3.inl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4C807F4624400486586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8A0BC615CEF94D003CD160 /* CpuPdeSolver1.inl in Resources */,
+				3C8A0BCA15CEF94D003CD160 /* CpuPdeSolver2.inl in Resources */,
+				3C8A0BCE15CEF94D003CD160 /* CpuPdeSolver3.inl in Resources */,
+				3C8A0BF615CEF94D003CD160 /* Image.inl in Resources */,
+				3C8A0BFA15CEF94D003CD160 /* Image1.inl in Resources */,
+				3C8A0BFE15CEF94D003CD160 /* Image2.inl in Resources */,
+				3C8A0C0215CEF94D003CD160 /* Image3.inl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D607F4631800486586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8A0BC715CEF94D003CD160 /* CpuPdeSolver1.inl in Resources */,
+				3C8A0BCB15CEF94D003CD160 /* CpuPdeSolver2.inl in Resources */,
+				3C8A0BCF15CEF94D003CD160 /* CpuPdeSolver3.inl in Resources */,
+				3C8A0BF715CEF94D003CD160 /* Image.inl in Resources */,
+				3C8A0BFB15CEF94D003CD160 /* Image1.inl in Resources */,
+				3C8A0BFF15CEF94D003CD160 /* Image2.inl in Resources */,
+				3C8A0C0315CEF94D003CD160 /* Image3.inl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C64D2A51256D1CD00F4B0B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C64D2AD1256D1F200F4B0B0 /* NonlocalBlowup.cpp in Sources */,
+				3C8A0B9415CEF94D003CD160 /* CpuLocalSolver1.cpp in Sources */,
+				3C8A0B9815CEF94D003CD160 /* CpuLocalSolver2.cpp in Sources */,
+				3C8A0B9C15CEF94D003CD160 /* CpuLocalSolver3.cpp in Sources */,
+				3C8A0BA015CEF94D003CD160 /* CpuNonlocalSolver1.cpp in Sources */,
+				3C8A0BA415CEF94D003CD160 /* CpuNonlocalSolver2.cpp in Sources */,
+				3C8A0BA815CEF94D003CD160 /* CpuNonlocalSolver3.cpp in Sources */,
+				3C8A0BAC15CEF94D003CD160 /* GpuLocalSolver1.cpp in Sources */,
+				3C8A0BB015CEF94D003CD160 /* GpuLocalSolver2.cpp in Sources */,
+				3C8A0BB415CEF94D003CD160 /* GpuLocalSolver3.cpp in Sources */,
+				3C8A0BB815CEF94D003CD160 /* GpuNonlocalSolver1.cpp in Sources */,
+				3C8A0BBC15CEF94D003CD160 /* GpuNonlocalSolver2.cpp in Sources */,
+				3C8A0BC015CEF94D003CD160 /* GpuNonlocalSolver3.cpp in Sources */,
+				3C8A0BC415CEF94D003CD160 /* RunConsole.cpp in Sources */,
+				3C8A0BD415CEF94D003CD160 /* DisplacementEffect.cpp in Sources */,
+				3C8A0BD815CEF94D003CD160 /* GpuAvrPyramid2.cpp in Sources */,
+				3C8A0BDC15CEF94D003CD160 /* GpuEvaluate2.cpp in Sources */,
+				3C8A0BE015CEF94D003CD160 /* GpuMaxPyramid2.cpp in Sources */,
+				3C8A0BE415CEF94D003CD160 /* GpuPdeSolver1.cpp in Sources */,
+				3C8A0BE815CEF94D003CD160 /* GpuPdeSolver2.cpp in Sources */,
+				3C8A0BEC15CEF94D003CD160 /* GpuPdeSolver3.cpp in Sources */,
+				3C8A0BF015CEF94D003CD160 /* GpuPyramid2.cpp in Sources */,
+				3C8A0BF415CEF94D003CD160 /* Image.cpp in Sources */,
+				3C8A0C0815CEF94D003CD160 /* NonlocalSolver2.cpp in Sources */,
+				3C8A0C0C15CEF94D003CD160 /* OpenGLHelper.cpp in Sources */,
+				3C8A0C1015CEF94D003CD160 /* SaveBMP32.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C64D3841256D98E00F4B0B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C64D38C1256D99B00F4B0B0 /* NonlocalBlowup.cpp in Sources */,
+				3C8A0B9515CEF94D003CD160 /* CpuLocalSolver1.cpp in Sources */,
+				3C8A0B9915CEF94D003CD160 /* CpuLocalSolver2.cpp in Sources */,
+				3C8A0B9D15CEF94D003CD160 /* CpuLocalSolver3.cpp in Sources */,
+				3C8A0BA115CEF94D003CD160 /* CpuNonlocalSolver1.cpp in Sources */,
+				3C8A0BA515CEF94D003CD160 /* CpuNonlocalSolver2.cpp in Sources */,
+				3C8A0BA915CEF94D003CD160 /* CpuNonlocalSolver3.cpp in Sources */,
+				3C8A0BAD15CEF94D003CD160 /* GpuLocalSolver1.cpp in Sources */,
+				3C8A0BB115CEF94D003CD160 /* GpuLocalSolver2.cpp in Sources */,
+				3C8A0BB515CEF94D003CD160 /* GpuLocalSolver3.cpp in Sources */,
+				3C8A0BB915CEF94D003CD160 /* GpuNonlocalSolver1.cpp in Sources */,
+				3C8A0BBD15CEF94D003CD160 /* GpuNonlocalSolver2.cpp in Sources */,
+				3C8A0BC115CEF94D003CD160 /* GpuNonlocalSolver3.cpp in Sources */,
+				3C8A0BC515CEF94D003CD160 /* RunConsole.cpp in Sources */,
+				3C8A0BD515CEF94D003CD160 /* DisplacementEffect.cpp in Sources */,
+				3C8A0BD915CEF94D003CD160 /* GpuAvrPyramid2.cpp in Sources */,
+				3C8A0BDD15CEF94D003CD160 /* GpuEvaluate2.cpp in Sources */,
+				3C8A0BE115CEF94D003CD160 /* GpuMaxPyramid2.cpp in Sources */,
+				3C8A0BE515CEF94D003CD160 /* GpuPdeSolver1.cpp in Sources */,
+				3C8A0BE915CEF94D003CD160 /* GpuPdeSolver2.cpp in Sources */,
+				3C8A0BED15CEF94D003CD160 /* GpuPdeSolver3.cpp in Sources */,
+				3C8A0BF115CEF94D003CD160 /* GpuPyramid2.cpp in Sources */,
+				3C8A0BF515CEF94D003CD160 /* Image.cpp in Sources */,
+				3C8A0C0915CEF94D003CD160 /* NonlocalSolver2.cpp in Sources */,
+				3C8A0C0D15CEF94D003CD160 /* OpenGLHelper.cpp in Sources */,
+				3C8A0C1115CEF94D003CD160 /* SaveBMP32.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4C907F4624400486586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748AA51307F465B300486586 /* NonlocalBlowup.cpp in Sources */,
+				3C8A0B9215CEF94D003CD160 /* CpuLocalSolver1.cpp in Sources */,
+				3C8A0B9615CEF94D003CD160 /* CpuLocalSolver2.cpp in Sources */,
+				3C8A0B9A15CEF94D003CD160 /* CpuLocalSolver3.cpp in Sources */,
+				3C8A0B9E15CEF94D003CD160 /* CpuNonlocalSolver1.cpp in Sources */,
+				3C8A0BA215CEF94D003CD160 /* CpuNonlocalSolver2.cpp in Sources */,
+				3C8A0BA615CEF94D003CD160 /* CpuNonlocalSolver3.cpp in Sources */,
+				3C8A0BAA15CEF94D003CD160 /* GpuLocalSolver1.cpp in Sources */,
+				3C8A0BAE15CEF94D003CD160 /* GpuLocalSolver2.cpp in Sources */,
+				3C8A0BB215CEF94D003CD160 /* GpuLocalSolver3.cpp in Sources */,
+				3C8A0BB615CEF94D003CD160 /* GpuNonlocalSolver1.cpp in Sources */,
+				3C8A0BBA15CEF94D003CD160 /* GpuNonlocalSolver2.cpp in Sources */,
+				3C8A0BBE15CEF94D003CD160 /* GpuNonlocalSolver3.cpp in Sources */,
+				3C8A0BC215CEF94D003CD160 /* RunConsole.cpp in Sources */,
+				3C8A0BD215CEF94D003CD160 /* DisplacementEffect.cpp in Sources */,
+				3C8A0BD615CEF94D003CD160 /* GpuAvrPyramid2.cpp in Sources */,
+				3C8A0BDA15CEF94D003CD160 /* GpuEvaluate2.cpp in Sources */,
+				3C8A0BDE15CEF94D003CD160 /* GpuMaxPyramid2.cpp in Sources */,
+				3C8A0BE215CEF94D003CD160 /* GpuPdeSolver1.cpp in Sources */,
+				3C8A0BE615CEF94D003CD160 /* GpuPdeSolver2.cpp in Sources */,
+				3C8A0BEA15CEF94D003CD160 /* GpuPdeSolver3.cpp in Sources */,
+				3C8A0BEE15CEF94D003CD160 /* GpuPyramid2.cpp in Sources */,
+				3C8A0BF215CEF94D003CD160 /* Image.cpp in Sources */,
+				3C8A0C0615CEF94D003CD160 /* NonlocalSolver2.cpp in Sources */,
+				3C8A0C0A15CEF94D003CD160 /* OpenGLHelper.cpp in Sources */,
+				3C8A0C0E15CEF94D003CD160 /* SaveBMP32.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D707F4631800486586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748AA51107F465B300486586 /* NonlocalBlowup.cpp in Sources */,
+				3C8A0B9315CEF94D003CD160 /* CpuLocalSolver1.cpp in Sources */,
+				3C8A0B9715CEF94D003CD160 /* CpuLocalSolver2.cpp in Sources */,
+				3C8A0B9B15CEF94D003CD160 /* CpuLocalSolver3.cpp in Sources */,
+				3C8A0B9F15CEF94D003CD160 /* CpuNonlocalSolver1.cpp in Sources */,
+				3C8A0BA315CEF94D003CD160 /* CpuNonlocalSolver2.cpp in Sources */,
+				3C8A0BA715CEF94D003CD160 /* CpuNonlocalSolver3.cpp in Sources */,
+				3C8A0BAB15CEF94D003CD160 /* GpuLocalSolver1.cpp in Sources */,
+				3C8A0BAF15CEF94D003CD160 /* GpuLocalSolver2.cpp in Sources */,
+				3C8A0BB315CEF94D003CD160 /* GpuLocalSolver3.cpp in Sources */,
+				3C8A0BB715CEF94D003CD160 /* GpuNonlocalSolver1.cpp in Sources */,
+				3C8A0BBB15CEF94D003CD160 /* GpuNonlocalSolver2.cpp in Sources */,
+				3C8A0BBF15CEF94D003CD160 /* GpuNonlocalSolver3.cpp in Sources */,
+				3C8A0BC315CEF94D003CD160 /* RunConsole.cpp in Sources */,
+				3C8A0BD315CEF94D003CD160 /* DisplacementEffect.cpp in Sources */,
+				3C8A0BD715CEF94D003CD160 /* GpuAvrPyramid2.cpp in Sources */,
+				3C8A0BDB15CEF94D003CD160 /* GpuEvaluate2.cpp in Sources */,
+				3C8A0BDF15CEF94D003CD160 /* GpuMaxPyramid2.cpp in Sources */,
+				3C8A0BE315CEF94D003CD160 /* GpuPdeSolver1.cpp in Sources */,
+				3C8A0BE715CEF94D003CD160 /* GpuPdeSolver2.cpp in Sources */,
+				3C8A0BEB15CEF94D003CD160 /* GpuPdeSolver3.cpp in Sources */,
+				3C8A0BEF15CEF94D003CD160 /* GpuPyramid2.cpp in Sources */,
+				3C8A0BF315CEF94D003CD160 /* Image.cpp in Sources */,
+				3C8A0C0715CEF94D003CD160 /* NonlocalSolver2.cpp in Sources */,
+				3C8A0C0B15CEF94D003CD160 /* OpenGLHelper.cpp in Sources */,
+				3C8A0C0F15CEF94D003CD160 /* SaveBMP32.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3C4B939908674C10001A085C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					WM5_USE_OPENGL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../SDK/Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../SDK/Library/Debug";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = NonlocalBlowupdGlut;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C4B939C08674C10001A085C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					WM5_USE_OPENGL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../SDK/Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../SDK/Library/Release";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = NonlocalBlowupGlut;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C4B93AE08674C10001A085C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				SDKROOT = macosx;
+			};
+			name = Default;
+		};
+		3C64D2AB1256D1CE00F4B0B0 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					WM5_USE_OPENGL,
+				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../SDK/Include";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../SDK/Library/DebugDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = NonlocalBlowupGlutDebDyn;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C64D38A1256D98F00F4B0B0 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					WM5_USE_OPENGL,
+				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../SDK/Include";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../SDK/Library/ReleaseDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = NonlocalBlowupGlutRelDyn;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C4B939708674C10001A085C /* Build configuration list for PBXNativeTarget "Glut Debug Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B939908674C10001A085C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C4B939A08674C10001A085C /* Build configuration list for PBXNativeTarget "Glut Release Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B939C08674C10001A085C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C4B93AC08674C10001A085C /* Build configuration list for PBXProject "NonlocalBlowup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B93AE08674C10001A085C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C64D2AC1256D1CE00F4B0B0 /* Build configuration list for PBXNativeTarget "Glut Debug Dynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C64D2AB1256D1CE00F4B0B0 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C64D38B1256D98F00F4B0B0 /* Build configuration list for PBXNativeTarget "Glut Release Dynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C64D38A1256D98F00F4B0B0 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 748AA4C207F4621A00486586 /* Project object */;
+}

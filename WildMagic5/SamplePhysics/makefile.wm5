@@ -1,0 +1,89 @@
+CFG ?= Debug
+SYS ?= Linux
+GRF ?= Glx
+
+build :
+	cd BallHill                         ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BallHill
+	cd BallRubberBand                   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BallRubberBand
+	cd BeadSlide                        ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BeadSlide
+	cd BouncingBall                     ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BouncingBall
+	cd BouncingSpheres                  ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BouncingSpheres
+	cd BouncingTetrahedra               ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BouncingTetrahedra
+	cd BSplineCurveExamples             ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BSplineCurveExamples
+	cd Cloth                            ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Cloth
+	cd CollisionsBoundTree              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CollisionsBoundTree
+	cd CollisionsMovingSpheres          ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CollisionsMovingSpheres
+	cd CollisionsMovingSphereTriangle   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CollisionsMovingSphereTriangle
+	cd DoublePendulum                   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=DoublePendulum
+	cd ExtremalQuery                    ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtremalQuery
+	cd FlowingSkirt                     ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=FlowingSkirt
+	cd Fluids2D                         ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Fluids2D
+	cd Fluids3D                         ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Fluids3D
+	cd FoucaultPendulum                 ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=FoucaultPendulum
+	cd FreeFormDeformation              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=FreeFormDeformation
+	cd FreeTopFixedTip                  ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=FreeTopFixedTip
+	cd GelatinBlob                      ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GelatinBlob
+	cd GelatinCube                      ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GelatinCube
+	cd GpuFluids2D                      ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GpuFluids2D
+	cd HelixTubeSurface                 ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=HelixTubeSurface
+	cd IntersectingBoxes                ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectingBoxes
+	cd IntersectingRectangles           ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectingRectangles
+	cd KeplerPolarForm                  ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=KeplerPolarForm
+	cd MassPulleySpringSystem           ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MassPulleySpringSystem
+	cd NURBSCurveExample                ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=NURBSCurveExample
+	cd PolygonDistance                  ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PolygonDistance
+	cd PolyhedronDistance               ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PolyhedronDistance
+	cd Rope                             ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Rope
+	cd RoughPlaneFlatBoard              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneFlatBoard
+	cd RoughPlaneParticle1              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneParticle1
+	cd RoughPlaneParticle2              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneParticle2
+	cd RoughPlaneSolidBox               ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneSolidBox
+	cd RoughPlaneThinRod1               ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneThinRod1
+	cd RoughPlaneThinRod2               ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneThinRod2
+	cd SimplePendulum                   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SimplePendulum
+	cd SimplePendulumFriction           ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SimplePendulumFriction
+	cd WaterDropFormation               ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=WaterDropFormation
+	cd WrigglingSnake                   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=WrigglingSnake
+
+clean :
+	cd BallHill                         ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BallHill
+	cd BallRubberBand                   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BallRubberBand
+	cd BeadSlide                        ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BeadSlide
+	cd BouncingBall                     ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BouncingBall
+	cd BouncingSpheres                  ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BouncingSpheres
+	cd BouncingTetrahedra               ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BouncingTetrahedra
+	cd BSplineCurveExamples             ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BSplineCurveExamples
+	cd Cloth                            ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Cloth
+	cd CollisionsBoundTree              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CollisionsBoundTree
+	cd CollisionsMovingSpheres          ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CollisionsMovingSpheres
+	cd CollisionsMovingSphereTriangle   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CollisionsMovingSphereTriangle
+	cd DoublePendulum                   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=DoublePendulum
+	cd ExtremalQuery                    ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtremalQuery
+	cd FlowingSkirt                     ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=FlowingSkirt
+	cd Fluids2D                         ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Fluids2D
+	cd Fluids3D                         ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Fluids3D
+	cd FoucaultPendulum                 ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=FoucaultPendulum
+	cd FreeFormDeformation              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=FreeFormDeformation
+	cd FreeTopFixedTip                  ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=FreeTopFixedTip
+	cd GelatinBlob                      ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GelatinBlob
+	cd GelatinCube                      ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GelatinCube
+	cd GpuFluids2D                      ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GpuFluids2D
+	cd HelixTubeSurface                 ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=HelixTubeSurface
+	cd IntersectingBoxes                ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectingBoxes
+	cd IntersectingRectangles           ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectingRectangles
+	cd KeplerPolarForm                  ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=KeplerPolarForm
+	cd MassPulleySpringSystem           ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MassPulleySpringSystem
+	cd NURBSCurveExample                ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=NURBSCurveExample
+	cd PolygonDistance                  ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PolygonDistance
+	cd PolyhedronDistance               ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PolyhedronDistance
+	cd Rope                             ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Rope
+	cd RoughPlaneFlatBoard              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneFlatBoard
+	cd RoughPlaneParticle1              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneParticle1
+	cd RoughPlaneParticle2              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneParticle2
+	cd RoughPlaneSolidBox               ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneSolidBox
+	cd RoughPlaneThinRod1               ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneThinRod1
+	cd RoughPlaneThinRod2               ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RoughPlaneThinRod2
+	cd SimplePendulum                   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SimplePendulum
+	cd SimplePendulumFriction           ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SimplePendulumFriction
+	cd WaterDropFormation               ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=WaterDropFormation
+	cd WrigglingSnake                   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=WrigglingSnake

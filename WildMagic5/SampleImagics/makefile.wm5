@@ -1,0 +1,31 @@
+CFG ?= Debug
+SYS ?= Linux
+GRF ?= Glx
+
+build :
+	cd AdaptiveSkeletonClimbing2 ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=AdaptiveSkeletonClimbing2
+	cd AdaptiveSkeletonClimbing3 ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=AdaptiveSkeletonClimbing3
+	cd BinaryOperations          ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BinaryOperations
+	cd ConformalMapping          ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ConformalMapping
+	cd ExtractLevelCurves        ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtractLevelCurves
+	cd ExtractLevelSurfacesCubes ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtractLevelSurfacesCubes
+	cd ExtractLevelSurfacesTetra ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtractLevelSurfacesTetra
+	cd ExtractRidges             ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtractRidges
+	cd GpuGaussianBlur2          ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GpuGaussianBlur2
+	cd GpuGaussianBlur3          ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GpuGaussianBlur3
+	cd ImViewer                  ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ImViewer
+	cd VolumeRenderer            ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=VolumeRenderer
+
+clean :
+	cd AdaptiveSkeletonClimbing2 ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=AdaptiveSkeletonClimbing2
+	cd AdaptiveSkeletonClimbing3 ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=AdaptiveSkeletonClimbing3
+	cd BinaryOperations          ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BinaryOperations
+	cd ConformalMapping          ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ConformalMapping
+	cd ExtractLevelCurves        ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtractLevelCurves
+	cd ExtractLevelSurfacesCubes ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtractLevelSurfacesCubes
+	cd ExtractLevelSurfacesTetra ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtractLevelSurfacesTetra
+	cd ExtractRidges             ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ExtractRidges
+	cd GpuGaussianBlur2          ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GpuGaussianBlur2
+	cd GpuGaussianBlur3          ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GpuGaussianBlur3
+	cd ImViewer                  ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ImViewer
+	cd VolumeRenderer            ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=VolumeRenderer

@@ -1,0 +1,51 @@
+// Times in milliseconds.
+
+CpuLocal1: inner = 5
+CpuLocal1: total = 5
+CpuLocal2: inner = 1179
+CpuLocal2: total = 1180
+CpuLocal3: inner = 338435
+CpuLocal3: total = 338785
+CpuNonlocal1_0p50: inner = 14
+CpuNonlocal1_0p50: total = 14
+CpuNonlocal1_0p99: inner = 105
+CpuNonlocal1_0p99: total = 105
+CpuNonlocal2_0p50: inner = 4330
+CpuNonlocal2_0p50: total = 4331
+CpuNonlocal2_0p99: inner = 14791
+CpuNonlocal2_0p99: total = 14792
+CpuNonlocal3_0p50: inner = 1493267
+CpuNonlocal3_0p50: total = 1493620
+CpuNonlocal3_0p99: inner = 5850243
+CpuNonlocal3_0p99: total = 5850596
+
+GpuLocal1: inner = 23
+GpuLocal1: total = 44
+GpuLocal2: inner = 61
+GpuLocal2: total = 79
+GpuLocal3: inner = 10761
+GpuLocal3: total = 12879
+
+// CPU-based max/average/infinite
+GpuNonlocal1_0p50: inner = 71
+GpuNonlocal1_0p50: total = 84
+GpuNonlocal1_0p99: inner = 366
+GpuNonlocal1_0p99: total = 379
+GpuNonlocal2_0p50: inner = 592
+GpuNonlocal2_0p50: total = 621
+GpuNonlocal2_0p99: inner = 2047
+GpuNonlocal2_0p99: total = 2073
+GpuNonlocal3_0p50: inner = 169986
+GpuNonlocal3_0p50: total = 171814
+GpuNonlocal3_0p99: inner = 663884
+GpuNonlocal3_0p99: total = 665690
+
+// GPU-based max/average/infinite
+GpuNonlocal2_0p50: inner = 467
+GpuNonlocal2_0p50: total = 502
+GpuNonlocal2_0p99: inner = 1728
+GpuNonlocal2_0p99: total = 1764
+GpuNonlocal3_0p50: inner = 19757
+GpuNonlocal3_0p50: total = 21416
+GpuNonlocal3_0p99: inner = 45789
+GpuNonlocal3_0p99: total = 47543

@@ -1,0 +1,88 @@
+Node<zbuffer><wireframe><lightstate(directional)>
+   Node<"Biped"><kfctrl>
+      Node<"Pelvis"><kfctrl>
+         Node<"Spine"><kfctrl>
+            Node<"Spine1"><kfctrl>
+               Node<"Spine2"><kfctrl: no data>
+                  Node<"Spine3">
+                     Node<"Neck"><kfctrl: no data>
+                        Node<"Head">
+                        Node<"L Clavicle"><kfctrl>
+                           Node<"L UpperArm"><kfctrl>
+                              Node<"L Forearm"><kfctrl>
+                                 Node<"L Hand"><kfctrl>
+                              TriMesh<"L Arm"><V32,T57><material>
+                                 <skinctrl: bones = 2
+                                    L Forearm influences 26 vertices
+                                    L UpperArm influences 11 vertices>
+                        TriMesh<"Hair"><V39,T58><material>
+                           <skinctrl: bones = 1
+                              Head influences 39 vertices>
+                        Node<"R Clavicle"><kfctrl>
+                           Node<"R UpperArm"><kfctrl>
+                              Node<"R Forearm"><kfctrl>
+                                 Node<"R Hand"><kfctrl>
+                              TriMesh<"R Arm"><V32,T57><material>
+                                 <skinctrl: bones = 2
+                                    R Forearm influences 26 vertices
+                                    R UpperArm influences 11 vertices>
+                     TriMesh<"Face"><V89,T152><material>
+                        <skinctrl: bones = 3
+                           Spine3 influences 9 vertices
+                           Head influences 84 vertices
+                           Neck influences 9 vertices>
+         Node<"L Thigh"><kfctrl>
+            Node<"L Calf"><kfctrl>
+               Node<"L Foot"><kfctrl>
+                  Node<"L Toe"><kfctrl: no data>
+               TriMesh<"L Shoe"><V22,T37><material>
+                  <skinctrl: bones = 2
+                     L Calf influences 5 vertices
+                     L Foot influences 19 vertices
+            TriMesh<"L Leg"><V20,T30><material>
+               <skinctrl: bones = 2
+                  L Calf influences 18 vertices
+                  L Thigh influences 10 vertices>
+            TriMesh<"L Ankle"><V10,T10><material>
+               <skinctrl: bones = 2
+                  L Calf influences 10 vertices
+                  L Foot influences 2 vertices
+         Node<"R Thigh"><kfctrl>
+            Node<"R Calf"><kfctrl>
+               Node<"R Foot"><kfctrl>
+                  Node<"R Toe"><kfctrl: no data>
+               TriMesh<"R Shoe"><V22,T37><material>
+                  <skinctrl: bones = 2
+                     R Calf influences 5 vertices
+                     R Foot influences 19 vertices>
+            TriMesh<"R Leg"><V30,T30><material>
+               <skinctrl: bones = 2
+                  R Calf influences 17 vertices
+                  R Thigh influences 10 vertices>
+            TriMesh<"R Ankle"><V10,T10><material>
+               <skinctrl: bones = 2
+                  R Calf influences 10 vertices
+                  R Foot influences 2 vertices>
+         TriMesh<"Shirt"><V97,T152><material>
+            <skinctrl: bones = 13
+               Spine3 influences 33 vertices
+               L UpperArm influences 26 vertices
+               L Clavicle influences 2 vertices
+               Spine2 influences 13 vertices
+               Spine1 influences 8 vertices
+               Spine influences 16 vertices
+               Head influences 3 vertices
+               Neck influences 5 vertices
+               Pelvis influences 1 vertex
+               L Forearm influences 1 vertex
+               R UpperArm influences 26 vertices
+               R Clavicle influences 2 vertices
+               R Forearm influences 1 vertex>
+        TriMesh<"Pants"><V58,T80><material>
+            <skinctrl: bones = 6
+               L Thigh influences 24 vertices
+               R Thigh influences 25 vertices
+               Pelvis influences 5 vertices
+               Spine influences 8 vertices
+               L Calf influences 3 vertices
+               R Calf influences 2 vertices>

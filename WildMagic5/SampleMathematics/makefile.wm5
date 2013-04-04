@@ -1,0 +1,67 @@
+CFG ?= Debug
+SYS ?= Linux
+GRF ?= Glx
+
+build :
+	cd Boolean2D                      ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Boolean2D
+	cd BooleanIntervalRectangle       ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BooleanIntervalRectangle
+	cd BSplineCurveFitter             ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BSplineCurveFitter
+	cd BSplineFitContinuous           ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BSplineFitContinuous
+	cd BSplineSurfaceFitter           ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BSplineSurfaceFitter
+	cd ClipMesh                       ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ClipMesh
+	cd ClodPolyline                   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ClodPolyline
+	cd ConvexHull2D                   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ConvexHull2D
+	cd ConvexHull3D                   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ConvexHull3D
+	cd Delaunay2D                     ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Delaunay2D
+	cd Delaunay2DInsertRemove         ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Delaunay2DInsertRemove
+	cd Delaunay3D                     ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Delaunay3D
+	cd DistancePointEllipseEllipsoid  ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=DistancePointEllipseEllipsoid
+	cd DrawImplicitSurface            ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=DrawImplicitSurface
+	cd GeodesicHeightField            ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GeodesicHeightField
+	cd GeodesicPaths                  ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GeodesicPaths
+	cd GpuRootFinder                  ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GpuRootFinder
+	cd IntersectConvexPolyhedra       ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectConvexPolyhedra
+	cd IntersectInfiniteCylinders     ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectInfiniteCylinders
+	cd IntersectTriangleCylinder      ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectTriangleCylinder
+	cd IntersectionEllipsesEllipsoids ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectionEllipsesEllipsoids
+	cd MapTextureToQuad               ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MapTextureToQuad
+	cd MeshEnvelope                   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MeshEnvelope
+	cd MinimalCycleBasis              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MinimalCycleBasis
+	cd NoniterativeEigensolver        ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=NoniterativeEigensolver
+	cd NonlocalBlowup                 ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=NonlocalBlowup
+	cd PointInPolyhedron              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PointInPolyhedron
+	cd QuadraticFreeForm2D            ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=QuadraticFreeForm2D
+	cd ThinPlateSplines               ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ThinPlateSplines
+	cd Triangulation                  ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Triangulation
+
+clean :
+	cd Boolean2D                      ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Boolean2D
+	cd BooleanIntervalRectangle       ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BooleanIntervalRectangle
+	cd BSplineCurveFitter             ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BSplineCurveFitter
+	cd BSplineFitContinuous           ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BSplineFitContinuous
+	cd BSplineSurfaceFitter           ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BSplineSurfaceFitter
+	cd ClipMesh                       ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ClipMesh
+	cd ClodPolyline                   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ClodPolyline
+	cd ConvexHull2D                   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ConvexHull2D
+	cd ConvexHull3D                   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ConvexHull3D
+	cd Delaunay2D                     ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Delaunay2D
+	cd Delaunay2DInsertRemove         ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Delaunay2DInsertRemove
+	cd Delaunay3D                     ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Delaunay3D
+	cd DistancePointEllipseEllipsoid  ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=DistancePointEllipseEllipsoid
+	cd DrawImplicitSurface            ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=DrawImplicitSurface
+	cd GeodesicHeightField            ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GeodesicHeightField
+	cd GeodesicPaths                  ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GeodesicPaths
+	cd GpuRootFinder                  ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GpuRootFinder
+	cd IntersectConvexPolyhedra       ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectConvexPolyhedra
+	cd IntersectInfiniteCylinders     ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectInfiniteCylinders
+	cd IntersectTriangleCylinder      ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectTriangleCylinder
+	cd IntersectionEllipsesEllipsoids ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=IntersectionEllipsesEllipsoids
+	cd MapTextureToQuad               ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MapTextureToQuad
+	cd MeshEnvelope                   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MeshEnvelope
+	cd MinimalCycleBasis              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MinimalCycleBasis
+	cd NoniterativeEigensolver        ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=NoniterativeEigensolver
+	cd NonlocalBlowup                 ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=NonlocalBlowup
+	cd PointInPolyhedron              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PointInPolyhedron
+	cd QuadraticFreeForm2D            ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=QuadraticFreeForm2D
+	cd ThinPlateSplines               ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ThinPlateSplines
+	cd Triangulation                  ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Triangulation

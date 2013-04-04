@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C64D2AD1256D1F200F4B0B0 /* DlodNodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* DlodNodes.cpp */; };
+		3C64D2B11256D20F00F4B0B0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C64D2B81256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B21256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib */; };
+		3C64D2B91256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B31256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib */; };
+		3C64D2BA1256D24F00F4B0B0 /* libWm5Cored.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B41256D24F00F4B0B0 /* libWm5Cored.dylib */; };
+		3C64D2BB1256D24F00F4B0B0 /* libWm5Imagicsd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B51256D24F00F4B0B0 /* libWm5Imagicsd.dylib */; };
+		3C64D2BC1256D24F00F4B0B0 /* libWm5Mathematicsd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B61256D24F00F4B0B0 /* libWm5Mathematicsd.dylib */; };
+		3C64D2BD1256D24F00F4B0B0 /* libWm5Physicsd.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D2B71256D24F00F4B0B0 /* libWm5Physicsd.dylib */; };
+		3C64D38C1256D99B00F4B0B0 /* DlodNodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* DlodNodes.cpp */; };
+		3C64D3991256D9C400F4B0B0 /* libWm5GlutApplication.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3931256D9C400F4B0B0 /* libWm5GlutApplication.dylib */; };
+		3C64D39A1256D9C400F4B0B0 /* libWm5GlutGraphics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3941256D9C400F4B0B0 /* libWm5GlutGraphics.dylib */; };
+		3C64D39B1256D9C400F4B0B0 /* libWm5Core.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3951256D9C400F4B0B0 /* libWm5Core.dylib */; };
+		3C64D39C1256D9C400F4B0B0 /* libWm5Imagics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3961256D9C400F4B0B0 /* libWm5Imagics.dylib */; };
+		3C64D39D1256D9C400F4B0B0 /* libWm5Mathematics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3971256D9C400F4B0B0 /* libWm5Mathematics.dylib */; };
+		3C64D39E1256D9C400F4B0B0 /* libWm5Physics.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C64D3981256D9C400F4B0B0 /* libWm5Physics.dylib */; };
+		3C64D3A21256D9CF00F4B0B0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C6FBC6C083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C6FBC6D083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3CB4F4A813DCF47000C74DF4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F4A713DCF47000C74DF4 /* GLUT.framework */; };
+		3CB4F4A913DCF47000C74DF4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F4A713DCF47000C74DF4 /* GLUT.framework */; };
+		3CB4F4AA13DCF47000C74DF4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F4A713DCF47000C74DF4 /* GLUT.framework */; };
+		3CB4F4AB13DCF47000C74DF4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB4F4A713DCF47000C74DF4 /* GLUT.framework */; };
+		3CC4FE4910FD1F4900C42DBB /* libWm5Cored.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4310FD1F4900C42DBB /* libWm5Cored.a */; };
+		3CC4FE4A10FD1F4900C42DBB /* libWm5Physicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4410FD1F4900C42DBB /* libWm5Physicsd.a */; };
+		3CC4FE4B10FD1F4900C42DBB /* libWm5GlutGraphicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4510FD1F4900C42DBB /* libWm5GlutGraphicsd.a */; };
+		3CC4FE4C10FD1F4900C42DBB /* libWm5Mathematicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4610FD1F4900C42DBB /* libWm5Mathematicsd.a */; };
+		3CC4FE4D10FD1F4900C42DBB /* libWm5Imagicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4710FD1F4900C42DBB /* libWm5Imagicsd.a */; };
+		3CC4FE4E10FD1F4900C42DBB /* libWm5GlutApplicationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4810FD1F4900C42DBB /* libWm5GlutApplicationd.a */; };
+		3CC4FE6110FD1F6600C42DBB /* libWm5GlutApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5510FD1F6600C42DBB /* libWm5GlutApplication.a */; };
+		3CC4FE6210FD1F6600C42DBB /* libWm5GlutGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5610FD1F6600C42DBB /* libWm5GlutGraphics.a */; };
+		3CC4FE6310FD1F6600C42DBB /* libWm5Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5710FD1F6600C42DBB /* libWm5Core.a */; };
+		3CC4FE6410FD1F6600C42DBB /* libWm5Imagics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */; };
+		3CC4FE6510FD1F6600C42DBB /* libWm5Mathematics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */; };
+		3CC4FE6610FD1F6600C42DBB /* libWm5Physics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */; };
+		748AA51107F465B300486586 /* DlodNodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* DlodNodes.cpp */; };
+		748AA51307F465B300486586 /* DlodNodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 748AA50F07F465B300486586 /* DlodNodes.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C64D2A81256D1CD00F4B0B0 /* DlodNodesGlutDebDyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DlodNodesGlutDebDyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C64D2B21256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5GlutApplicationd.dylib; path = ../../SDK/Library/DebugDLL/libWm5GlutApplicationd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B31256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5GlutGraphicsd.dylib; path = ../../SDK/Library/DebugDLL/libWm5GlutGraphicsd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B41256D24F00F4B0B0 /* libWm5Cored.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Cored.dylib; path = ../../SDK/Library/DebugDLL/libWm5Cored.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B51256D24F00F4B0B0 /* libWm5Imagicsd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Imagicsd.dylib; path = ../../SDK/Library/DebugDLL/libWm5Imagicsd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B61256D24F00F4B0B0 /* libWm5Mathematicsd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Mathematicsd.dylib; path = ../../SDK/Library/DebugDLL/libWm5Mathematicsd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D2B71256D24F00F4B0B0 /* libWm5Physicsd.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Physicsd.dylib; path = ../../SDK/Library/DebugDLL/libWm5Physicsd.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3871256D98E00F4B0B0 /* DlodNodesGlutRelDyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DlodNodesGlutRelDyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C64D3931256D9C400F4B0B0 /* libWm5GlutApplication.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5GlutApplication.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5GlutApplication.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3941256D9C400F4B0B0 /* libWm5GlutGraphics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5GlutGraphics.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5GlutGraphics.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3951256D9C400F4B0B0 /* libWm5Core.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Core.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5Core.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3961256D9C400F4B0B0 /* libWm5Imagics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Imagics.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5Imagics.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3971256D9C400F4B0B0 /* libWm5Mathematics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Mathematics.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5Mathematics.dylib; sourceTree = SOURCE_ROOT; };
+		3C64D3981256D9C400F4B0B0 /* libWm5Physics.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libWm5Physics.dylib; path = ../../SDK/Library/ReleaseDLL/libWm5Physics.dylib; sourceTree = SOURCE_ROOT; };
+		3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		3CB4F4A713DCF47000C74DF4 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = "<group>"; };
+		3CC4FE4310FD1F4900C42DBB /* libWm5Cored.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Cored.a; path = ../../SDK/Library/Debug/libWm5Cored.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4410FD1F4900C42DBB /* libWm5Physicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Physicsd.a; path = ../../SDK/Library/Debug/libWm5Physicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4510FD1F4900C42DBB /* libWm5GlutGraphicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5GlutGraphicsd.a; path = ../../SDK/Library/Debug/libWm5GlutGraphicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4610FD1F4900C42DBB /* libWm5Mathematicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Mathematicsd.a; path = ../../SDK/Library/Debug/libWm5Mathematicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4710FD1F4900C42DBB /* libWm5Imagicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Imagicsd.a; path = ../../SDK/Library/Debug/libWm5Imagicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4810FD1F4900C42DBB /* libWm5GlutApplicationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5GlutApplicationd.a; path = ../../SDK/Library/Debug/libWm5GlutApplicationd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5510FD1F6600C42DBB /* libWm5GlutApplication.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5GlutApplication.a; path = ../../SDK/Library/Release/libWm5GlutApplication.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5610FD1F6600C42DBB /* libWm5GlutGraphics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5GlutGraphics.a; path = ../../SDK/Library/Release/libWm5GlutGraphics.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5710FD1F6600C42DBB /* libWm5Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Core.a; path = ../../SDK/Library/Release/libWm5Core.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Imagics.a; path = ../../SDK/Library/Release/libWm5Imagics.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Mathematics.a; path = ../../SDK/Library/Release/libWm5Mathematics.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Physics.a; path = ../../SDK/Library/Release/libWm5Physics.a; sourceTree = SOURCE_ROOT; };
+		748AA4CC07F4624400486586 /* DlodNodesdGlut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DlodNodesdGlut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748AA4DA07F4631800486586 /* DlodNodesGlut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DlodNodesGlut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748AA50F07F465B300486586 /* DlodNodes.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DlodNodes.cpp; sourceTree = SOURCE_ROOT; };
+		748AA51007F465B300486586 /* DlodNodes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DlodNodes.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C64D2A61256D1CD00F4B0B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C64D2B11256D20F00F4B0B0 /* OpenGL.framework in Frameworks */,
+				3C64D2B81256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib in Frameworks */,
+				3C64D2B91256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib in Frameworks */,
+				3C64D2BA1256D24F00F4B0B0 /* libWm5Cored.dylib in Frameworks */,
+				3C64D2BB1256D24F00F4B0B0 /* libWm5Imagicsd.dylib in Frameworks */,
+				3C64D2BC1256D24F00F4B0B0 /* libWm5Mathematicsd.dylib in Frameworks */,
+				3C64D2BD1256D24F00F4B0B0 /* libWm5Physicsd.dylib in Frameworks */,
+				3CB4F4AA13DCF47000C74DF4 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C64D3851256D98E00F4B0B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C64D3991256D9C400F4B0B0 /* libWm5GlutApplication.dylib in Frameworks */,
+				3C64D39A1256D9C400F4B0B0 /* libWm5GlutGraphics.dylib in Frameworks */,
+				3C64D39B1256D9C400F4B0B0 /* libWm5Core.dylib in Frameworks */,
+				3C64D39C1256D9C400F4B0B0 /* libWm5Imagics.dylib in Frameworks */,
+				3C64D39D1256D9C400F4B0B0 /* libWm5Mathematics.dylib in Frameworks */,
+				3C64D39E1256D9C400F4B0B0 /* libWm5Physics.dylib in Frameworks */,
+				3C64D3A21256D9CF00F4B0B0 /* OpenGL.framework in Frameworks */,
+				3CB4F4AB13DCF47000C74DF4 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4CA07F4624400486586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBC6C083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3CC4FE4910FD1F4900C42DBB /* libWm5Cored.a in Frameworks */,
+				3CC4FE4A10FD1F4900C42DBB /* libWm5Physicsd.a in Frameworks */,
+				3CC4FE4B10FD1F4900C42DBB /* libWm5GlutGraphicsd.a in Frameworks */,
+				3CC4FE4C10FD1F4900C42DBB /* libWm5Mathematicsd.a in Frameworks */,
+				3CC4FE4D10FD1F4900C42DBB /* libWm5Imagicsd.a in Frameworks */,
+				3CC4FE4E10FD1F4900C42DBB /* libWm5GlutApplicationd.a in Frameworks */,
+				3CB4F4A813DCF47000C74DF4 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D807F4631800486586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBC6D083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3CC4FE6110FD1F6600C42DBB /* libWm5GlutApplication.a in Frameworks */,
+				3CC4FE6210FD1F6600C42DBB /* libWm5GlutGraphics.a in Frameworks */,
+				3CC4FE6310FD1F6600C42DBB /* libWm5Core.a in Frameworks */,
+				3CC4FE6410FD1F6600C42DBB /* libWm5Imagics.a in Frameworks */,
+				3CC4FE6510FD1F6600C42DBB /* libWm5Mathematics.a in Frameworks */,
+				3CC4FE6610FD1F6600C42DBB /* libWm5Physics.a in Frameworks */,
+				3CB4F4A913DCF47000C74DF4 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C64D28E1256D12100F4B0B0 /* DebugDLL */ = {
+			isa = PBXGroup;
+			children = (
+				3C64D2B21256D24F00F4B0B0 /* libWm5GlutApplicationd.dylib */,
+				3C64D2B31256D24F00F4B0B0 /* libWm5GlutGraphicsd.dylib */,
+				3C64D2B41256D24F00F4B0B0 /* libWm5Cored.dylib */,
+				3C64D2B51256D24F00F4B0B0 /* libWm5Imagicsd.dylib */,
+				3C64D2B61256D24F00F4B0B0 /* libWm5Mathematicsd.dylib */,
+				3C64D2B71256D24F00F4B0B0 /* libWm5Physicsd.dylib */,
+			);
+			name = DebugDLL;
+			sourceTree = "<group>";
+		};
+		3C64D2931256D12C00F4B0B0 /* ReleaseDLL */ = {
+			isa = PBXGroup;
+			children = (
+				3C64D3931256D9C400F4B0B0 /* libWm5GlutApplication.dylib */,
+				3C64D3941256D9C400F4B0B0 /* libWm5GlutGraphics.dylib */,
+				3C64D3951256D9C400F4B0B0 /* libWm5Core.dylib */,
+				3C64D3961256D9C400F4B0B0 /* libWm5Imagics.dylib */,
+				3C64D3971256D9C400F4B0B0 /* libWm5Mathematics.dylib */,
+				3C64D3981256D9C400F4B0B0 /* libWm5Physics.dylib */,
+			);
+			name = ReleaseDLL;
+			sourceTree = "<group>";
+		};
+		7432C2B407F8766A00ABC141 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				3CC4FE4310FD1F4900C42DBB /* libWm5Cored.a */,
+				3CC4FE4410FD1F4900C42DBB /* libWm5Physicsd.a */,
+				3CC4FE4510FD1F4900C42DBB /* libWm5GlutGraphicsd.a */,
+				3CC4FE4610FD1F4900C42DBB /* libWm5Mathematicsd.a */,
+				3CC4FE4710FD1F4900C42DBB /* libWm5Imagicsd.a */,
+				3CC4FE4810FD1F4900C42DBB /* libWm5GlutApplicationd.a */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		7432C2B707F8767000ABC141 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				3CC4FE5510FD1F6600C42DBB /* libWm5GlutApplication.a */,
+				3CC4FE5610FD1F6600C42DBB /* libWm5GlutGraphics.a */,
+				3CC4FE5710FD1F6600C42DBB /* libWm5Core.a */,
+				3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */,
+				3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */,
+				3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */,
+			);
+			name = Release;
+			sourceTree = "<group>";
+		};
+		748AA4BE07F4621A00486586 = {
+			isa = PBXGroup;
+			children = (
+				748AA50C07F465A200486586 /* Sources */,
+				748AA4F707F4641600486586 /* Libraries */,
+				748AA4E207F463F300486586 /* Frameworks */,
+				748AA4CD07F4624400486586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		748AA4CD07F4624400486586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				748AA4CC07F4624400486586 /* DlodNodesdGlut.app */,
+				748AA4DA07F4631800486586 /* DlodNodesGlut.app */,
+				3C64D2A81256D1CD00F4B0B0 /* DlodNodesGlutDebDyn.app */,
+				3C64D3871256D98E00F4B0B0 /* DlodNodesGlutRelDyn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		748AA4E207F463F300486586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CB4F4A713DCF47000C74DF4 /* GLUT.framework */,
+				3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		748AA4F707F4641600486586 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7432C2B407F8766A00ABC141 /* Debug */,
+				3C64D28E1256D12100F4B0B0 /* DebugDLL */,
+				7432C2B707F8767000ABC141 /* Release */,
+				3C64D2931256D12C00F4B0B0 /* ReleaseDLL */,
+			);
+			name = Libraries;
+			sourceTree = SOURCE_ROOT;
+		};
+		748AA50C07F465A200486586 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				748AA50F07F465B300486586 /* DlodNodes.cpp */,
+				748AA51007F465B300486586 /* DlodNodes.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C64D2A71256D1CD00F4B0B0 /* Glut Debug Dynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C64D2AC1256D1CE00F4B0B0 /* Build configuration list for PBXNativeTarget "Glut Debug Dynamic" */;
+			buildPhases = (
+				3C64D2A41256D1CD00F4B0B0 /* Resources */,
+				3C64D2A51256D1CD00F4B0B0 /* Sources */,
+				3C64D2A61256D1CD00F4B0B0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glut Debug Dynamic";
+			productName = "Glut Debug Dynamic";
+			productReference = 3C64D2A81256D1CD00F4B0B0 /* DlodNodesGlutDebDyn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C64D3861256D98E00F4B0B0 /* Glut Release Dynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C64D38B1256D98F00F4B0B0 /* Build configuration list for PBXNativeTarget "Glut Release Dynamic" */;
+			buildPhases = (
+				3C64D3831256D98E00F4B0B0 /* Resources */,
+				3C64D3841256D98E00F4B0B0 /* Sources */,
+				3C64D3851256D98E00F4B0B0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glut Release Dynamic";
+			productName = "Glut Release Dynamic";
+			productReference = 3C64D3871256D98E00F4B0B0 /* DlodNodesGlutRelDyn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		748AA4CB07F4624400486586 /* Glut Debug Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4B939708674C10001A085C /* Build configuration list for PBXNativeTarget "Glut Debug Static" */;
+			buildPhases = (
+				748AA4C807F4624400486586 /* Resources */,
+				748AA4C907F4624400486586 /* Sources */,
+				748AA4CA07F4624400486586 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glut Debug Static";
+			productName = DlodNodesStaDeb;
+			productReference = 748AA4CC07F4624400486586 /* DlodNodesdGlut.app */;
+			productType = "com.apple.product-type.application";
+		};
+		748AA4D907F4631800486586 /* Glut Release Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4B939A08674C10001A085C /* Build configuration list for PBXNativeTarget "Glut Release Static" */;
+			buildPhases = (
+				748AA4D607F4631800486586 /* Resources */,
+				748AA4D707F4631800486586 /* Sources */,
+				748AA4D807F4631800486586 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Glut Release Static";
+			productName = DlodNodesStaRel;
+			productReference = 748AA4DA07F4631800486586 /* DlodNodesGlut.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		748AA4C207F4621A00486586 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 3C4B93AC08674C10001A085C /* Build configuration list for PBXProject "DlodNodes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 748AA4BE07F4621A00486586;
+			productRefGroup = 748AA4CD07F4624400486586 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				748AA4CB07F4624400486586 /* Glut Debug Static */,
+				748AA4D907F4631800486586 /* Glut Release Static */,
+				3C64D2A71256D1CD00F4B0B0 /* Glut Debug Dynamic */,
+				3C64D3861256D98E00F4B0B0 /* Glut Release Dynamic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C64D2A41256D1CD00F4B0B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C64D3831256D98E00F4B0B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4C807F4624400486586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D607F4631800486586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C64D2A51256D1CD00F4B0B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C64D2AD1256D1F200F4B0B0 /* DlodNodes.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C64D3841256D98E00F4B0B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C64D38C1256D99B00F4B0B0 /* DlodNodes.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4C907F4624400486586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748AA51307F465B300486586 /* DlodNodes.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D707F4631800486586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				748AA51107F465B300486586 /* DlodNodes.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3C4B939908674C10001A085C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					WM5_USE_OPENGL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../SDK/Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../SDK/Library/Debug";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = DlodNodesdGlut;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C4B939C08674C10001A085C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					WM5_USE_OPENGL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../SDK/Include";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../SDK/Library/Release";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = DlodNodesGlut;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C4B93AE08674C10001A085C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				SDKROOT = macosx;
+			};
+			name = Default;
+		};
+		3C64D2AB1256D1CE00F4B0B0 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					WM5_USE_OPENGL,
+				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../SDK/Include";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../SDK/Library/DebugDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = DlodNodesGlutDebDyn;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C64D38A1256D98F00F4B0B0 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					WM5_USE_OPENGL,
+				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../SDK/Include";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../../SDK/Library/ReleaseDLL";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = DlodNodesGlutRelDyn;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C4B939708674C10001A085C /* Build configuration list for PBXNativeTarget "Glut Debug Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B939908674C10001A085C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C4B939A08674C10001A085C /* Build configuration list for PBXNativeTarget "Glut Release Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B939C08674C10001A085C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C4B93AC08674C10001A085C /* Build configuration list for PBXProject "DlodNodes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B93AE08674C10001A085C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C64D2AC1256D1CE00F4B0B0 /* Build configuration list for PBXNativeTarget "Glut Debug Dynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C64D2AB1256D1CE00F4B0B0 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C64D38B1256D98F00F4B0B0 /* Build configuration list for PBXNativeTarget "Glut Release Dynamic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C64D38A1256D98F00F4B0B0 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 748AA4C207F4621A00486586 /* Project object */;
+}
+

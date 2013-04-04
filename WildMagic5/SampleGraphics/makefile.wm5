@@ -1,0 +1,89 @@
+CFG ?= Debug
+SYS ?= Linux
+GRF ?= Glx
+
+build :
+	cd BillboardNodes        ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BillboardNodes
+	cd BlendedAnimations     ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BlendedAnimations
+	cd BlendedTerrain        ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BlendedTerrain
+	cd BspNodes              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BspNodes
+	cd BumpMaps              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BumpMaps
+	cd CameraAndLightNodes   ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CameraAndLightNodes
+	cd Castle                ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Castle
+	cd ClodMeshes            ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ClodMeshes
+	cd CubeMaps              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CubeMaps
+	cd DlodNodes             ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=DlodNodes
+	cd GlossMaps             ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GlossMaps
+	cd InverseKinematics     ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=InverseKinematics
+	cd Lights                ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Lights
+	cd MaterialTextures      ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MaterialTextures
+	cd MorphControllers      ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MorphControllers
+	cd MorphFaces            ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MorphFaces
+	cd MultipleRenderTargets ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MultipleRenderTargets
+	cd NonuniformScale       ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=NonuniformScale
+	cd ParticleSystems       ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ParticleSystems
+	cd PlanarReflections     ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PlanarReflections
+	cd PlanarShadows         ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PlanarShadows
+	cd PointSystems          ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PointSystems
+	cd PolygonOffsets        ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PolygonOffsets
+	cd Polysegments          ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Polysegments
+	cd Portals               ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Portals
+	cd ProjectedTextures     ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ProjectedTextures
+	cd ReflectionsAndShadows ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ReflectionsAndShadow
+	cd RenderToTexture       ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RenderToTexture
+	cd ScreenPolygons        ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ScreenPolygons
+	cd ShadowMaps            ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ShadowMaps
+	cd SkinnedBiped          ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SkinnedBiped
+	cd Skinning              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Skinning
+	cd SortFaces             ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SortFaces
+	cd SphereMaps            ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SphereMaps
+	cd SurfaceMeshes         ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SurfaceMeshes
+	cd SwitchNodes           ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SwitchNodes
+	cd Terrains              ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Terrains
+	cd TriStripsFans         ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=TriStripsFans
+	cd VertexTextures        ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=VertexTextures
+	cd VolumeFog             ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=VolumeFog
+	cd VolumeTextures        ; make CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=VolumeTextures
+
+clean :
+	cd BillboardNodes        ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BillboardNodes
+	cd BlendedAnimations     ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BlendedAnimations
+	cd BlendedTerrain        ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BlendedTerrain
+	cd BspNodes              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BspNodes
+	cd BumpMaps              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=BumpMaps
+	cd CameraAndLightNodes   ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CameraAndLightNodes
+	cd Castle                ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Castle
+	cd ClodMeshes            ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ClodMeshes
+	cd CubeMaps              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=CubeMaps
+	cd DlodNodes             ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=DlodNodes
+	cd GlossMaps             ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=GlossMaps
+	cd InverseKinematics     ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=InverseKinematics
+	cd Lights                ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Lights
+	cd MaterialTextures      ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MaterialTextures
+	cd MorphControllers      ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MorphControllers
+	cd MorphFaces            ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MorphFaces
+	cd MultipleRenderTargets ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=MultipleRenderTargets
+	cd NonuniformScale       ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=NonuniformScale
+	cd ParticleSystems       ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ParticleSystems
+	cd PlanarReflections     ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PlanarReflections
+	cd PlanarShadows         ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PlanarShadows
+	cd PointSystems          ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PointSystems
+	cd PolygonOffsets        ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=PolygonOffsets
+	cd Polysegments          ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Polysegments
+	cd Portals               ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Portals
+	cd ProjectedTextures     ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ProjectedTextures
+	cd ReflectionsAndShadows ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ReflectionsAndShadow
+	cd RenderToTexture       ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=RenderToTexture
+	cd ScreenPolygons        ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ScreenPolygons
+	cd ShadowMaps            ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=ShadowMaps
+	cd SkinnedBiped          ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SkinnedBiped
+	cd Skinning              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Skinning
+	cd SortFaces             ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SortFaces
+	cd SphereMaps            ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SphereMaps
+	cd SurfaceMeshes         ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SurfaceMeshes
+	cd SwitchNodes           ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=SwitchNodes
+	cd Terrains              ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=Terrains
+	cd TriStripsFans         ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=TriStripsFans
+	cd VertexTextures        ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=VertexTextures
+	cd VolumeFog             ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=VolumeFog
+	cd VolumeTextures        ; make clean CFG=$(CFG) SYS=$(SYS) GRF=$(GRF) -f ../makeapp.wm5 APP=VolumeTextures
