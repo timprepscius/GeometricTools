@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.2 (2011/07/23)
+// File Version: 5.0.3 (2012/11/03)
 
 #include "Wm5MathematicsPCH.h"
 #include "Wm5PolynomialRootsR.h"
@@ -251,7 +251,7 @@ bool PolynomialRootsR<Real>::Cubic (const PRational& a0,
         const double third = 1.0/3.0;
         ratDiscr = PRational(discr);
 
-        PRational ratSum0 = ratR + ratDiscr;
+        PRational ratSum0 = -ratR + ratDiscr;
         double sum0;
         ratSum0.ConvertTo(sum0);
         if (sum0 >= 0.0)
@@ -262,9 +262,9 @@ bool PolynomialRootsR<Real>::Cubic (const PRational& a0,
         {
             sum0 = -Mathd::Pow(-sum0, third);
         }
-        ratSum0 = PRational(ratSum0);
+        ratSum0 = PRational(sum0);
 
-        PRational ratSum1 = ratR - ratDiscr;
+        PRational ratSum1 = -ratR - ratDiscr;
         double sum1;
         ratSum1.ConvertTo(sum1);
         if (sum1 >= 0.0)
@@ -277,9 +277,8 @@ bool PolynomialRootsR<Real>::Cubic (const PRational& a0,
         }
         ratSum1 = PRational(sum1);
 
-        PRational ratRoot = ratA2Div3 + ratSum0 + ratSum1;
+        PRational ratRoot = ratSum0 + ratSum1 - ratA2Div3;
         ratRoot.ConvertTo(mRoot[0]);
-        mRoot[0] = -mRoot[0];
         mMultiplicity[0] = 1;
     }
     else if (ratDiscr < msZero)

@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "SphereMaps.h"
 #include "SphereMapEffect.h"
@@ -43,6 +43,7 @@ bool SphereMaps::OnInitialize ()
 
     // Initial update of objects.
     mScene->Update();
+    CopyNormalToTCoord1(mScene);
 
     // Initial culling of scene.
     mCuller.SetCamera(mCamera);
@@ -73,6 +74,7 @@ void SphereMaps::OnIdle ()
     if (MoveObject())
     {
         mScene->Update();
+        CopyNormalToTCoord1(mScene);
         mCuller.ComputeVisibleSet(mScene);
     }
 
@@ -94,9 +96,10 @@ void SphereMaps::CreateScene ()
     mTrnNode = new0 Node();
     mScene->AttachChild(mTrnNode);
 
-    VertexFormat* vformat = VertexFormat::Create(2,
+    VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0);
+        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1);
 
     TriMesh* mesh = StandardMesh(vformat).Torus(64, 64, 1.0f, 0.5f);
     mTrnNode->AttachChild(mesh);
@@ -105,6 +108,34 @@ void SphereMaps::CreateScene ()
     SphereMapEffect* effect = new0 SphereMapEffect(effectFile);
     std::string environmentName = Environment::GetPathR("SphereMap.wmtf");
     Texture2D* environmentTexture = Texture2D::LoadWMTF(environmentName);
+    environmentTexture->GenerateMipmaps();
     mesh->SetEffectInstance(effect->CreateInstance(environmentTexture));
+}
+//----------------------------------------------------------------------------
+void SphereMaps::CopyNormalToTCoord1 (Object* object)
+{
+    TriMesh* mesh = DynamicCast<TriMesh>(object);
+    if (mesh)
+    {
+        VertexBufferAccessor vba(mesh);
+        for (int i = 0; i < vba.GetNumVertices(); ++i)
+        {
+            vba.TCoord<Vector3f>(1, i) = vba.Normal<Vector3f>(i);
+        }
+        mRenderer->Update(mesh->GetVertexBuffer());
+    }
+
+    Node* node = DynamicCast<Node>(object);
+    if (node)
+    {
+        for (int i = 0; i < node->GetNumChildren(); ++i)
+        {
+            Spatial* child = node->GetChild(i);
+            if (child)
+            {
+                CopyNormalToTCoord1(child);
+            }
+        }
+    }
 }
 //----------------------------------------------------------------------------

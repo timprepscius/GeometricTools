@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "Wm5GraphicsPCH.h"
 #include "Wm5LightSptPerVerEffect.h"
@@ -37,7 +37,7 @@ LightSptPerVerEffect::LightSptPerVerEffect ()
     vshader->SetInput(0, "modelPosition", Shader::VT_FLOAT3,
         Shader::VS_POSITION);
     vshader->SetInput(1, "modelNormal", Shader::VT_FLOAT3,
-        Shader::VS_NORMAL);
+        Shader::VS_TEXCOORD1);
     vshader->SetOutput(0, "clipPosition", Shader::VT_FLOAT4,
         Shader::VS_POSITION);
     vshader->SetOutput(1, "vertexColor", Shader::VT_FLOAT4,
@@ -211,7 +211,7 @@ std::string LightSptPerVerEffect::msVPrograms[Shader::MAX_PROFILES] =
     "vs_1_1\n"
     "def c20, 1.00000000, 0.00000000, 0, 0\n"
     "dcl_position0 v0\n"
-    "dcl_normal0 v1\n"
+    "dcl_texcoord1 v1\n"
     "add r0.xyz, v0, -c13\n"
     "dp3 r0.w, r0, r0\n"
     "add r2.xyz, -v0, c8\n"
@@ -270,7 +270,7 @@ std::string LightSptPerVerEffect::msVPrograms[Shader::MAX_PROFILES] =
     "vs_2_0\n"
     "def c20, 1.00000000, 0.00000000, 0, 0\n"
     "dcl_position v0\n"
-    "dcl_normal v1\n"
+    "dcl_texcoord1 v1\n"
     "add r1.xyz, v0, -c13\n"
     "dp3 r0.x, r1, r1\n"
     "add r2.xyz, -v0, c8\n"
@@ -330,7 +330,7 @@ std::string LightSptPerVerEffect::msVPrograms[Shader::MAX_PROFILES] =
     "dcl_color0 o1\n"
     "def c20, 1.00000000, 0.00000000, 0, 0\n"
     "dcl_position0 v0\n"
-    "dcl_normal0 v1\n"
+    "dcl_texcoord1 v1\n"
     "add r1.xyz, v0, -c13\n"
     "dp3 r1.w, r1, r1\n"
     "rsq r1.w, r1.w\n"
@@ -398,8 +398,8 @@ std::string LightSptPerVerEffect::msVPrograms[Shader::MAX_PROFILES] =
     "MUL R2.xyz, R1.w, R2;\n"
     "DP3 R0.w, R0, c[15];\n"
     "SGE R1.w, R0, c[19].y;\n"
-    "DP3 R2.y, vertex.normal, R2;\n"
-    "DP3 R0.x, R0, vertex.normal;\n"
+    "DP3 R2.y, vertex.texcoord[1], R2;\n"
+    "DP3 R0.x, R0, vertex.texcoord[1];\n"
     "MOV R2.x, -R0;\n"
     "MOV R2.z, c[13].w;\n"
     "LIT R0.yz, R2.xyzz;\n"

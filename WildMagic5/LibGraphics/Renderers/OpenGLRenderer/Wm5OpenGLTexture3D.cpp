@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2011/07/09)
+// File Version: 5.0.2 (2013/07/13)
 
 #include "Wm5GraphicsPCH.h"
 #include "Wm5OpenGLTexture3D.h"
@@ -120,9 +120,20 @@ void PdrTexture3D::Unlock (int level)
         {
             GLuint previousBind = BindTexture(Shader::ST_3D, mTexture);
 
-            glTexSubImage3D(GL_TEXTURE_3D, level, 0, 0, 0,
+            // TODO:  When creating a texture with only level 0 (not a
+            // complete set of mipmaps), the following code generates a
+            // GL_INVALID_OPERATION on an AMD Radeon HD 7970 (Catalyst
+            // 13.4 and Catalyst 13.6 beta).  My analysis shows that it
+            // should not.  So for now, just use glTexImage2D.  This
+            // problem does not occur on my NVIDIA graphics cards.
+            //
+            //glTexSubImage3D(GL_TEXTURE_3D, level, 0, 0, 0,
+            //    mDimension[0][level], mDimension[1][level],
+            //    mDimension[2][level], mFormat, mType, 0);
+
+            glTexImage3D(GL_TEXTURE_3D, level, mInternalFormat,
                 mDimension[0][level], mDimension[1][level],
-                mDimension[2][level], mFormat, mType, 0);
+                mDimension[2][level], 0, mFormat, mType, 0);
 
             glBindTexture(GL_TEXTURE_3D, previousBind);
             mWriteLock[level] = false;

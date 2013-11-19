@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "GeodesicHeightField.h"
 
@@ -252,10 +252,13 @@ void GeodesicHeightField::CreateScene ()
     mRenderer->SetOverrideCullState(mCullState);
 
     // Create the ground.  It covers a square with vertices (1,1,0), (1,-1,0),
-    // (-1,1,0), and (-1,-1,0).
+    // (-1,1,0), and (-1,-1,0).  The normals are duplicated to texture
+    // coordinates to avoid the AMD lighting problems due to use of
+    // pre-OpenGL2.x extensions.
     VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
         VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1, // normals
         VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT2, 0);
 
     const int xSize = 64;
@@ -310,6 +313,11 @@ void GeodesicHeightField::CreateScene ()
         position.Z() = (float)mSurface->P(u,v).Z();
     }
     mMesh->UpdateModelSpace(Visual::GU_NORMALS);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Float3>(1, i) = vba.Normal<Float3>(i);
+    }
+    mRenderer->Update(mMesh->GetVertexBuffer());
 
     // Attach an effect that uses lights, material, and texture.
     mMesh->SetEffectInstance(CreateEffectInstance());
@@ -520,7 +528,7 @@ std::string GeodesicHeightField::msVPrograms[Shader::MAX_PROFILES] =
     "vs_1_1\n"
     "def c19, 1.00000000, 0, 0, 0\n"
     "dcl_position0 v0\n"
-    "dcl_normal0 v1\n"
+    "dcl_texcoord1 v1\n"
     "dcl_texcoord0 v2\n"
     "add r0.xyz, -v0, c4\n"
     "dp3 r0.w, r0, r0\n"
@@ -571,7 +579,7 @@ std::string GeodesicHeightField::msVPrograms[Shader::MAX_PROFILES] =
     "vs_2_0\n"
     "def c19, 1.00000000, 0, 0, 0\n"
     "dcl_position0 v0\n"
-    "dcl_normal0 v1\n"
+    "dcl_texcoord1 v1\n"
     "dcl_texcoord0 v2\n"
     "add r0.xyz, -v0, c4\n"
     "dp3 r0.w, r0, r0\n"
@@ -625,7 +633,7 @@ std::string GeodesicHeightField::msVPrograms[Shader::MAX_PROFILES] =
     "dcl_texcoord0 o2\n"
     "def c19, 1.00000000, 0, 0, 0\n"
     "dcl_position0 v0\n"
-    "dcl_normal0 v1\n"
+    "dcl_texcoord1 v1\n"
     "dcl_texcoord0 v2\n"
     "add r0.xyz, -v0, c4\n"
     "dp3 r0.w, r0, r0\n"
@@ -688,12 +696,12 @@ std::string GeodesicHeightField::msVPrograms[Shader::MAX_PROFILES] =
     "DP3 R0.w, R0, R0;\n"
     "RSQ R0.w, R0.w;\n"
     "MUL R0.xyz, R0.w, R0;\n"
-    "DP3 R0.y, vertex.normal, R0;\n"
+    "DP3 R0.y, vertex.texcoord[1], R0;\n"
     "RSQ R1.w, R1.w;\n"
     "MUL R1.xyz, R1.w, R1;\n"
-    "DP3 R1.y, vertex.normal, R1;\n"
-    "DP3 R1.x, vertex.normal, c[10];\n"
-    "DP3 R0.x, vertex.normal, c[15];\n"
+    "DP3 R1.y, vertex.texcoord[1], R1;\n"
+    "DP3 R1.x, vertex.texcoord[1], c[10];\n"
+    "DP3 R0.x, vertex.texcoord[1], c[15];\n"
     "MOV R1.z, c[9].w;\n"
     "MOV R1.x, -R1;\n"
     "LIT R2.yz, R1.xyzz;\n"

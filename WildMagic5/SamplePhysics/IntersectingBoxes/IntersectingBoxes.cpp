@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "IntersectingBoxes.h"
 
@@ -161,10 +161,13 @@ void IntersectingBoxes::CreateScene ()
     mNoIntersectEffect = effect->CreateInstance(light, blueMaterial);
     mIntersectEffect = effect->CreateInstance(light, redMaterial);
 
-    // Create visual representations of the boxes.
-    VertexFormat* vformat = VertexFormat::Create(2,
+    // Create visual representations of the boxes.  The normals are duplicated
+    // to texture coordinates to avoid the AMD lighting problems due to use of
+    // pre-OpenGL2.x extensions.
+    VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0);
+        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1);
 
     for (i = 0; i < imax; ++i)
     {
@@ -276,6 +279,11 @@ void IntersectingBoxes::ModifyMesh (int i)
     vba.Position<Vector3f>(7) = center - xTerm + yTerm + zTerm;
 
     mesh->UpdateModelSpace(Visual::GU_NORMALS);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Float3>(1, i) = vba.Normal<Float3>(i);
+    }
+
     mRenderer->Update(mesh->GetVertexBuffer());
 }
 //----------------------------------------------------------------------------

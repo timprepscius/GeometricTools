@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.3 (2011/06/27)
+// File Version: 5.0.4 (2013/03/01)
 
 #include "Wm5GraphicsPCH.h"
 #include "Wm5Renderer.h"
@@ -55,7 +55,7 @@ void Renderer::SetAlphaState (const AlphaState* alphaState)
             glBlendColor(
                 mData->mCurrentRS.mBlendColor[0],
                 mData->mCurrentRS.mBlendColor[1],
-                mData->mCurrentRS.mBlendColor[1],
+                mData->mCurrentRS.mBlendColor[2],
                 mData->mCurrentRS.mBlendColor[3]);
         }
     }

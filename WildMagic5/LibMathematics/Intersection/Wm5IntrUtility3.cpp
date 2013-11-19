@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/01)
+// File Version: 5.0.2 (2013/03/01)
 
 #include "Wm5MathematicsPCH.h"
 #include "Wm5IntrUtility3.h"
@@ -1358,7 +1358,7 @@ FindContactSet<Real>::FindContactSet (const Box3<Real>& box0,
         else if (box1Cfg.mMap == IntrConfiguration<Real>::m1_1)
         {
             quantity = 1;
-            P[0] = GetPointFromIndex(b0Index[0], box1Final);
+            P[0] = GetPointFromIndex(b1Index[0], box1Final);
         }
         else if (box0Cfg.mMap == IntrConfiguration<Real>::m2_2)
         {

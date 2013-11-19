@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "Wm5GraphicsPCH.h"
 #include "Wm5LightSptPerPixEffect.h"
@@ -37,7 +37,7 @@ LightSptPerPixEffect::LightSptPerPixEffect ()
     vshader->SetInput(0, "modelPosition", Shader::VT_FLOAT3,
         Shader::VS_POSITION);
     vshader->SetInput(1, "modelNormal", Shader::VT_FLOAT3,
-        Shader::VS_NORMAL);
+        Shader::VS_TEXCOORD1);
     vshader->SetOutput(0, "clipPosition", Shader::VT_FLOAT4,
         Shader::VS_POSITION);
     vshader->SetOutput(1, "vertexPosition", Shader::VT_FLOAT3,
@@ -216,7 +216,7 @@ std::string LightSptPerPixEffect::msVPrograms[Shader::MAX_PROFILES] =
     "vs_2_0\n"
     "def c4, 1.00000000, 0, 0, 0\n"
     "dcl_position v0\n"
-    "dcl_normal v1\n"
+    "dcl_texcoord1 v1\n"
     "mov r0.w, c4.x\n"
     "mov r0.xyz, v0\n"
     "dp4 oPos.w, r0, c3\n"
@@ -233,7 +233,7 @@ std::string LightSptPerPixEffect::msVPrograms[Shader::MAX_PROFILES] =
     "dcl_texcoord1 o2\n"
     "def c4, 1.00000000, 0, 0, 0\n"
     "dcl_position0 v0\n"
-    "dcl_normal0 v1\n"
+    "dcl_texcoord1 v1\n"
     "mov r0.w, c4.x\n"
     "mov r0.xyz, v0\n"
     "dp4 o0.w, r0, c3\n"
@@ -254,7 +254,7 @@ std::string LightSptPerPixEffect::msVPrograms[Shader::MAX_PROFILES] =
     "DP4 result.position.y, R0, c[2];\n"
     "DP4 result.position.x, R0, c[1];\n"
     "MOV result.texcoord[0].xyz, vertex.position;\n"
-    "MOV result.texcoord[1].xyz, vertex.normal;\n"
+    "MOV result.texcoord[1].xyz, vertex.texcoord[1];\n"
     "END\n"
 };
 

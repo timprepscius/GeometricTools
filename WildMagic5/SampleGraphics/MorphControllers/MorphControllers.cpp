@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "MorphControllers.h"
 
@@ -96,6 +96,17 @@ void MorphControllers::OnIdle ()
     }
     mScene->Update(mCurrTime - mBaseTime);
     mCuller.ComputeVisibleSet(mScene);
+
+    // The normals are duplicated to texture coordinates to avoid the AMD
+    // lighting problems due to use of pre-OpenGL2.x extensions.  We could
+    // also derive a class from MorphController and override its Update(...)
+    // function to do this.
+    VertexBufferAccessor vba(mFace);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Vector3f>(1, i) = vba.Normal<Vector3f>(i);
+    }
+    mRenderer->Update(mFace->GetVertexBuffer());
 
     if (mRenderer->PreDraw())
     {
@@ -305,10 +316,12 @@ void MorphControllers::LoadTargets ()
     // Load the targets.  Create triangle meshes for each of the targets just
     // for the purposes of this application.  Normally target0 and the
     // differences between the other targets and target0 are stored only in
-    // the controller.
-    VertexFormat* vformat = VertexFormat::Create(2,
+    // the controller.  The normals are duplicated to texture coordinates to
+    // avoid the AMD lighting problems due to use of pre-OpenGL2.x extensions.
+    VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0);
+        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1);
     int vstride = vformat->GetStride();
 
     for (int j = 0; j < TARGET_QUANTITY; ++j)
@@ -335,6 +348,11 @@ void MorphControllers::LoadTargets ()
         mTarget[j] = new0 TriMesh(vformat, vbuffer, mIBuffer);
         mTarget[j]->SetName(filename);
         mTarget[j]->UpdateModelSpace(Visual::GU_NORMALS);
+        for (i = 0; i < numVertices; ++i)
+        {
+            vba.TCoord<Vector3f>(1, i) = vba.Normal<Vector3f>(i);
+        }
+        mRenderer->Update(mTarget[j]->GetVertexBuffer());
 
         mTarget[j]->SetEffectInstance(mEffect->CreateInstance(mLight,
             mMaterial));
@@ -357,6 +375,12 @@ void MorphControllers::CreateFace ()
 
     mFace = new0 TriMesh(vformat, vbuffer, ibuffer);
     mFace->UpdateModelSpace(Visual::GU_NORMALS);
+    VertexBufferAccessor vba(mFace);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Vector3f>(1, i) = vba.Normal<Vector3f>(i);
+    }
+    mRenderer->Update(mFace->GetVertexBuffer());
 
 #if 0
     // For regenerating the face WMOF whenever the engine streaming changes.

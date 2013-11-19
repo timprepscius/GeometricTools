@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.2 (2010/10/16)
+// File Version: 5.0.3 (2012/11/22)
 
 #include "Wm5MathematicsPCH.h"
 #include "Wm5ContMinCircle2.h"
@@ -55,25 +55,53 @@ MinCircle2<Real>::MinCircle2 (int numPoints, const Vector2<Real>* points,
         minimal = ExactCircle1(*permuted[0]);
         support.Quantity = 1;
         support.Index[0] = 0;
-        i = 1;
-        while (i < numPoints)
+
+        // The previous version of the processing loop is
+        //  i = 1;
+        //  while (i < numPoints)
+        //  {
+        //      if (!support.Contains(i, permuted, mEpsilon))
+        //      {
+        //          if (!Contains(*permuted[i], minimal, distDiff))
+        //          {
+        //              UpdateFunction update = mUpdate[support.Quantity];
+        //              Circle2<Real> circle = (this->*update)(i, permuted,
+        //                  support);
+        //              if (circle.Radius > minimal.Radius)
+        //              {
+        //                  minimal = circle;
+        //                  i = 0;
+        //                  continue;
+        //              }
+        //          }
+        //      }
+        //      ++i;
+        //  }
+        // This loop restarts from the beginning of the point list each time
+        // the circle needs updating.  Linus Källberg (Computer Science at
+        // Mälardalen University in Sweden) discovered that performance is
+        // better when the remaining points in the array are processed before
+        // restarting.  The points processed before the point that caused the
+        // update are likely to be enclosed by the new circle (or near the
+        // circle boundary) because they were enclosed by the previous circle.
+        // The chances are better that points after the current one will cause
+        // growth of the bounding circle.
+        for (int i = 1 % numPoints, n = 0; i != n; i = (i + 1) % numPoints)
         {
             if (!support.Contains(i, permuted, mEpsilon))
             {
                 if (!Contains(*permuted[i], minimal, distDiff))
                 {
                     UpdateFunction update = mUpdate[support.Quantity];
-                    Circle2<Real> circle = (this->*update)(i, permuted,
+                    Circle2<Real> circle =(this->*update)(i, permuted,
                         support);
                     if (circle.Radius > minimal.Radius)
                     {
                         minimal = circle;
-                        i = 0;
-                        continue;
+                        n = i;
                     }
                 }
             }
-            ++i;
         }
         
         delete1(permuted);

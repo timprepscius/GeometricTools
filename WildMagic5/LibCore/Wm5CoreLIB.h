@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.7 (2012/03/17)
+// File Version: 5.0.10 (2012/11/29)
 
 #ifndef WM5CORELIB_H
 #define WM5CORELIB_H
@@ -32,17 +32,25 @@
 #define WM5_LITTLE_ENDIAN
 
 #if defined(_MSC_VER)
-// MSVC6 is version 12.00, MSVC7.0 is version 13.00, MSVC7.1 is version 13.10,
-// MSVC8.0 is version 14.00, and MSVC9.0 is version 15.00.  Currently, only
-// version 9.0 or later are supported.
+// Microsoft Visual Studio versions:
+//  MSVC  6   is version 12.00
+//  MSVC  7.0 is version 13.00 (MSVS 2002)
+//  MSVC  7.1 is version 13.10 (MSVS 2003)
+//  MSVC  8.0 is version 14.00 (MSVS 2005)
+//  MSVC  9.0 is version 15.00 (MSVS 2008)
+//  MSVC 10.0 is version 16.00 (MSVS 2010)
+//  MSVC 11.0 is version 17.00 (MSVS 2012)
+//  Currently, projects are provided only for MSVC 10.0 and 11.0.
 #if _MSC_VER < 1400
 #error MSVC 8.0 or later is required
 #elif _MSC_VER < 1500
 #define WM5_USING_VC80
 #elif _MSC_VER < 1600
 #define WM5_USING_VC90
-#else
+#elif _MSC_VER < 1700
 #define WM5_USING_VC100
+#else
+#define WM5_USING_VC110
 #endif
 
 // Disable the Microsoft warnings about not using the secure functions.
@@ -58,7 +66,7 @@
 // stdint.h provides on Unix platforms.
 #include <climits>
 
-#ifdef WM5_USING_VC100
+#if _MSC_VER >= 1600
 #include <stdint.h>
 #else
 typedef __int8              int8_t;
@@ -148,6 +156,7 @@ typedef unsigned __int64    uint64_t;
 // Common STL headers.
 #include <algorithm>
 #include <deque>
+#include <functional>
 #include <limits>
 #include <list>
 #include <map>
@@ -192,7 +201,7 @@ typedef unsigned __int64    uint64_t;
 // and shut-down
 //   WildMagic5/Documentation/Wm5InitTerm.pdf
 //
-#define WM5_USE_MEMORY
+//#define WM5_USE_MEMORY
 #ifdef WM5_USE_MEMORY
     // Enable an assertion when a allocation occurs before
     // Memory::Initialize was called or when a deallocation occurs after

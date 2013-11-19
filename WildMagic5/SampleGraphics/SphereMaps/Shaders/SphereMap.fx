@@ -9,7 +9,7 @@ sampler2D BaseSampler = sampler_state
 void v_SphereMap
 (
     in float3 modelPosition : POSITION,
-    in float3 modelNormal : NORMAL,
+    in float3 modelNormal : TEXCOORD1,
     out float4 clipPosition : POSITION,
     out float2 vertexTCoord : TEXCOORD0,
     uniform float4x4 PVWMatrix,

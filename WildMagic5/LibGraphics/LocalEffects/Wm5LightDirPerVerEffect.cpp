@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "Wm5GraphicsPCH.h"
 #include "Wm5LightDirPerVerEffect.h"
@@ -34,7 +34,7 @@ LightDirPerVerEffect::LightDirPerVerEffect ()
     vshader->SetInput(0, "modelPosition", Shader::VT_FLOAT3,
         Shader::VS_POSITION);
     vshader->SetInput(1, "modelNormal", Shader::VT_FLOAT3,
-        Shader::VS_POSITION);
+        Shader::VS_TEXCOORD1);
     vshader->SetOutput(0, "clipPosition", Shader::VT_FLOAT4,
         Shader::VS_POSITION);
     vshader->SetOutput(1, "vertexColor", Shader::VT_FLOAT4,
@@ -199,7 +199,7 @@ std::string LightDirPerVerEffect::msVPrograms[Shader::MAX_PROFILES] =
     "vs_1_1\n"
     "def c14, 1.00000000, 0, 0, 0\n"
     "dcl_position0 v0\n"
-    "dcl_normal0 v1\n"
+    "dcl_texcoord1 v1\n"
     "add r1.xyz, -v0, c4\n"
     "dp3 r0.x, r1, r1\n"
     "rsq r0.x, r0.x\n"
@@ -232,7 +232,7 @@ std::string LightDirPerVerEffect::msVPrograms[Shader::MAX_PROFILES] =
     "vs_2_0\n"
     "def c14, 1.00000000, 0, 0, 0\n"
     "dcl_position v0\n"
-    "dcl_normal v1\n"
+    "dcl_texcoord1 v1\n"
     "add r1.xyz, -v0, c4\n"
     "dp3 r0.x, r1, r1\n"
     "rsq r0.x, r0.x\n"
@@ -267,7 +267,7 @@ std::string LightDirPerVerEffect::msVPrograms[Shader::MAX_PROFILES] =
     "dcl_color0 o1\n"
     "def c14, 1.00000000, 0, 0, 0\n"
     "dcl_position0 v0\n"
-    "dcl_normal0 v1\n"
+    "dcl_texcoord1 v1\n"
     "add r1.xyz, -v0, c4\n"
     "dp3 r0.x, r1, r1\n"
     "rsq r0.x, r0.x\n"
@@ -308,8 +308,8 @@ std::string LightDirPerVerEffect::msVPrograms[Shader::MAX_PROFILES] =
     "DP3 R0.x, R1, R1;\n"
     "RSQ R0.x, R0.x;\n"
     "MUL R0.xyz, R0.x, R1;\n"
-    "DP3 R0.y, vertex.normal, R0;\n"
-    "DP3 R0.x, vertex.normal, c[10];\n"
+    "DP3 R0.y, vertex.texcoord[1], R0;\n"
+    "DP3 R0.x, vertex.texcoord[1], c[10];\n"
     "MOV R0.x, -R0;\n"
     "MOV R0.z, c[9].w;\n"
     "LIT R0.yz, R0.xyzz;\n"

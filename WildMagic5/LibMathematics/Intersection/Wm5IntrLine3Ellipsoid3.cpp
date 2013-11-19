@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/01)
+// File Version: 5.0.2 (2012/11/03)
 
 #include "Wm5MathematicsPCH.h"
 #include "Wm5IntrLine3Ellipsoid3.h"
@@ -17,7 +17,9 @@ IntrLine3Ellipsoid3<Real>::IntrLine3Ellipsoid3 (const Line3<Real>& line,
     const Ellipsoid3<Real>& ellipsoid)
     :
     mLine(&line),
-    mEllipsoid(&ellipsoid)
+    mEllipsoid(&ellipsoid),
+    mNegativeThreshold((Real)0),
+    mPositiveThreshold((Real)0)
 {
 }
 //----------------------------------------------------------------------------
@@ -54,7 +56,7 @@ bool IntrLine3Ellipsoid3<Real>::Test ()
 
     // Intersection occurs if Q(t) has real roots.
     Real discr = a1*a1 - a0*a2;
-    return discr >= (Real)0;
+    return discr >= mNegativeThreshold;
 }
 //----------------------------------------------------------------------------
 template <typename Real>
@@ -79,12 +81,12 @@ bool IntrLine3Ellipsoid3<Real>::Find ()
     // Intersection occurs if Q(t) has real roots.
     Real discr = a1*a1 - a0*a2;
     Real t[2];
-    if (discr < (Real)0)
+    if (discr < mNegativeThreshold)
     {
         mIntersectionType = IT_EMPTY;
         mQuantity = 0;
     }
-    else if (discr > Math<Real>::ZERO_TOLERANCE)
+    else if (discr > mPositiveThreshold)
     {
         mIntersectionType = IT_SEGMENT;
         mQuantity = 2;
@@ -118,6 +120,42 @@ template <typename Real>
 const Vector3<Real>& IntrLine3Ellipsoid3<Real>::GetPoint (int i) const
 {
     return mPoint[i];
+}
+//----------------------------------------------------------------------------
+template <typename Real>
+void IntrLine3Ellipsoid3<Real>::SetNegativeThreshold (Real negThreshold)
+{
+    if (negThreshold <= (Real)0)
+    {
+        mNegativeThreshold = negThreshold;
+        return;
+    }
+
+    assertion(false, "Negative threshold must be nonpositive.");
+}
+//----------------------------------------------------------------------------
+template <typename Real>
+Real IntrLine3Ellipsoid3<Real>::GetNegativeThreshold () const
+{
+    return mNegativeThreshold;
+}
+//----------------------------------------------------------------------------
+template <typename Real>
+void IntrLine3Ellipsoid3<Real>::SetPositiveThreshold (Real posThreshold)
+{
+    if (posThreshold >= (Real)0)
+    {
+        mPositiveThreshold = posThreshold;
+        return;
+    }
+
+    assertion(false, "Positive threshold must be nonnegative.");
+}
+//----------------------------------------------------------------------------
+template <typename Real>
+Real IntrLine3Ellipsoid3<Real>::GetPositiveThreshold () const
+{
+    return mPositiveThreshold;
 }
 //----------------------------------------------------------------------------
 

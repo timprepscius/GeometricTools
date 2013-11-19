@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "ProjectedTextures.h"
 #include "ProjectedTextureEffect.h"
@@ -96,7 +96,7 @@ void ProjectedTextures::CreateScene ()
 
     // Load the face model.
 #ifdef WM5_LITTLE_ENDIAN
-    std::string path = Environment::GetPathR("FacePN.wmof");
+    std::string path = Environment::GetPathR("FacePT1.wmof");
 #else
     std::string path = Environment::GetPathR("FacePN.be.wmof");
 #endif

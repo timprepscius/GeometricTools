@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "ExtractLevelSurfacesCubes.h"
 
@@ -132,7 +132,7 @@ void ExtractLevelSurfacesCubes::CreateScene ()
     // Create a triangle mesh for the surface.
     VertexFormat* vformat = VertexFormat::Create(2,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0);
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1);  // normals
     int vstride = vformat->GetStride();
     const int numVertices = (int)vertices.size();
     VertexBuffer* vbuffer = new0 VertexBuffer(numVertices, vstride);
@@ -141,7 +141,7 @@ void ExtractLevelSurfacesCubes::CreateScene ()
     for (i = 0; i < numVertices; ++i)
     {
         vba.Position<Vector3f>(i) = vertices[i];
-        vba.Normal<Vector3f>(i) = normals[i];
+        vba.TCoord<Vector3f>(1, i) = normals[i];
     }
 
     const int numTriangles = (int)triangles.size();

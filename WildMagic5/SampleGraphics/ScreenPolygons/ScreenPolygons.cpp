@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "ScreenPolygons.h"
 
@@ -40,6 +40,7 @@ bool ScreenPolygons::OnInitialize ()
 
     // Initial update of objects.
     mScene->Update();
+    CopyNormalToTCoord1(mScene);
     mCuller.SetCamera(mCamera);
     mCuller.ComputeVisibleSet(mScene);
 
@@ -71,6 +72,7 @@ void ScreenPolygons::OnIdle ()
     if (MoveObject())
     {
         mScene->Update();
+        CopyNormalToTCoord1(mScene);
         mCuller.ComputeVisibleSet(mScene);
     }
 
@@ -123,11 +125,13 @@ bool ScreenPolygons::OnKeyDown (unsigned char key, int x, int y)
     case 'g':
         mAnimTime += mAnimTimeDelta;
         mScene->Update(mAnimTime);
+        CopyNormalToTCoord1(mScene);
         mCuller.ComputeVisibleSet(mScene);
         return true;
     case 'G':
         mAnimTime = 0.0;
         mScene->Update(mAnimTime);
+        CopyNormalToTCoord1(mScene);
         mCuller.ComputeVisibleSet(mScene);
         return true;
 
@@ -176,7 +180,7 @@ void ScreenPolygons::CreateScene ()
 
     // Load the biped just for some model to display.
 #ifdef WM5_LITTLE_ENDIAN
-    std::string path = Environment::GetPathR("SkinnedBipedPN.wmof");
+    std::string path = Environment::GetPathR("SkinnedBipedPNTC1.wmof");
 #else
     std::string path = Environment::GetPathR("SkinnedBipedPN.be.wmof");
 #endif
@@ -262,5 +266,32 @@ void ScreenPolygons::CreateScene ()
 
     // Make the foreground semitransparent.
     foreEffect->GetAlphaState(0, 0)->BlendEnabled = true;
+}
+//----------------------------------------------------------------------------
+void ScreenPolygons::CopyNormalToTCoord1 (Object* object)
+{
+    TriMesh* mesh = DynamicCast<TriMesh>(object);
+    if (mesh)
+    {
+        VertexBufferAccessor vba(mesh);
+        for (int i = 0; i < vba.GetNumVertices(); ++i)
+        {
+            vba.TCoord<Vector3f>(1, i) = vba.Normal<Vector3f>(i);
+        }
+        mRenderer->Update(mesh->GetVertexBuffer());
+    }
+
+    Node* node = DynamicCast<Node>(object);
+    if (node)
+    {
+        for (int i = 0; i < node->GetNumChildren(); ++i)
+        {
+            Spatial* child = node->GetChild(i);
+            if (child)
+            {
+                CopyNormalToTCoord1(child);
+            }
+        }
+    }
 }
 //----------------------------------------------------------------------------

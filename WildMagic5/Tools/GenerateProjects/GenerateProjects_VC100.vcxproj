@@ -165,10 +165,12 @@
   <ItemGroup>
     <ClCompile Include="GenerateProjects.cpp" />
     <ClCompile Include="TemplateVC100.cpp" />
+    <ClCompile Include="TemplateVC110.cpp" />
     <ClCompile Include="TemplateXC44.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TemplateVC100.h" />
+    <ClInclude Include="TemplateVC110.h" />
     <ClInclude Include="TemplateXC44.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

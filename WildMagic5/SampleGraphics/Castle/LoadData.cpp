@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.1.0 (2010/04/14)
+// File Version: 5.1.1 (2013/07/14)
 
 #include "Castle.h"
 
@@ -14,7 +14,7 @@ TriMesh* Castle::LoadMeshPNT1 (const std::string& name)
     // Get the vertex format.
     VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 2,  // normals
         VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT2, 0);
     int vstride = vformat->GetStride();
 
@@ -78,7 +78,7 @@ TriMesh* Castle::LoadMeshPNT1 (const std::string& name)
     {
         VertexPNT1& vertex = PNT1Array[i];
         vba.Position<Float3>(i) = positions[vertex.PIndex];
-        vba.Normal<Float3>(i) = normals[vertex.NIndex];
+        vba.TCoord<Float3>(2, i) = normals[vertex.NIndex];
         vba.TCoord<Float2>(0, i) = tcoords[vertex.TIndex];
     }
 
@@ -99,7 +99,7 @@ TriMesh* Castle::LoadMeshPNT2 (const std::string& name)
     // Get the vertex format.
     VertexFormat* vformat = VertexFormat::Create(4,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 2,  // normals
         VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT2, 0,
         VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT2, 1);
     int vstride = vformat->GetStride();
@@ -170,7 +170,7 @@ TriMesh* Castle::LoadMeshPNT2 (const std::string& name)
     {
         VertexPNT2& vertex = PNT2Array[i];
         vba.Position<Float3>(i) = positions[vertex.PIndex];
-        vba.Normal<Float3>(i) = normals[vertex.NIndex];
+        vba.TCoord<Float3>(2, i) = normals[vertex.NIndex];
         vba.TCoord<Float2>(0, i) = tcoords0[vertex.T0Index];
         vba.TCoord<Float2>(1, i) = tcoords1[vertex.T1Index];
     }
@@ -193,7 +193,7 @@ std::vector<TriMesh*> Castle::LoadMeshPNT1Multi (const std::string& name)
     // Get the vertex format.
     VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 2,  // normals
         VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT2, 0);
     int vstride = vformat->GetStride();
 
@@ -270,7 +270,7 @@ std::vector<TriMesh*> Castle::LoadMeshPNT1Multi (const std::string& name)
     {
         VertexPNT1& vertex = PNT1Array[i];
         vba.Position<Float3>(i) = positions[vertex.PIndex];
-        vba.Normal<Float3>(i) = normals[vertex.NIndex];
+        vba.TCoord<Float3>(2, i) = normals[vertex.NIndex];
         vba.TCoord<Float2>(0, i) = tcoords[vertex.TIndex];
     }
 

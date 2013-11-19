@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/01)
+// File Version: 5.0.2 (2012/10/31)
 
 #include "Wm5MathematicsPCH.h"
 #include "Wm5BSplineSurfaceFit.h"
@@ -18,9 +18,9 @@ BSplineSurfaceFit<Real>::BSplineSurfaceFit (int degree0, int numControls0,
     int numSamples0, int degree1, int numControls1, int numSamples1,
     Vector3<Real>** samples)
 {
-    assertion(1 <= degree0 && degree0 < numControls0, "Invalid input\n");
+    assertion(1 <= degree0 && degree0 + 1 < numControls0, "Invalid input\n");
     assertion(numControls0 <= numSamples0, "Invalid input\n");
-    assertion(1 <= degree1 && degree1 < numControls1, "Invalid input\n");
+    assertion(1 <= degree1 && degree1 + 1 < numControls1, "Invalid input\n");
     assertion(numControls1 <= numSamples1, "Invalid input\n");
 
     mDegree[0] = degree0;
@@ -95,7 +95,8 @@ BSplineSurfaceFit<Real>::BSplineSurfaceFit (int degree0, int numControls0,
         }
     }
 
-    // Construct the matrices A0^T and A1^T.
+    // Construct the matrices A0^T and A1^T.  A[d]^T has mNumControls[d]
+    // rows and mNumSamples[d] columns.
     double** ATMat[2];
     for (dim = 0; dim < 2; dim++)
     {
@@ -128,21 +129,21 @@ BSplineSurfaceFit<Real>::BSplineSurfaceFit (int degree0, int numControls0,
 
     // The control points for the fitted surface are stored in the matrix
     // Q = X0*P*X1^T, where P is the matrix of sample data.
-    for (i0 = 0; i0 < mNumControls[0]; ++i0)
+    for (i1 = 0; i1 < mNumControls[1]; ++i1)
     {
-        for (i1 = 0; i1 < mNumControls[1]; ++i1)
+        for (i0 = 0; i0 < mNumControls[0]; ++i0)
         {
             Vector3<Real> sum = Vector3<Real>::ZERO;
-            for (int j0 = 0; j0 < mNumSamples[0]; ++j0)
+            for (int j1 = 0; j1 < mNumSamples[1]; ++j1)
             {
-                Real x0Value = (Real)ATMat[0][i0][j0];
-                for (int j1 = 0; j1 < mNumSamples[1]; ++j1)
+                Real x1Value = (Real)ATMat[1][i1][j1];
+                for (int j0 = 0; j0 < mNumSamples[0]; ++j0)
                 {
-                    Real x1Value = (Real)ATMat[1][i1][j1];
-                    sum += (x0Value*x1Value)*mSamples[j0][j1];
+                    Real x0Value = (Real)ATMat[0][i0][j0];
+                    sum += (x0Value*x1Value)*mSamples[j1][j0];
                 }
             }
-            mControls[i0][i1] = sum;
+            mControls[i1][i0] = sum;
         }
     }
 
@@ -206,13 +207,13 @@ Vector3<Real> BSplineSurfaceFit<Real>::GetPosition (Real u, Real v) const
     mBasis[1]->Compute(v, ivmin, ivmax);
 
     Vector3<Real> pos = Vector3<Real>::ZERO;
-    for (int iu = iumin, i = 0; iu <= iumax; ++iu, ++i)
+    for (int iv = ivmin, j = 0; iv <= ivmax; ++iv, ++j)
     {
-        Real value0 = mBasis[0]->GetValue(i);
-        for (int iv = ivmin, j = 0; iv <= ivmax; ++iv, ++j)
+        Real value1 = mBasis[1]->GetValue(j);
+        for (int iu = iumin, i = 0; iu <= iumax; ++iu, ++i)
         {
-            Real value1 = mBasis[1]->GetValue(j);
-            pos += (value0*value1)*mControls[iu][iv];
+            Real value0 = mBasis[0]->GetValue(i);
+            pos += (value0*value1)*mControls[iv][iu];
         }
     }
     return pos;

@@ -9,7 +9,7 @@ sampler2D ProjectorSampler = sampler_state
 void v_ProjectedTexture
 (
     in float3 modelPosition : POSITION,
-    in float3 modelNormal : NORMAL,
+    in float3 modelNormal : TEXCOORD1,
     out float4 clipPosition : POSITION,
     out float4 vertexColor : COLOR,
     out float4 vertexTCoord : TEXCOORD0,

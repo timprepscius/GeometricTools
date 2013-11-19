@@ -149,41 +149,42 @@
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Graphics.h ..\SDK\Include
-xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
-xcopy /DY Controllers\*.h ..\SDK\Include
-xcopy /DY Controllers\*.inl ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY Detail\*.h ..\SDK\Include
-xcopy /DY Detail\*.inl ..\SDK\Include
-xcopy /DY GlobalEffects\*.h ..\SDK\Include
-xcopy /DY GlobalEffects\*.inl ..\SDK\Include
-xcopy /DY ImageProcessing\*.h ..\SDK\Include
-xcopy /DY ImageProcessing\*.inl ..\SDK\Include
-xcopy /DY LocalEffects\*.h ..\SDK\Include
-xcopy /DY Renderers\*.h ..\SDK\Include
-xcopy /DY Renderers\*.inl ..\SDK\Include
-xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
-xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
-xcopy /DY Resources\*.h ..\SDK\Include
-xcopy /DY Resources\*.inl ..\SDK\Include
-xcopy /DY SceneGraph\*.h ..\SDK\Include
-xcopy /DY SceneGraph\*.inl ..\SDK\Include
-xcopy /DY ShaderFloats\*.h ..\SDK\Include
-xcopy /DY ShaderFloats\*.inl ..\SDK\Include
-xcopy /DY Shaders\*.h ..\SDK\Include
-xcopy /DY Shaders\*.inl ..\SDK\Include
-xcopy /DY Sorting\*.h ..\SDK\Include
-xcopy /DY Sorting\*.inl ..\SDK\Include
-xcopy /DY Terrain\*.h ..\SDK\Include
-xcopy /DY Terrain\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Graphics.h ..\SDK\Include
+        xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
+        xcopy /DY Controllers\*.h ..\SDK\Include
+        xcopy /DY Controllers\*.inl ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY Detail\*.h ..\SDK\Include
+        xcopy /DY Detail\*.inl ..\SDK\Include
+        xcopy /DY GlobalEffects\*.h ..\SDK\Include
+        xcopy /DY GlobalEffects\*.inl ..\SDK\Include
+        xcopy /DY ImageProcessing\*.h ..\SDK\Include
+        xcopy /DY ImageProcessing\*.inl ..\SDK\Include
+        xcopy /DY LocalEffects\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.inl ..\SDK\Include
+        xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
+        xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
+        xcopy /DY Resources\*.h ..\SDK\Include
+        xcopy /DY Resources\*.inl ..\SDK\Include
+        xcopy /DY SceneGraph\*.h ..\SDK\Include
+        xcopy /DY SceneGraph\*.inl ..\SDK\Include
+        xcopy /DY ShaderFloats\*.h ..\SDK\Include
+        xcopy /DY ShaderFloats\*.inl ..\SDK\Include
+        xcopy /DY Shaders\*.h ..\SDK\Include
+        xcopy /DY Shaders\*.inl ..\SDK\Include
+        xcopy /DY Sorting\*.h ..\SDK\Include
+        xcopy /DY Sorting\*.inl ..\SDK\Include
+        xcopy /DY Terrain\*.h ..\SDK\Include
+        xcopy /DY Terrain\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -203,41 +204,42 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Graphics.h ..\SDK\Include
-xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
-xcopy /DY Controllers\*.h ..\SDK\Include
-xcopy /DY Controllers\*.inl ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY Detail\*.h ..\SDK\Include
-xcopy /DY Detail\*.inl ..\SDK\Include
-xcopy /DY GlobalEffects\*.h ..\SDK\Include
-xcopy /DY GlobalEffects\*.inl ..\SDK\Include
-xcopy /DY ImageProcessing\*.h ..\SDK\Include
-xcopy /DY ImageProcessing\*.inl ..\SDK\Include
-xcopy /DY LocalEffects\*.h ..\SDK\Include
-xcopy /DY Renderers\*.h ..\SDK\Include
-xcopy /DY Renderers\*.inl ..\SDK\Include
-xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
-xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
-xcopy /DY Resources\*.h ..\SDK\Include
-xcopy /DY Resources\*.inl ..\SDK\Include
-xcopy /DY SceneGraph\*.h ..\SDK\Include
-xcopy /DY SceneGraph\*.inl ..\SDK\Include
-xcopy /DY ShaderFloats\*.h ..\SDK\Include
-xcopy /DY ShaderFloats\*.inl ..\SDK\Include
-xcopy /DY Shaders\*.h ..\SDK\Include
-xcopy /DY Shaders\*.inl ..\SDK\Include
-xcopy /DY Sorting\*.h ..\SDK\Include
-xcopy /DY Sorting\*.inl ..\SDK\Include
-xcopy /DY Terrain\*.h ..\SDK\Include
-xcopy /DY Terrain\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Graphics.h ..\SDK\Include
+        xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
+        xcopy /DY Controllers\*.h ..\SDK\Include
+        xcopy /DY Controllers\*.inl ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY Detail\*.h ..\SDK\Include
+        xcopy /DY Detail\*.inl ..\SDK\Include
+        xcopy /DY GlobalEffects\*.h ..\SDK\Include
+        xcopy /DY GlobalEffects\*.inl ..\SDK\Include
+        xcopy /DY ImageProcessing\*.h ..\SDK\Include
+        xcopy /DY ImageProcessing\*.inl ..\SDK\Include
+        xcopy /DY LocalEffects\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.inl ..\SDK\Include
+        xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
+        xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
+        xcopy /DY Resources\*.h ..\SDK\Include
+        xcopy /DY Resources\*.inl ..\SDK\Include
+        xcopy /DY SceneGraph\*.h ..\SDK\Include
+        xcopy /DY SceneGraph\*.inl ..\SDK\Include
+        xcopy /DY ShaderFloats\*.h ..\SDK\Include
+        xcopy /DY ShaderFloats\*.inl ..\SDK\Include
+        xcopy /DY Shaders\*.h ..\SDK\Include
+        xcopy /DY Shaders\*.inl ..\SDK\Include
+        xcopy /DY Sorting\*.h ..\SDK\Include
+        xcopy /DY Sorting\*.inl ..\SDK\Include
+        xcopy /DY Terrain\*.h ..\SDK\Include
+        xcopy /DY Terrain\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
@@ -258,41 +260,43 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Graphics.h ..\SDK\Include
-xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
-xcopy /DY Controllers\*.h ..\SDK\Include
-xcopy /DY Controllers\*.inl ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY Detail\*.h ..\SDK\Include
-xcopy /DY Detail\*.inl ..\SDK\Include
-xcopy /DY GlobalEffects\*.h ..\SDK\Include
-xcopy /DY GlobalEffects\*.inl ..\SDK\Include
-xcopy /DY ImageProcessing\*.h ..\SDK\Include
-xcopy /DY ImageProcessing\*.inl ..\SDK\Include
-xcopy /DY LocalEffects\*.h ..\SDK\Include
-xcopy /DY Renderers\*.h ..\SDK\Include
-xcopy /DY Renderers\*.inl ..\SDK\Include
-xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
-xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
-xcopy /DY Resources\*.h ..\SDK\Include
-xcopy /DY Resources\*.inl ..\SDK\Include
-xcopy /DY SceneGraph\*.h ..\SDK\Include
-xcopy /DY SceneGraph\*.inl ..\SDK\Include
-xcopy /DY ShaderFloats\*.h ..\SDK\Include
-xcopy /DY ShaderFloats\*.inl ..\SDK\Include
-xcopy /DY Shaders\*.h ..\SDK\Include
-xcopy /DY Shaders\*.inl ..\SDK\Include
-xcopy /DY Sorting\*.h ..\SDK\Include
-xcopy /DY Sorting\*.inl ..\SDK\Include
-xcopy /DY Terrain\*.h ..\SDK\Include
-xcopy /DY Terrain\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Graphics.h ..\SDK\Include
+        xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
+        xcopy /DY Controllers\*.h ..\SDK\Include
+        xcopy /DY Controllers\*.inl ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY Detail\*.h ..\SDK\Include
+        xcopy /DY Detail\*.inl ..\SDK\Include
+        xcopy /DY GlobalEffects\*.h ..\SDK\Include
+        xcopy /DY GlobalEffects\*.inl ..\SDK\Include
+        xcopy /DY ImageProcessing\*.h ..\SDK\Include
+        xcopy /DY ImageProcessing\*.inl ..\SDK\Include
+        xcopy /DY LocalEffects\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.inl ..\SDK\Include
+        xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
+        xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
+        xcopy /DY Resources\*.h ..\SDK\Include
+        xcopy /DY Resources\*.inl ..\SDK\Include
+        xcopy /DY SceneGraph\*.h ..\SDK\Include
+        xcopy /DY SceneGraph\*.inl ..\SDK\Include
+        xcopy /DY ShaderFloats\*.h ..\SDK\Include
+        xcopy /DY ShaderFloats\*.inl ..\SDK\Include
+        xcopy /DY Shaders\*.h ..\SDK\Include
+        xcopy /DY Shaders\*.inl ..\SDK\Include
+        xcopy /DY Sorting\*.h ..\SDK\Include
+        xcopy /DY Sorting\*.inl ..\SDK\Include
+        xcopy /DY Terrain\*.h ..\SDK\Include
+        xcopy /DY Terrain\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
@@ -317,41 +321,43 @@ xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platf
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Graphics.h ..\SDK\Include
-xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
-xcopy /DY Controllers\*.h ..\SDK\Include
-xcopy /DY Controllers\*.inl ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY Detail\*.h ..\SDK\Include
-xcopy /DY Detail\*.inl ..\SDK\Include
-xcopy /DY GlobalEffects\*.h ..\SDK\Include
-xcopy /DY GlobalEffects\*.inl ..\SDK\Include
-xcopy /DY ImageProcessing\*.h ..\SDK\Include
-xcopy /DY ImageProcessing\*.inl ..\SDK\Include
-xcopy /DY LocalEffects\*.h ..\SDK\Include
-xcopy /DY Renderers\*.h ..\SDK\Include
-xcopy /DY Renderers\*.inl ..\SDK\Include
-xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
-xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
-xcopy /DY Resources\*.h ..\SDK\Include
-xcopy /DY Resources\*.inl ..\SDK\Include
-xcopy /DY SceneGraph\*.h ..\SDK\Include
-xcopy /DY SceneGraph\*.inl ..\SDK\Include
-xcopy /DY ShaderFloats\*.h ..\SDK\Include
-xcopy /DY ShaderFloats\*.inl ..\SDK\Include
-xcopy /DY Shaders\*.h ..\SDK\Include
-xcopy /DY Shaders\*.inl ..\SDK\Include
-xcopy /DY Sorting\*.h ..\SDK\Include
-xcopy /DY Sorting\*.inl ..\SDK\Include
-xcopy /DY Terrain\*.h ..\SDK\Include
-xcopy /DY Terrain\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Graphics.h ..\SDK\Include
+        xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
+        xcopy /DY Controllers\*.h ..\SDK\Include
+        xcopy /DY Controllers\*.inl ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY Detail\*.h ..\SDK\Include
+        xcopy /DY Detail\*.inl ..\SDK\Include
+        xcopy /DY GlobalEffects\*.h ..\SDK\Include
+        xcopy /DY GlobalEffects\*.inl ..\SDK\Include
+        xcopy /DY ImageProcessing\*.h ..\SDK\Include
+        xcopy /DY ImageProcessing\*.inl ..\SDK\Include
+        xcopy /DY LocalEffects\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.inl ..\SDK\Include
+        xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
+        xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
+        xcopy /DY Resources\*.h ..\SDK\Include
+        xcopy /DY Resources\*.inl ..\SDK\Include
+        xcopy /DY SceneGraph\*.h ..\SDK\Include
+        xcopy /DY SceneGraph\*.inl ..\SDK\Include
+        xcopy /DY ShaderFloats\*.h ..\SDK\Include
+        xcopy /DY ShaderFloats\*.inl ..\SDK\Include
+        xcopy /DY Shaders\*.h ..\SDK\Include
+        xcopy /DY Shaders\*.inl ..\SDK\Include
+        xcopy /DY Sorting\*.h ..\SDK\Include
+        xcopy /DY Sorting\*.inl ..\SDK\Include
+        xcopy /DY Terrain\*.h ..\SDK\Include
+        xcopy /DY Terrain\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
@@ -377,41 +383,42 @@ xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platf
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Graphics.h ..\SDK\Include
-xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
-xcopy /DY Controllers\*.h ..\SDK\Include
-xcopy /DY Controllers\*.inl ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY Detail\*.h ..\SDK\Include
-xcopy /DY Detail\*.inl ..\SDK\Include
-xcopy /DY GlobalEffects\*.h ..\SDK\Include
-xcopy /DY GlobalEffects\*.inl ..\SDK\Include
-xcopy /DY ImageProcessing\*.h ..\SDK\Include
-xcopy /DY ImageProcessing\*.inl ..\SDK\Include
-xcopy /DY LocalEffects\*.h ..\SDK\Include
-xcopy /DY Renderers\*.h ..\SDK\Include
-xcopy /DY Renderers\*.inl ..\SDK\Include
-xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
-xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
-xcopy /DY Resources\*.h ..\SDK\Include
-xcopy /DY Resources\*.inl ..\SDK\Include
-xcopy /DY SceneGraph\*.h ..\SDK\Include
-xcopy /DY SceneGraph\*.inl ..\SDK\Include
-xcopy /DY ShaderFloats\*.h ..\SDK\Include
-xcopy /DY ShaderFloats\*.inl ..\SDK\Include
-xcopy /DY Shaders\*.h ..\SDK\Include
-xcopy /DY Shaders\*.inl ..\SDK\Include
-xcopy /DY Sorting\*.h ..\SDK\Include
-xcopy /DY Sorting\*.inl ..\SDK\Include
-xcopy /DY Terrain\*.h ..\SDK\Include
-xcopy /DY Terrain\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Graphics.h ..\SDK\Include
+        xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
+        xcopy /DY Controllers\*.h ..\SDK\Include
+        xcopy /DY Controllers\*.inl ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY Detail\*.h ..\SDK\Include
+        xcopy /DY Detail\*.inl ..\SDK\Include
+        xcopy /DY GlobalEffects\*.h ..\SDK\Include
+        xcopy /DY GlobalEffects\*.inl ..\SDK\Include
+        xcopy /DY ImageProcessing\*.h ..\SDK\Include
+        xcopy /DY ImageProcessing\*.inl ..\SDK\Include
+        xcopy /DY LocalEffects\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.inl ..\SDK\Include
+        xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
+        xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
+        xcopy /DY Resources\*.h ..\SDK\Include
+        xcopy /DY Resources\*.inl ..\SDK\Include
+        xcopy /DY SceneGraph\*.h ..\SDK\Include
+        xcopy /DY SceneGraph\*.inl ..\SDK\Include
+        xcopy /DY ShaderFloats\*.h ..\SDK\Include
+        xcopy /DY ShaderFloats\*.inl ..\SDK\Include
+        xcopy /DY Shaders\*.h ..\SDK\Include
+        xcopy /DY Shaders\*.inl ..\SDK\Include
+        xcopy /DY Sorting\*.h ..\SDK\Include
+        xcopy /DY Sorting\*.inl ..\SDK\Include
+        xcopy /DY Terrain\*.h ..\SDK\Include
+        xcopy /DY Terrain\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -432,41 +439,42 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Graphics.h ..\SDK\Include
-xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
-xcopy /DY Controllers\*.h ..\SDK\Include
-xcopy /DY Controllers\*.inl ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY Detail\*.h ..\SDK\Include
-xcopy /DY Detail\*.inl ..\SDK\Include
-xcopy /DY GlobalEffects\*.h ..\SDK\Include
-xcopy /DY GlobalEffects\*.inl ..\SDK\Include
-xcopy /DY ImageProcessing\*.h ..\SDK\Include
-xcopy /DY ImageProcessing\*.inl ..\SDK\Include
-xcopy /DY LocalEffects\*.h ..\SDK\Include
-xcopy /DY Renderers\*.h ..\SDK\Include
-xcopy /DY Renderers\*.inl ..\SDK\Include
-xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
-xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
-xcopy /DY Resources\*.h ..\SDK\Include
-xcopy /DY Resources\*.inl ..\SDK\Include
-xcopy /DY SceneGraph\*.h ..\SDK\Include
-xcopy /DY SceneGraph\*.inl ..\SDK\Include
-xcopy /DY ShaderFloats\*.h ..\SDK\Include
-xcopy /DY ShaderFloats\*.inl ..\SDK\Include
-xcopy /DY Shaders\*.h ..\SDK\Include
-xcopy /DY Shaders\*.inl ..\SDK\Include
-xcopy /DY Sorting\*.h ..\SDK\Include
-xcopy /DY Sorting\*.inl ..\SDK\Include
-xcopy /DY Terrain\*.h ..\SDK\Include
-xcopy /DY Terrain\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Graphics.h ..\SDK\Include
+        xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
+        xcopy /DY Controllers\*.h ..\SDK\Include
+        xcopy /DY Controllers\*.inl ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY Detail\*.h ..\SDK\Include
+        xcopy /DY Detail\*.inl ..\SDK\Include
+        xcopy /DY GlobalEffects\*.h ..\SDK\Include
+        xcopy /DY GlobalEffects\*.inl ..\SDK\Include
+        xcopy /DY ImageProcessing\*.h ..\SDK\Include
+        xcopy /DY ImageProcessing\*.inl ..\SDK\Include
+        xcopy /DY LocalEffects\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.inl ..\SDK\Include
+        xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
+        xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
+        xcopy /DY Resources\*.h ..\SDK\Include
+        xcopy /DY Resources\*.inl ..\SDK\Include
+        xcopy /DY SceneGraph\*.h ..\SDK\Include
+        xcopy /DY SceneGraph\*.inl ..\SDK\Include
+        xcopy /DY ShaderFloats\*.h ..\SDK\Include
+        xcopy /DY ShaderFloats\*.inl ..\SDK\Include
+        xcopy /DY Shaders\*.h ..\SDK\Include
+        xcopy /DY Shaders\*.inl ..\SDK\Include
+        xcopy /DY Sorting\*.h ..\SDK\Include
+        xcopy /DY Sorting\*.inl ..\SDK\Include
+        xcopy /DY Terrain\*.h ..\SDK\Include
+        xcopy /DY Terrain\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
@@ -487,41 +495,43 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Graphics.h ..\SDK\Include
-xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
-xcopy /DY Controllers\*.h ..\SDK\Include
-xcopy /DY Controllers\*.inl ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY Detail\*.h ..\SDK\Include
-xcopy /DY Detail\*.inl ..\SDK\Include
-xcopy /DY GlobalEffects\*.h ..\SDK\Include
-xcopy /DY GlobalEffects\*.inl ..\SDK\Include
-xcopy /DY ImageProcessing\*.h ..\SDK\Include
-xcopy /DY ImageProcessing\*.inl ..\SDK\Include
-xcopy /DY LocalEffects\*.h ..\SDK\Include
-xcopy /DY Renderers\*.h ..\SDK\Include
-xcopy /DY Renderers\*.inl ..\SDK\Include
-xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
-xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
-xcopy /DY Resources\*.h ..\SDK\Include
-xcopy /DY Resources\*.inl ..\SDK\Include
-xcopy /DY SceneGraph\*.h ..\SDK\Include
-xcopy /DY SceneGraph\*.inl ..\SDK\Include
-xcopy /DY ShaderFloats\*.h ..\SDK\Include
-xcopy /DY ShaderFloats\*.inl ..\SDK\Include
-xcopy /DY Shaders\*.h ..\SDK\Include
-xcopy /DY Shaders\*.inl ..\SDK\Include
-xcopy /DY Sorting\*.h ..\SDK\Include
-xcopy /DY Sorting\*.inl ..\SDK\Include
-xcopy /DY Terrain\*.h ..\SDK\Include
-xcopy /DY Terrain\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Graphics.h ..\SDK\Include
+        xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
+        xcopy /DY Controllers\*.h ..\SDK\Include
+        xcopy /DY Controllers\*.inl ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY Detail\*.h ..\SDK\Include
+        xcopy /DY Detail\*.inl ..\SDK\Include
+        xcopy /DY GlobalEffects\*.h ..\SDK\Include
+        xcopy /DY GlobalEffects\*.inl ..\SDK\Include
+        xcopy /DY ImageProcessing\*.h ..\SDK\Include
+        xcopy /DY ImageProcessing\*.inl ..\SDK\Include
+        xcopy /DY LocalEffects\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.inl ..\SDK\Include
+        xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
+        xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
+        xcopy /DY Resources\*.h ..\SDK\Include
+        xcopy /DY Resources\*.inl ..\SDK\Include
+        xcopy /DY SceneGraph\*.h ..\SDK\Include
+        xcopy /DY SceneGraph\*.inl ..\SDK\Include
+        xcopy /DY ShaderFloats\*.h ..\SDK\Include
+        xcopy /DY ShaderFloats\*.inl ..\SDK\Include
+        xcopy /DY Shaders\*.h ..\SDK\Include
+        xcopy /DY Shaders\*.inl ..\SDK\Include
+        xcopy /DY Sorting\*.h ..\SDK\Include
+        xcopy /DY Sorting\*.inl ..\SDK\Include
+        xcopy /DY Terrain\*.h ..\SDK\Include
+        xcopy /DY Terrain\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
@@ -546,41 +556,43 @@ xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platf
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Graphics.h ..\SDK\Include
-xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
-xcopy /DY Controllers\*.h ..\SDK\Include
-xcopy /DY Controllers\*.inl ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
-xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY Detail\*.h ..\SDK\Include
-xcopy /DY Detail\*.inl ..\SDK\Include
-xcopy /DY GlobalEffects\*.h ..\SDK\Include
-xcopy /DY GlobalEffects\*.inl ..\SDK\Include
-xcopy /DY ImageProcessing\*.h ..\SDK\Include
-xcopy /DY ImageProcessing\*.inl ..\SDK\Include
-xcopy /DY LocalEffects\*.h ..\SDK\Include
-xcopy /DY Renderers\*.h ..\SDK\Include
-xcopy /DY Renderers\*.inl ..\SDK\Include
-xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
-xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
-xcopy /DY Resources\*.h ..\SDK\Include
-xcopy /DY Resources\*.inl ..\SDK\Include
-xcopy /DY SceneGraph\*.h ..\SDK\Include
-xcopy /DY SceneGraph\*.inl ..\SDK\Include
-xcopy /DY ShaderFloats\*.h ..\SDK\Include
-xcopy /DY ShaderFloats\*.inl ..\SDK\Include
-xcopy /DY Shaders\*.h ..\SDK\Include
-xcopy /DY Shaders\*.inl ..\SDK\Include
-xcopy /DY Sorting\*.h ..\SDK\Include
-xcopy /DY Sorting\*.inl ..\SDK\Include
-xcopy /DY Terrain\*.h ..\SDK\Include
-xcopy /DY Terrain\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Graphics.h ..\SDK\Include
+        xcopy /DY Wm5GraphicsLIB.h ..\SDK\Include
+        xcopy /DY Controllers\*.h ..\SDK\Include
+        xcopy /DY Controllers\*.inl ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfaces\*.inl ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY Detail\*.h ..\SDK\Include
+        xcopy /DY Detail\*.inl ..\SDK\Include
+        xcopy /DY GlobalEffects\*.h ..\SDK\Include
+        xcopy /DY GlobalEffects\*.inl ..\SDK\Include
+        xcopy /DY ImageProcessing\*.h ..\SDK\Include
+        xcopy /DY ImageProcessing\*.inl ..\SDK\Include
+        xcopy /DY LocalEffects\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.h ..\SDK\Include
+        xcopy /DY Renderers\*.inl ..\SDK\Include
+        xcopy /DY Renderers\OpenGLRenderer\*.h ..\SDK\Include
+        xcopy /DY Renderers\WglRenderer\*.h ..\SDK\Include
+        xcopy /DY Resources\*.h ..\SDK\Include
+        xcopy /DY Resources\*.inl ..\SDK\Include
+        xcopy /DY SceneGraph\*.h ..\SDK\Include
+        xcopy /DY SceneGraph\*.inl ..\SDK\Include
+        xcopy /DY ShaderFloats\*.h ..\SDK\Include
+        xcopy /DY ShaderFloats\*.inl ..\SDK\Include
+        xcopy /DY Shaders\*.h ..\SDK\Include
+        xcopy /DY Shaders\*.inl ..\SDK\Include
+        xcopy /DY Sorting\*.h ..\SDK\Include
+        xcopy /DY Sorting\*.inl ..\SDK\Include
+        xcopy /DY Terrain\*.h ..\SDK\Include
+        xcopy /DY Terrain\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>

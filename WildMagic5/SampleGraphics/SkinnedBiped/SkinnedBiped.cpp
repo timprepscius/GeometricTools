@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/04/14)
+// File Version: 5.0.2 (2013/07/14)
 
 #include "SkinnedBiped.h"
 
@@ -42,6 +42,7 @@ bool SkinnedBiped::OnInitialize ()
 
     // Initial update of objects.
     mScene->Update();
+    CopyNormalToTCoord1(mScene);
 
     // Initial culling of scene.
     mCuller.SetCamera(mCamera);
@@ -73,6 +74,7 @@ void SkinnedBiped::OnIdle ()
     if (MoveObject())
     {
         mScene->Update();
+        CopyNormalToTCoord1(mScene);
         mCuller.ComputeVisibleSet(mScene);
     }
 
@@ -105,11 +107,13 @@ bool SkinnedBiped::OnKeyDown (unsigned char key, int x, int y)
     case 'g':
         mAnimTime += mAnimTimeDelta;
         mScene->Update(mAnimTime);
+        CopyNormalToTCoord1(mScene);
         mCuller.ComputeVisibleSet(mScene);
         return true;
     case 'G':
         mAnimTime = 0.0;
         mScene->Update(mAnimTime);
+        CopyNormalToTCoord1(mScene);
         mCuller.ComputeVisibleSet(mScene);
         return true;
     }
@@ -197,10 +201,13 @@ void SkinnedBiped::CreateScene ()
         // pelvis->AttachChild(pants);
 
 
-    // The vertex format is shared among all the triangle meshes.
-    mVFormat = VertexFormat::Create(2,
+    // The vertex format is shared among all the triangle meshes.  The normals
+    // are duplicated to texture coordinates to avoid the AMD lighting
+    // problems due to use of pre-OpenGL2.x extensions.
+    mVFormat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0);
+        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1);
 
     // The TriMesh objects must be created after the Node tree is built,
     // because the TriMesh objects have to find the "bones" that correspond
@@ -241,7 +248,7 @@ void SkinnedBiped::CreateScene ()
     // For regenerating the biped WMOF whenever engine streaming changes.
     OutStream target;
     target.Insert(mScene);
-    target.Save("SkinnedBipedPN.wmof");
+    target.Save("SkinnedBipedPNTC1.wmof");
 #endif
 }
 //----------------------------------------------------------------------------
@@ -430,5 +437,32 @@ TriMesh* SkinnedBiped::GetMesh (const std::string& name, Node* biped)
         mLight, material));
 
     return mesh;
+}
+//----------------------------------------------------------------------------
+void SkinnedBiped::CopyNormalToTCoord1 (Object* object)
+{
+    TriMesh* mesh = DynamicCast<TriMesh>(object);
+    if (mesh)
+    {
+        VertexBufferAccessor vba(mesh);
+        for (int i = 0; i < vba.GetNumVertices(); ++i)
+        {
+            vba.TCoord<Vector3f>(1, i) = vba.Normal<Vector3f>(i);
+        }
+        mRenderer->Update(mesh->GetVertexBuffer());
+    }
+
+    Node* node = DynamicCast<Node>(object);
+    if (node)
+    {
+        for (int i = 0; i < node->GetNumChildren(); ++i)
+        {
+            Spatial* child = node->GetChild(i);
+            if (child)
+            {
+                CopyNormalToTCoord1(child);
+            }
+        }
+    }
 }
 //----------------------------------------------------------------------------

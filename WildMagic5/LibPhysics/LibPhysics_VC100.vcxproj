@@ -149,20 +149,21 @@
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-copy /y Wm5Physics.h ..\SDK\Include
-copy /y Wm5PhysicsLIB.h ..\SDK\Include
-copy /y CollisionDetection\*.h ..\SDK\Include
-copy /y CollisionDetection\*.inl ..\SDK\Include
-copy /y Fluid\*.h ..\SDK\Include
-copy /y Fluid\*.inl ..\SDK\Include
-copy /y Intersection\*.h ..\SDK\Include
-copy /y LCPSolver\*.h ..\SDK\Include
-copy /y ParticleSystem\*.h ..\SDK\Include
-copy /y RigidBody\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        copy /y Wm5Physics.h ..\SDK\Include
+        copy /y Wm5PhysicsLIB.h ..\SDK\Include
+        copy /y CollisionDetection\*.h ..\SDK\Include
+        copy /y CollisionDetection\*.inl ..\SDK\Include
+        copy /y Fluid\*.h ..\SDK\Include
+        copy /y Fluid\*.inl ..\SDK\Include
+        copy /y Intersection\*.h ..\SDK\Include
+        copy /y LCPSolver\*.h ..\SDK\Include
+        copy /y ParticleSystem\*.h ..\SDK\Include
+        copy /y RigidBody\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -182,20 +183,21 @@ copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configur
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-copy /y Wm5Physics.h ..\SDK\Include
-copy /y Wm5PhysicsLIB.h ..\SDK\Include
-copy /y CollisionDetection\*.h ..\SDK\Include
-copy /y CollisionDetection\*.inl ..\SDK\Include
-copy /y Fluid\*.h ..\SDK\Include
-copy /y Fluid\*.inl ..\SDK\Include
-copy /y Intersection\*.h ..\SDK\Include
-copy /y LCPSolver\*.h ..\SDK\Include
-copy /y ParticleSystem\*.h ..\SDK\Include
-copy /y RigidBody\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        copy /y Wm5Physics.h ..\SDK\Include
+        copy /y Wm5PhysicsLIB.h ..\SDK\Include
+        copy /y CollisionDetection\*.h ..\SDK\Include
+        copy /y CollisionDetection\*.inl ..\SDK\Include
+        copy /y Fluid\*.h ..\SDK\Include
+        copy /y Fluid\*.inl ..\SDK\Include
+        copy /y Intersection\*.h ..\SDK\Include
+        copy /y LCPSolver\*.h ..\SDK\Include
+        copy /y ParticleSystem\*.h ..\SDK\Include
+        copy /y RigidBody\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
@@ -216,20 +218,22 @@ copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configur
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-copy /y Wm5Physics.h ..\SDK\Include
-copy /y Wm5PhysicsLIB.h ..\SDK\Include
-copy /y CollisionDetection\*.h ..\SDK\Include
-copy /y CollisionDetection\*.inl ..\SDK\Include
-copy /y Fluid\*.h ..\SDK\Include
-copy /y Fluid\*.inl ..\SDK\Include
-copy /y Intersection\*.h ..\SDK\Include
-copy /y LCPSolver\*.h ..\SDK\Include
-copy /y ParticleSystem\*.h ..\SDK\Include
-copy /y RigidBody\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        copy /y Wm5Physics.h ..\SDK\Include
+        copy /y Wm5PhysicsLIB.h ..\SDK\Include
+        copy /y CollisionDetection\*.h ..\SDK\Include
+        copy /y CollisionDetection\*.inl ..\SDK\Include
+        copy /y Fluid\*.h ..\SDK\Include
+        copy /y Fluid\*.inl ..\SDK\Include
+        copy /y Intersection\*.h ..\SDK\Include
+        copy /y LCPSolver\*.h ..\SDK\Include
+        copy /y ParticleSystem\*.h ..\SDK\Include
+        copy /y RigidBody\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
@@ -254,20 +258,22 @@ copy /y "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platfor
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-copy /y Wm5Physics.h ..\SDK\Include
-copy /y Wm5PhysicsLIB.h ..\SDK\Include
-copy /y CollisionDetection\*.h ..\SDK\Include
-copy /y CollisionDetection\*.inl ..\SDK\Include
-copy /y Fluid\*.h ..\SDK\Include
-copy /y Fluid\*.inl ..\SDK\Include
-copy /y Intersection\*.h ..\SDK\Include
-copy /y LCPSolver\*.h ..\SDK\Include
-copy /y ParticleSystem\*.h ..\SDK\Include
-copy /y RigidBody\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        copy /y Wm5Physics.h ..\SDK\Include
+        copy /y Wm5PhysicsLIB.h ..\SDK\Include
+        copy /y CollisionDetection\*.h ..\SDK\Include
+        copy /y CollisionDetection\*.inl ..\SDK\Include
+        copy /y Fluid\*.h ..\SDK\Include
+        copy /y Fluid\*.inl ..\SDK\Include
+        copy /y Intersection\*.h ..\SDK\Include
+        copy /y LCPSolver\*.h ..\SDK\Include
+        copy /y ParticleSystem\*.h ..\SDK\Include
+        copy /y RigidBody\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
@@ -293,20 +299,21 @@ copy /y "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platfor
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-copy /y Wm5Physics.h ..\SDK\Include
-copy /y Wm5PhysicsLIB.h ..\SDK\Include
-copy /y CollisionDetection\*.h ..\SDK\Include
-copy /y CollisionDetection\*.inl ..\SDK\Include
-copy /y Fluid\*.h ..\SDK\Include
-copy /y Fluid\*.inl ..\SDK\Include
-copy /y Intersection\*.h ..\SDK\Include
-copy /y LCPSolver\*.h ..\SDK\Include
-copy /y ParticleSystem\*.h ..\SDK\Include
-copy /y RigidBody\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        copy /y Wm5Physics.h ..\SDK\Include
+        copy /y Wm5PhysicsLIB.h ..\SDK\Include
+        copy /y CollisionDetection\*.h ..\SDK\Include
+        copy /y CollisionDetection\*.inl ..\SDK\Include
+        copy /y Fluid\*.h ..\SDK\Include
+        copy /y Fluid\*.inl ..\SDK\Include
+        copy /y Intersection\*.h ..\SDK\Include
+        copy /y LCPSolver\*.h ..\SDK\Include
+        copy /y ParticleSystem\*.h ..\SDK\Include
+        copy /y RigidBody\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -327,20 +334,21 @@ copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configur
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-copy /y Wm5Physics.h ..\SDK\Include
-copy /y Wm5PhysicsLIB.h ..\SDK\Include
-copy /y CollisionDetection\*.h ..\SDK\Include
-copy /y CollisionDetection\*.inl ..\SDK\Include
-copy /y Fluid\*.h ..\SDK\Include
-copy /y Fluid\*.inl ..\SDK\Include
-copy /y Intersection\*.h ..\SDK\Include
-copy /y LCPSolver\*.h ..\SDK\Include
-copy /y ParticleSystem\*.h ..\SDK\Include
-copy /y RigidBody\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        copy /y Wm5Physics.h ..\SDK\Include
+        copy /y Wm5PhysicsLIB.h ..\SDK\Include
+        copy /y CollisionDetection\*.h ..\SDK\Include
+        copy /y CollisionDetection\*.inl ..\SDK\Include
+        copy /y Fluid\*.h ..\SDK\Include
+        copy /y Fluid\*.inl ..\SDK\Include
+        copy /y Intersection\*.h ..\SDK\Include
+        copy /y LCPSolver\*.h ..\SDK\Include
+        copy /y ParticleSystem\*.h ..\SDK\Include
+        copy /y RigidBody\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
@@ -361,20 +369,22 @@ copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configur
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-copy /y Wm5Physics.h ..\SDK\Include
-copy /y Wm5PhysicsLIB.h ..\SDK\Include
-copy /y CollisionDetection\*.h ..\SDK\Include
-copy /y CollisionDetection\*.inl ..\SDK\Include
-copy /y Fluid\*.h ..\SDK\Include
-copy /y Fluid\*.inl ..\SDK\Include
-copy /y Intersection\*.h ..\SDK\Include
-copy /y LCPSolver\*.h ..\SDK\Include
-copy /y ParticleSystem\*.h ..\SDK\Include
-copy /y RigidBody\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        copy /y Wm5Physics.h ..\SDK\Include
+        copy /y Wm5PhysicsLIB.h ..\SDK\Include
+        copy /y CollisionDetection\*.h ..\SDK\Include
+        copy /y CollisionDetection\*.inl ..\SDK\Include
+        copy /y Fluid\*.h ..\SDK\Include
+        copy /y Fluid\*.inl ..\SDK\Include
+        copy /y Intersection\*.h ..\SDK\Include
+        copy /y LCPSolver\*.h ..\SDK\Include
+        copy /y ParticleSystem\*.h ..\SDK\Include
+        copy /y RigidBody\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
@@ -399,20 +409,22 @@ copy /y "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platfor
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-copy /y Wm5Physics.h ..\SDK\Include
-copy /y Wm5PhysicsLIB.h ..\SDK\Include
-copy /y CollisionDetection\*.h ..\SDK\Include
-copy /y CollisionDetection\*.inl ..\SDK\Include
-copy /y Fluid\*.h ..\SDK\Include
-copy /y Fluid\*.inl ..\SDK\Include
-copy /y Intersection\*.h ..\SDK\Include
-copy /y LCPSolver\*.h ..\SDK\Include
-copy /y ParticleSystem\*.h ..\SDK\Include
-copy /y RigidBody\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-copy /y "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        copy /y Wm5Physics.h ..\SDK\Include
+        copy /y Wm5PhysicsLIB.h ..\SDK\Include
+        copy /y CollisionDetection\*.h ..\SDK\Include
+        copy /y CollisionDetection\*.inl ..\SDK\Include
+        copy /y Fluid\*.h ..\SDK\Include
+        copy /y Fluid\*.inl ..\SDK\Include
+        copy /y Intersection\*.h ..\SDK\Include
+        copy /y LCPSolver\*.h ..\SDK\Include
+        copy /y ParticleSystem\*.h ..\SDK\Include
+        copy /y RigidBody\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        copy /y "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>

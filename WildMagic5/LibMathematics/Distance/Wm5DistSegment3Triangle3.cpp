@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/01)
+// File Version: 5.0.2 (2012/11/22)
 
 #include "Wm5MathematicsPCH.h"
 #include "Wm5DistSegment3Triangle3.h"
@@ -44,8 +44,8 @@ Real DistSegment3Triangle3<Real>::Get ()
 template <typename Real>
 Real DistSegment3Triangle3<Real>::GetSquared ()
 {
-    DistLine3Triangle3<Real> queryLT(Line3<Real>(mSegment->Center,
-        mSegment->Direction), *mTriangle);
+    Line3<Real> line(mSegment->Center, mSegment->Direction);
+    DistLine3Triangle3<Real> queryLT(line, *mTriangle);
     Real sqrDist = queryLT.GetSquared();
     mSegmentParameter = queryLT.GetLineParameter();
 

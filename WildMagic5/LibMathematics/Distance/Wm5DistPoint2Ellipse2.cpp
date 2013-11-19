@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.2 (2011/06/18)
+// File Version: 5.0.3 (2013/01/03)
 
 #include "Wm5MathematicsPCH.h"
 #include "Wm5DistPoint2Ellipse2.h"
@@ -207,7 +207,7 @@ Real DistPoint2Ellipse2<Real>::SqrDistance (const Real e[2], const Real y[2],
     for (i = 0; i < 2; ++i)
     {
         j = invpermute[i];
-        if (reflect[j])
+        if (reflect[i])
         {
             locX[j] = -locX[j];
         }

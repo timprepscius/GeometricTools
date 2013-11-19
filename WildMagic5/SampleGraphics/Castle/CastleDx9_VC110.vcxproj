@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Castle</ProjectName>
+    <ProjectGuid>{1389be49-b164-4a68-9552-767f8d6f16b4}</ProjectGuid>
+    <RootNamespace>Castle</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">_Output\$(PlatformToolset)\$(Platform)\Dx9$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\SDK\Include;$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WM5_USE_DX9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Wm5CoreD.lib;Wm5MathematicsD.lib;Wm5ImagicsD.lib;Wm5PhysicsD.lib;Wm5Dx9GraphicsD.lib;Wm5Dx9ApplicationsD.lib;d3d9.lib;d3dx9.lib;dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration);$(DXSDK_DIR)\Lib\x86</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\SDK\Include;$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WM5_USE_DX9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Wm5CoreD.lib;Wm5MathematicsD.lib;Wm5ImagicsD.lib;Wm5PhysicsD.lib;Wm5Dx9GraphicsD.lib;Wm5Dx9ApplicationsD.lib;d3d9.lib;d3dx9.lib;dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration);$(DXSDK_DIR)\Lib\x64</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\SDK\Include;$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WM5_CORE_DLL_IMPORT;WM5_MATHEMATICS_DLL_IMPORT;WM5_IMAGICS_DLL_IMPORT;WM5_PHYSICS_DLL_IMPORT;WM5_GRAPHICS_DLL_IMPORT;WM5_USE_DX9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Wm5CoreD.lib;Wm5MathematicsD.lib;Wm5ImagicsD.lib;Wm5PhysicsD.lib;Wm5Dx9GraphicsD.lib;Wm5Dx9ApplicationsD.lib;d3d9.lib;d3dx9.lib;dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration);$(DXSDK_DIR)\Lib\x86</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\SDK\Include;$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WM5_CORE_DLL_IMPORT;WM5_MATHEMATICS_DLL_IMPORT;WM5_IMAGICS_DLL_IMPORT;WM5_PHYSICS_DLL_IMPORT;WM5_GRAPHICS_DLL_IMPORT;WM5_USE_DX9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Wm5CoreD.lib;Wm5MathematicsD.lib;Wm5ImagicsD.lib;Wm5PhysicsD.lib;Wm5Dx9GraphicsD.lib;Wm5Dx9ApplicationsD.lib;d3d9.lib;d3dx9.lib;dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration);$(DXSDK_DIR)\Lib\x64</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\SDK\Include;$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WM5_USE_DX9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Wm5Core.lib;Wm5Mathematics.lib;Wm5Imagics.lib;Wm5Physics.lib;Wm5Dx9Graphics.lib;Wm5Dx9Applications.lib;d3d9.lib;d3dx9.lib;dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration);$(DXSDK_DIR)\Lib\x86</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\SDK\Include;$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WM5_USE_DX9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Wm5Core.lib;Wm5Mathematics.lib;Wm5Imagics.lib;Wm5Physics.lib;Wm5Dx9Graphics.lib;Wm5Dx9Applications.lib;d3d9.lib;d3dx9.lib;dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration);$(DXSDK_DIR)\Lib\x64</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\SDK\Include;$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WM5_CORE_DLL_IMPORT;WM5_MATHEMATICS_DLL_IMPORT;WM5_IMAGICS_DLL_IMPORT;WM5_PHYSICS_DLL_IMPORT;WM5_GRAPHICS_DLL_IMPORT;WM5_USE_DX9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Wm5Core.lib;Wm5Mathematics.lib;Wm5Imagics.lib;Wm5Physics.lib;Wm5Dx9Graphics.lib;Wm5Dx9Applications.lib;d3d9.lib;d3dx9.lib;dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration);$(DXSDK_DIR)\Lib\x86</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\SDK\Include;$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WM5_CORE_DLL_IMPORT;WM5_MATHEMATICS_DLL_IMPORT;WM5_IMAGICS_DLL_IMPORT;WM5_PHYSICS_DLL_IMPORT;WM5_GRAPHICS_DLL_IMPORT;WM5_USE_DX9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Wm5Core.lib;Wm5Mathematics.lib;Wm5Imagics.lib;Wm5Physics.lib;Wm5Dx9Graphics.lib;Wm5Dx9Applications.lib;d3d9.lib;d3dx9.lib;dxerr.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration);$(DXSDK_DIR)\Lib\x64</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Castle.cpp" />
+    <ClCompile Include="CreateMeshes.cpp" />
+    <ClCompile Include="DLitMatTexEffect.cpp" />
+    <ClCompile Include="LoadData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Castle.h" />
+    <ClInclude Include="DLitMatTexEffect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Geometry\Barrel01.txt" />
+    <None Include="Geometry\BarrelRack01.txt" />
+    <None Include="Geometry\BarrelRack03.txt" />
+    <None Include="Geometry\Bench01.txt" />
+    <None Include="Geometry\Box01.txt" />
+    <None Include="Geometry\Box02.txt" />
+    <None Include="Geometry\Bridge.txt" />
+    <None Include="Geometry\Bunk01.txt" />
+    <None Include="Geometry\CeilingLight01.txt" />
+    <None Include="Geometry\ChestBottom01.txt" />
+    <None Include="Geometry\ChestTop01.txt" />
+    <None Include="Geometry\Cylinder02.txt" />
+    <None Include="Geometry\Cylinder02NCL.txt" />
+    <None Include="Geometry\Cylinder03.txt" />
+    <None Include="Geometry\Cylinder06.txt" />
+    <None Include="Geometry\Door.txt" />
+    <None Include="Geometry\DoorFrame01.txt" />
+    <None Include="Geometry\DoorFrame53.txt" />
+    <None Include="Geometry\DoorFrame61.txt" />
+    <None Include="Geometry\DoorFrame62.txt" />
+    <None Include="Geometry\DrawBridge.txt" />
+    <None Include="Geometry\Exterior.txt" />
+    <None Include="Geometry\FrontHall.txt" />
+    <None Include="Geometry\FrontRamp.txt" />
+    <None Include="Geometry\LargePort.txt" />
+    <None Include="Geometry\MainGate.txt" />
+    <None Include="Geometry\MainGate01.txt" />
+    <None Include="Geometry\Mug.txt" />
+    <None Include="Geometry\QuadPatch01.txt" />
+    <None Include="Geometry\Rope.txt" />
+    <None Include="Geometry\SimpleChair01.txt" />
+    <None Include="Geometry\SkyDome.txt" />
+    <None Include="Geometry\SmallPort.txt" />
+    <None Include="Geometry\Sphere01.txt" />
+    <None Include="Geometry\SquareTable01.txt" />
+    <None Include="Geometry\Table01.txt" />
+    <None Include="Geometry\Terrain.txt" />
+    <None Include="Geometry\Tube01.txt" />
+    <None Include="Geometry\Wall01.txt" />
+    <None Include="Geometry\Wall02.txt" />
+    <None Include="Geometry\WallTurret01.txt" />
+    <None Include="Geometry\WallTurret02.txt" />
+    <None Include="Geometry\Water.txt" />
+    <None Include="Geometry\Water2.txt" />
+    <None Include="Geometry\WoodShield01.txt" />
+    <None Include="Shaders\DLitMatTex.fx" />
+    <None Include="Shaders\DLitMatTex.wmfx" />
+    <None Include="Textures\barrel.wmtf" />
+    <None Include="Textures\barrelbase.wmtf" />
+    <None Include="Textures\blanket.wmtf" />
+    <None Include="Textures\bunkwood.wmtf" />
+    <None Include="Textures\chest01.wmtf" />
+    <None Include="Textures\door.wmtf" />
+    <None Include="Textures\doorframe.wmtf" />
+    <None Include="Textures\floor02.wmtf" />
+    <None Include="Textures\gravel01.wmtf" />
+    <None Include="Textures\gravel02.wmtf" />
+    <None Include="Textures\gravel_cap_ne.wmtf" />
+    <None Include="Textures\gravel_cap_nw.wmtf" />
+    <None Include="Textures\gravel_corner_ne.wmtf" />
+    <None Include="Textures\gravel_corner_nw.wmtf" />
+    <None Include="Textures\gravel_corner_se.wmtf" />
+    <None Include="Textures\gravel_corner_sw.wmtf" />
+    <None Include="Textures\gravel_side_n.wmtf" />
+    <None Include="Textures\gravel_side_s.wmtf" />
+    <None Include="Textures\gravel_side_w.wmtf" />
+    <None Include="Textures\hugestone01.wmtf" />
+    <None Include="Textures\hugestone02.wmtf" />
+    <None Include="Textures\keystone.wmtf" />
+    <None Include="Textures\largerstone01.wmtf" />
+    <None Include="Textures\largerstone02.wmtf" />
+    <None Include="Textures\largestone01.wmtf" />
+    <None Include="Textures\largeststone01.wmtf" />
+    <None Include="Textures\largeststone02.wmtf" />
+    <None Include="Textures\metal01.wmtf" />
+    <None Include="Textures\mug.wmtf" />
+    <None Include="Textures\outwall03.wmtf" />
+    <None Include="Textures\port.wmtf" />
+    <None Include="Textures\ramp03.wmtf" />
+    <None Include="Textures\river01.wmtf" />
+    <None Include="Textures\river02.wmtf" />
+    <None Include="Textures\rooftemp.wmtf" />
+    <None Include="Textures\rope.wmtf" />
+    <None Include="Textures\shield01.wmtf" />
+    <None Include="Textures\skyline.wmtf" />
+    <None Include="Textures\steps.wmtf" />
+    <None Include="Textures\stone01.wmtf" />
+    <None Include="Textures\stone02.wmtf" />
+    <None Include="Textures\stone03.wmtf" />
+    <None Include="Textures\tileplanks.wmtf" />
+    <None Include="Textures\torchhead.wmtf" />
+    <None Include="Textures\torchwood.wmtf" />
+    <None Include="Textures\wall02.wmtf" />
+    <None Include="Textures\walllightmap.wmtf" />
+    <None Include="Textures\woodceiling.wmtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LibApplications\LibDx9Applications_VC110.vcxproj">
+      <Project>{d070aff0-e688-4e38-9c89-ab016371b618}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibCore\LibCore_VC110.vcxproj">
+      <Project>{4915b5b4-800b-40e2-a46b-703f8f38e066}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibGraphics\LibDx9Graphics_VC110.vcxproj">
+      <Project>{63500b2e-1745-47a8-a4cc-ef1ab127c8a3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibImagics\LibImagics_VC110.vcxproj">
+      <Project>{280ab789-07ff-49fd-9fdd-4459ac601d24}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibMathematics\LibMathematics_VC110.vcxproj">
+      <Project>{d7b74341-c2e2-470b-a375-3e97ceca3457}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LibPhysics\LibPhysics_VC110.vcxproj">
+      <Project>{31c32484-5292-4bd4-a89a-4fb089bb047f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

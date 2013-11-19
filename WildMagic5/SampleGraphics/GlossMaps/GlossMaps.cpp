@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "GlossMaps.h"
 #include "GlossMapEffect.h"
@@ -97,7 +97,7 @@ void GlossMaps::CreateScene ()
     // Create vertex and index buffers to be shared by two meshes.
     VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1,  // normals
         VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT2, 0);
     int vstride = vformat->GetStride();
 
@@ -108,10 +108,10 @@ void GlossMaps::CreateScene ()
     vba.Position<Float3>(1) = Float3(-0.5f, 0.0f,  0.5f);
     vba.Position<Float3>(2) = Float3( 0.5f, 0.0f,  0.5f);
     vba.Position<Float3>(3) = Float3( 0.5f, 0.0f, -0.5f);
-    vba.Normal<Float3>(0) = yVector;
-    vba.Normal<Float3>(1) = yVector;
-    vba.Normal<Float3>(2) = yVector;
-    vba.Normal<Float3>(3) = yVector;
+    vba.TCoord<Float3>(1, 0) = yVector;
+    vba.TCoord<Float3>(1, 1) = yVector;
+    vba.TCoord<Float3>(1, 2) = yVector;
+    vba.TCoord<Float3>(1, 3) = yVector;
     vba.TCoord<Float2>(0, 0) = Float2(1.0f, 0.0f);
     vba.TCoord<Float2>(0, 1) = Float2(1.0f, 1.0f);
     vba.TCoord<Float2>(0, 2) = Float2(0.0f, 1.0f);

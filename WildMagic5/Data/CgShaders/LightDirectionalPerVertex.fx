@@ -1,7 +1,7 @@
 void v_LightDirectionalPerVertex
 (
     in float3 modelPosition : POSITION,
-    in float3 modelNormal : NORMAL,
+    in float3 modelNormal : TEXCOORD1,
     out float4 clipPosition : POSITION,
     out float4 vertexColor : COLOR,
     uniform float4x4 PVWMatrix,

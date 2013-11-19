@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "FoucaultPendulum.h"
 
@@ -178,9 +178,12 @@ Polypoint* FoucaultPendulum::CreatePath ()
 //----------------------------------------------------------------------------
 Node* FoucaultPendulum::CreatePendulum ()
 {
-    VertexFormat* vformat = VertexFormat::Create(2,
+    // The normals are duplicated to texture coordinates to avoid the AMD
+    // lighting problems due to use of pre-OpenGL2.x extensions.
+    VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0);
+        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1);  // normals
 
     StandardMesh sm(vformat);
 
@@ -217,6 +220,11 @@ Node* FoucaultPendulum::CreatePendulum ()
         vba.Position<Vector3f>(i)[2] -= 16.0f;
     }
     bulb->UpdateModelSpace(Visual::GU_NORMALS);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Float3>(1, i) = vba.Normal<Float3>(i);
+    }
+    mRenderer->Update(bulb->GetVertexBuffer());
 
     vba.ApplyTo(rod);
     numVertices = vba.GetNumVertices();
@@ -225,6 +233,11 @@ Node* FoucaultPendulum::CreatePendulum ()
         vba.Position<Vector3f>(i)[2] -= 16.0f;
     }
     rod->UpdateModelSpace(Visual::GU_NORMALS);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Float3>(1, i) = vba.Normal<Float3>(i);
+    }
+    mRenderer->Update(rod->GetVertexBuffer());
 
     // Group the objects into a single subtree.
     mPendulum = new0 Node();
@@ -354,6 +367,8 @@ void FoucaultPendulum::PhysicsTick ()
     {
         mNextPoint = 0;
     }
+    mPath->UpdateModelSpace(Visual::GU_MODEL_BOUND_ONLY);
+    mPath->Update();
 
     mRenderer->Update(mPath->GetVertexBuffer());
 }

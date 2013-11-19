@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "PlanarShadows.h"
 
@@ -40,6 +40,7 @@ bool PlanarShadows::OnInitialize ()
     // Initial update of objects.
     mScene->Update();
     mBiped->Update(mUpdateTime);
+    CopyNormalToTCoord1(mBiped);
 
     // Initial culling of scene.
     mSceneCuller.SetCamera(mCamera);
@@ -78,6 +79,7 @@ void PlanarShadows::OnIdle ()
     {
         mScene->Update();
         mBiped->Update(mUpdateTime);
+        CopyNormalToTCoord1(mBiped);
         mSceneCuller.ComputeVisibleSet(mScene);
         mBipedCuller.ComputeVisibleSet(mBiped);
     }
@@ -112,10 +114,12 @@ bool PlanarShadows::OnKeyDown (unsigned char key, int x, int y)
     case 'g':
         mUpdateTime += 0.01;
         mBiped->Update(mUpdateTime);
+        CopyNormalToTCoord1(mBiped);
         return true;
     case 'G':
         mUpdateTime = 0.0;
         mBiped->Update(mUpdateTime);
+        CopyNormalToTCoord1(mBiped);
         return true;
     }
 
@@ -185,7 +189,7 @@ void PlanarShadows::CreateScene ()
 void PlanarShadows::LoadBiped ()
 {
 #ifdef WM5_LITTLE_ENDIAN
-    std::string path = Environment::GetPathR("SkinnedBipedPN.wmof");
+    std::string path = Environment::GetPathR("SkinnedBipedPNTC1.wmof");
 #else
     std::string path = Environment::GetPathR("SkinnedBipedPN.be.wmof");
 #endif
@@ -282,5 +286,32 @@ void PlanarShadows::CreatePlanarShadow ()
     mPSEffect->SetPlane(1, mPlane1);
     mPSEffect->SetProjector(1, projector);
     mPSEffect->SetShadowColor(1, shadowColor);
+}
+//----------------------------------------------------------------------------
+void PlanarShadows::CopyNormalToTCoord1 (Object* object)
+{
+    TriMesh* mesh = DynamicCast<TriMesh>(object);
+    if (mesh)
+    {
+        VertexBufferAccessor vba(mesh);
+        for (int i = 0; i < vba.GetNumVertices(); ++i)
+        {
+            vba.TCoord<Vector3f>(1, i) = vba.Normal<Vector3f>(i);
+        }
+        mRenderer->Update(mesh->GetVertexBuffer());
+    }
+
+    Node* node = DynamicCast<Node>(object);
+    if (node)
+    {
+        for (int i = 0; i < node->GetNumChildren(); ++i)
+        {
+            Spatial* child = node->GetChild(i);
+            if (child)
+            {
+                CopyNormalToTCoord1(child);
+            }
+        }
+    }
 }
 //----------------------------------------------------------------------------

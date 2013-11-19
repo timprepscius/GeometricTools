@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Console Source Files">
+      <UniqueIdentifier>{822e5f46-18c3-4f1c-bf40-29b40cf5cf0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files">
+      <UniqueIdentifier>{b78b5e8e-2df1-4924-94b7-ce3b6605372b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader Files">
+      <UniqueIdentifier>{3bdee1d0-e13e-48a4-b134-81e14abd7af1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NonlocalBlowup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\CpuLocalSolver1.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\CpuLocalSolver2.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\CpuLocalSolver3.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\CpuNonlocalSolver1.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\CpuNonlocalSolver2.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\CpuNonlocalSolver3.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\GpuLocalSolver1.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\GpuLocalSolver2.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\GpuLocalSolver3.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\GpuNonlocalSolver1.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\GpuNonlocalSolver2.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\GpuNonlocalSolver3.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsoleSource\RunConsole.cpp">
+      <Filter>Console Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NonlocalSolver2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveBMP32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplacementEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuAvrPyramid2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuEvaluate2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuMaxPyramid2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuPdeSolver1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuPdeSolver2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuPdeSolver3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GpuPyramid2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NonlocalBlowup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\CpuLocalSolver1.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\CpuLocalSolver2.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\CpuLocalSolver3.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\CpuNonlocalSolver1.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\CpuNonlocalSolver2.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\CpuNonlocalSolver3.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\GpuLocalSolver1.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\GpuLocalSolver2.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\GpuLocalSolver3.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\GpuNonlocalSolver1.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\GpuNonlocalSolver2.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleSource\GpuNonlocalSolver3.h">
+      <Filter>Console Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NonlocalSolver2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelBGRA8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveBMP32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpuPdeSolver1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpuPdeSolver2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpuPdeSolver3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplacementEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FpuSupport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuAvrPyramid2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuEvaluate2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuMaxPyramid2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuPdeSolver1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuPdeSolver2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuPdeSolver3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GpuPyramid2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Image3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Domain.bmp">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Domain.wmtf">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Grid.bmp">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Data\Grid.wmtf">
+      <Filter>Data Files</Filter>
+    </None>
+    <None Include="Shaders\Displacement.fx">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="ComprehensiveTiming.txt" />
+    <None Include="CpuPdeSolver1.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="CpuPdeSolver2.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="CpuPdeSolver3.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Image.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Image1.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Image2.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Image3.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

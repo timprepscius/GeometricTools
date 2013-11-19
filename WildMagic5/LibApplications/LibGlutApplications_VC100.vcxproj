@@ -91,17 +91,18 @@
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Application.h ..\SDK\Include
-xcopy /DY Wm5Command.h ..\SDK\Include
-xcopy /DY Wm5ConsoleApplication.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication.inl ..\SDK\Include
-xcopy /DY Wm5WindowApplication2.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication3.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Application.h ..\SDK\Include
+        xcopy /DY Wm5Command.h ..\SDK\Include
+        xcopy /DY Wm5ConsoleApplication.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication.inl ..\SDK\Include
+        xcopy /DY Wm5WindowApplication2.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication3.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
@@ -122,17 +123,18 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Application.h ..\SDK\Include
-xcopy /DY Wm5Command.h ..\SDK\Include
-xcopy /DY Wm5ConsoleApplication.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication.inl ..\SDK\Include
-xcopy /DY Wm5WindowApplication2.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication3.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Application.h ..\SDK\Include
+        xcopy /DY Wm5Command.h ..\SDK\Include
+        xcopy /DY Wm5ConsoleApplication.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication.inl ..\SDK\Include
+        xcopy /DY Wm5WindowApplication2.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication3.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -153,17 +155,18 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Application.h ..\SDK\Include
-xcopy /DY Wm5Command.h ..\SDK\Include
-xcopy /DY Wm5ConsoleApplication.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication.inl ..\SDK\Include
-xcopy /DY Wm5WindowApplication2.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication3.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Application.h ..\SDK\Include
+        xcopy /DY Wm5Command.h ..\SDK\Include
+        xcopy /DY Wm5ConsoleApplication.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication.inl ..\SDK\Include
+        xcopy /DY Wm5WindowApplication2.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication3.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
@@ -184,17 +187,18 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Application.h ..\SDK\Include
-xcopy /DY Wm5Command.h ..\SDK\Include
-xcopy /DY Wm5ConsoleApplication.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication.inl ..\SDK\Include
-xcopy /DY Wm5WindowApplication2.h ..\SDK\Include
-xcopy /DY Wm5WindowApplication3.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Application.h ..\SDK\Include
+        xcopy /DY Wm5Command.h ..\SDK\Include
+        xcopy /DY Wm5ConsoleApplication.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication.inl ..\SDK\Include
+        xcopy /DY Wm5WindowApplication2.h ..\SDK\Include
+        xcopy /DY Wm5WindowApplication3.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/03/01)
 
 #include "Wm5GraphicsPCH.h"
 #include "Wm5Triangles.h"
@@ -345,41 +345,27 @@ void Triangles::UpdateModelTangentsUseTCoords (VertexBufferAccessor& vba)
     {
         // Get the triangle vertices' positions, normals, tangents, and
         // texture coordinates.
-        int v0, v1, v2;
-        if (!GetTriangle(i, v0, v1, v2))
+        int v[3];
+        if (!GetTriangle(i, v[0], v[1], v[2]))
         {
             continue;
         }
 
-        APoint locPosition[3] =
+        APoint locPosition[3];
+        AVector locNormal[3], locTangent[3];
+        Float2 locTCoord[2];
+        int curr;
+        for (curr = 0; curr < 3; ++curr)
         {
-            vba.Position<Float3>(v0),
-            vba.Position<Float3>(v1),
-            vba.Position<Float3>(v2)
-        };
+            int k = v[curr];
+            locPosition[curr] = vba.Position<Float3>(k);
+            locNormal[curr] = vba.Normal<Float3>(k);
+            locTangent[curr] = (hasTangent ? vba.Tangent<Float3>(k) :
+                vba.Binormal<Float3>(k));
+            locTCoord[curr] = vba.TCoord<Float2>(0, k);
+        }
 
-        AVector locNormal[3] =
-        {
-            vba.Normal<Float3>(v0),
-            vba.Normal<Float3>(v1),
-            vba.Normal<Float3>(v2)
-        };
-
-        AVector locTangent[3] =
-        {
-            (hasTangent ? vba.Tangent<Float3>(v0) : vba.Binormal<Float3>(v0)),
-            (hasTangent ? vba.Tangent<Float3>(v1) : vba.Binormal<Float3>(v1)),
-            (hasTangent ? vba.Tangent<Float3>(v2) : vba.Binormal<Float3>(v2))
-        };
-
-        Float2 locTCoord[3] =
-        {
-            vba.TCoord<Float2>(0, v0),
-            vba.TCoord<Float2>(0, v1),
-            vba.TCoord<Float2>(0, v2)
-        };
-
-        for (int curr = 0; curr < 3; ++curr)
+        for (curr = 0; curr < 3; ++curr)
         {
             Float3 currLocTangent = (Float3)locTangent[curr];
             if (currLocTangent != zero)
@@ -405,17 +391,18 @@ void Triangles::UpdateModelTangentsUseTCoords (VertexBufferAccessor& vba)
             // Compute the bitangent B, another tangent perpendicular to T.
             AVector binvec = norvec.UnitCross(tanvec);
 
+            int k = v[curr];
             if (vba.HasTangent())
             {
-                locTangent[curr] = tanvec;
+                locTangent[k] = tanvec;
                 if (vba.HasBinormal())
                 {
-                    vba.Binormal<Float3>(curr) = binvec;
+                    vba.Binormal<Float3>(k) = binvec;
                 }
             }
             else
             {
-                vba.Binormal<Float3>(curr) = tanvec;
+                vba.Binormal<Float3>(k) = tanvec;
             }
         }
     }

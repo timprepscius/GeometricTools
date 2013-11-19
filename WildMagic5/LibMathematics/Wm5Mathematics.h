@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.4 (2011/07/09)
+// File Version: 5.0.5 (2013/03/17)
 
 #ifndef WM5MATHEMATICS_H
 #define WM5MATHEMATICS_H
@@ -156,6 +156,7 @@
 #include "Wm5DistLine2Segment2.h"
 #include "Wm5DistPoint2Box2.h"
 #include "Wm5DistPoint2Ellipse2.h"
+#include "Wm5DistPoint2Hyperbola2.h"
 #include "Wm5DistPoint2Line2.h"
 #include "Wm5DistPoint2Ray2.h"
 #include "Wm5DistPoint2Segment2.h"

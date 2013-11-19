@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.2 (2012/05/09)
+// File Version: 5.0.3 (2013/02/06)
 
 #include "Wm5MathematicsPCH.h"
 #include "Wm5IntrSegment3Triangle3.h"
@@ -65,6 +65,7 @@ bool IntrSegment3Triangle3<Real>::Test ()
         // Segment and triangle are parallel, call it a "no intersection"
         // even if the segment does intersect.
         mIntersectionType = IT_EMPTY;
+        mQuantity = 0;
         return false;
     }
 
@@ -83,6 +84,7 @@ bool IntrSegment3Triangle3<Real>::Test ()
                 {
                     // Segment intersects triangle.
                     mIntersectionType = IT_POINT;
+                    mQuantity = 1;
                     return true;
                 }
                 // else: |t| > extent, no intersection
@@ -94,6 +96,7 @@ bool IntrSegment3Triangle3<Real>::Test ()
     // else: b1 < 0, no intersection
 
     mIntersectionType = IT_EMPTY;
+    mQuantity = 0;
     return false;
 }
 //----------------------------------------------------------------------------
@@ -127,6 +130,7 @@ bool IntrSegment3Triangle3<Real>::Find ()
         // Segment and triangle are parallel, call it a "no intersection"
         // even if the segment does intersect.
         mIntersectionType = IT_EMPTY;
+        mQuantity = 0;
         return false;
     }
 
@@ -149,6 +153,11 @@ bool IntrSegment3Triangle3<Real>::Find ()
                     mTriBary1 = DdQxE2*inv;
                     mTriBary2 = DdE1xQ*inv;
                     mTriBary0 = (Real)1 - mTriBary1 - mTriBary2;
+
+                    mIntersectionType = IT_POINT;
+                    mQuantity = 1;
+                    mPoint[0] = mSegment->Center + mSegmentParameter *
+                        mSegment->Direction;
                     return true;
                 }
                 // else: |t| > extent, no intersection
@@ -160,6 +169,7 @@ bool IntrSegment3Triangle3<Real>::Find ()
     // else: b1 < 0, no intersection
 
     mIntersectionType = IT_EMPTY;
+    mQuantity = 0;
     return false;
 }
 //----------------------------------------------------------------------------

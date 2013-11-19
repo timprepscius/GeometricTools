@@ -9,7 +9,7 @@ sampler2D DiffuseSampler = sampler_state
 void v_DLitMatTex
 (
     in float3 modelPosition : POSITION,
-    in float3 modelNormal : NORMAL,
+    in float3 modelNormal : TEXCOORD2,
     in float2 modelTCoord : TEXCOORD0,
     out float4 clipPosition : POSITION,
     out float3 vertexPosition : TEXCOORD0,

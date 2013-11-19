@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/01)
+// File Version: 5.0.2 (2012/02/06)
 
 #ifndef WM5INTRSEGMENT3TRIANGLE3_H
 #define WM5INTRSEGMENT3TRIANGLE3_H
@@ -52,6 +52,11 @@ public:
     virtual bool Find (Real tmax, const Vector3<Real>& velocity0,
         const Vector3<Real>& velocity1);
 
+    // NOTE: These functions were intended to be called after the dynamic
+    // find-intersection query.  For the 'bool Find()' query, it was intended
+    // that you use GetSegmentParameter() or the three GetTriBary?() functions
+    // to compute the contact point yourself.  Now the functions also support
+    // the 'bool Find()' query.
     int GetQuantity () const;
     const Vector3<Real>& GetPoint (int i) const;
 

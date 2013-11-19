@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.0 (2010/01/01)
+// File Version: 5.0.1 (2013/07/14)
 
 #include "Lights.h"
 
@@ -276,29 +276,53 @@ void Lights::CreateScene ()
     mInstance[2][0][1] = effectSV->CreateInstance(mLight[2][0], gold);
     mInstance[2][1][1] = effectSP->CreateInstance(mLight[2][1], gold);
 
-    // Create the objects.
-    VertexFormat* vformat = VertexFormat::Create(2,
+    // Create the objects.  The normals are duplicated to texture
+    // coordinates to avoid the AMD lighting problems due to use of
+    // pre-OpenGL2.x extensions.
+    VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0);
+        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1);
 
     StandardMesh sm(vformat);
+    VertexBufferAccessor vba;
 
     mPlane0 = sm.Rectangle(128, 128, 8.0f, 8.0f);
+    vba.ApplyTo(mPlane0);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Float3>(1, i) = vba.Normal<Float3>(i);
+    }
     mPlane0->LocalTransform.SetTranslate(APoint(0.0f, -8.0f, 0.0f));
     mPlane0->SetEffectInstance(mInstance[0][0][0]);
     mScene->AttachChild(mPlane0);
 
     mSphere0 = sm.Sphere(64, 64, 2.0f);
+    vba.ApplyTo(mSphere0);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Float3>(1, i) = vba.Normal<Float3>(i);
+    }
     mSphere0->LocalTransform.SetTranslate(APoint(0.0f, -8.0f, 2.0f));
     mSphere0->SetEffectInstance(mInstance[0][0][1]);
     mScene->AttachChild(mSphere0);
 
     mPlane1 = sm.Rectangle(128, 128, 8.0f, 8.0f);
+    vba.ApplyTo(mPlane1);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Float3>(1, i) = vba.Normal<Float3>(i);
+    }
     mPlane1->LocalTransform.SetTranslate(APoint(0.0f, +8.0f, 0.0f));
     mPlane1->SetEffectInstance(mInstance[0][1][0]);
     mScene->AttachChild(mPlane1);
 
     mSphere1 = sm.Sphere(64, 64, 2.0f);
+    vba.ApplyTo(mSphere1);
+    for (int i = 0; i < vba.GetNumVertices(); ++i)
+    {
+        vba.TCoord<Float3>(1, i) = vba.Normal<Float3>(i);
+    }
     mSphere1->LocalTransform.SetTranslate(APoint(0.0f, +8.0f, 2.0f));
     mSphere1->SetEffectInstance(mInstance[0][1][1]);
     mScene->AttachChild(mSphere1);

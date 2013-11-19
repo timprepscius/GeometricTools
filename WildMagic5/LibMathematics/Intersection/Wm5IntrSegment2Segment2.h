@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/01)
+// File Version: 5.0.2 (2012/11/03)
 
 #ifndef WM5INTRSEGMENT2SEGMENT2_H
 #define WM5INTRSEGMENT2SEGMENT2_H
@@ -42,6 +42,25 @@ public:
     int GetQuantity () const;
     const Vector2<Real>& GetPoint () const;
 
+    // The intersection testing uses the center-extent form for line segments.
+    // If you start with endpoints (Vector2<Real>) and create Segment2<Real>
+    // objects, the conversion to center-extent form can contain small
+    // numerical round-off errors.  Testing for the intersection of two
+    // segments that share an endpoint might lead to a failure due to the
+    // round-off errors.  To allow for this, you may specify a small positive
+    // threshold that slightly enlarges the intervals for the segments.  The
+    // default value is zero.
+    void SetIntervalThreshold (Real intervalThreshold);
+    Real GetIntervalThreshold () const;
+
+    // The computation for determining whether the segments are parallel
+    // might contain small floating-point round-off errors.  The algorithm
+    // reduces to testing whether a dot product is zero or nonzero.  You may
+    // specify a small positive threshold to adjust the test (dot == 0) to
+    // (fabs(dot) > 0).  The default threshold is zero.
+    void SetDotThreshold (Real dotThreshold);
+    Real GetDotThreshold () const;
+
 private:
     using Intersector<Real,Vector2<Real> >::IT_EMPTY;
     using Intersector<Real,Vector2<Real> >::IT_POINT;
@@ -58,6 +77,12 @@ private:
     // Information about the intersection set.
     int mQuantity;
     Vector2<Real> mPoint;
+
+    // See the comments before {Set,Get}IntervalThreshold.
+    Real mIntervalThreshold;
+
+    // See the comments before {Set,Get}DotThreshold.
+    Real mDotThreshold;
 };
 
 typedef IntrSegment2Segment2<float> IntrSegment2Segment2f;

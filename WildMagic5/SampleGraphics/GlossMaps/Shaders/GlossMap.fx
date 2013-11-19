@@ -9,7 +9,7 @@ sampler2D BaseSampler = sampler_state
 void v_GlossMap
 (
     in float3 modelPosition : POSITION,
-    in float3 modelNormal : NORMAL,
+    in float3 modelNormal : TEXCOORD1,
     in float2 modelTCoord : TEXCOORD0,
     out float4 clipPosition : POSITION,
     out float3 emsAmbDiffColor : COLOR,

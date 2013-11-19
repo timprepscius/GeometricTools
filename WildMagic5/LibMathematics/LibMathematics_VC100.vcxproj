@@ -149,35 +149,36 @@
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Mathematics.h ..\SDK\Include
-xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
-xcopy /DY Algebra\*.h ..\SDK\Include
-xcopy /DY Algebra\*.inl ..\SDK\Include
-xcopy /DY Approximation\*.h ..\SDK\Include
-xcopy /DY Base\*.h ..\SDK\Include
-xcopy /DY Base\*.inl ..\SDK\Include
-xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
-xcopy /DY Containment\*.h ..\SDK\Include
-xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
-xcopy /DY Distance\*.h ..\SDK\Include
-xcopy /DY Intersection\*.h ..\SDK\Include
-xcopy /DY Interpolation\*.h ..\SDK\Include
-xcopy /DY Meshes\*.h ..\SDK\Include
-xcopy /DY Meshes\*.inl ..\SDK\Include
-xcopy /DY Miscellaneous\*.h ..\SDK\Include
-xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.inl ..\SDK\Include
-xcopy /DY Objects3D\*.h ..\SDK\Include
-xcopy /DY Objects3D\*.inl ..\SDK\Include
-xcopy /DY Query\*.h ..\SDK\Include
-xcopy /DY Query\*.inl ..\SDK\Include
-xcopy /DY Rational\*.h ..\SDK\Include
-xcopy /DY Rational\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Mathematics.h ..\SDK\Include
+        xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
+        xcopy /DY Algebra\*.h ..\SDK\Include
+        xcopy /DY Algebra\*.inl ..\SDK\Include
+        xcopy /DY Approximation\*.h ..\SDK\Include
+        xcopy /DY Base\*.h ..\SDK\Include
+        xcopy /DY Base\*.inl ..\SDK\Include
+        xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
+        xcopy /DY Containment\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
+        xcopy /DY Distance\*.h ..\SDK\Include
+        xcopy /DY Intersection\*.h ..\SDK\Include
+        xcopy /DY Interpolation\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.inl ..\SDK\Include
+        xcopy /DY Miscellaneous\*.h ..\SDK\Include
+        xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.inl ..\SDK\Include
+        xcopy /DY Objects3D\*.h ..\SDK\Include
+        xcopy /DY Objects3D\*.inl ..\SDK\Include
+        xcopy /DY Query\*.h ..\SDK\Include
+        xcopy /DY Query\*.inl ..\SDK\Include
+        xcopy /DY Rational\*.h ..\SDK\Include
+        xcopy /DY Rational\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -197,35 +198,36 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Mathematics.h ..\SDK\Include
-xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
-xcopy /DY Algebra\*.h ..\SDK\Include
-xcopy /DY Algebra\*.inl ..\SDK\Include
-xcopy /DY Approximation\*.h ..\SDK\Include
-xcopy /DY Base\*.h ..\SDK\Include
-xcopy /DY Base\*.inl ..\SDK\Include
-xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
-xcopy /DY Containment\*.h ..\SDK\Include
-xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
-xcopy /DY Distance\*.h ..\SDK\Include
-xcopy /DY Intersection\*.h ..\SDK\Include
-xcopy /DY Interpolation\*.h ..\SDK\Include
-xcopy /DY Meshes\*.h ..\SDK\Include
-xcopy /DY Meshes\*.inl ..\SDK\Include
-xcopy /DY Miscellaneous\*.h ..\SDK\Include
-xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.inl ..\SDK\Include
-xcopy /DY Objects3D\*.h ..\SDK\Include
-xcopy /DY Objects3D\*.inl ..\SDK\Include
-xcopy /DY Query\*.h ..\SDK\Include
-xcopy /DY Query\*.inl ..\SDK\Include
-xcopy /DY Rational\*.h ..\SDK\Include
-xcopy /DY Rational\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Mathematics.h ..\SDK\Include
+        xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
+        xcopy /DY Algebra\*.h ..\SDK\Include
+        xcopy /DY Algebra\*.inl ..\SDK\Include
+        xcopy /DY Approximation\*.h ..\SDK\Include
+        xcopy /DY Base\*.h ..\SDK\Include
+        xcopy /DY Base\*.inl ..\SDK\Include
+        xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
+        xcopy /DY Containment\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
+        xcopy /DY Distance\*.h ..\SDK\Include
+        xcopy /DY Intersection\*.h ..\SDK\Include
+        xcopy /DY Interpolation\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.inl ..\SDK\Include
+        xcopy /DY Miscellaneous\*.h ..\SDK\Include
+        xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.inl ..\SDK\Include
+        xcopy /DY Objects3D\*.h ..\SDK\Include
+        xcopy /DY Objects3D\*.inl ..\SDK\Include
+        xcopy /DY Query\*.h ..\SDK\Include
+        xcopy /DY Query\*.inl ..\SDK\Include
+        xcopy /DY Rational\*.h ..\SDK\Include
+        xcopy /DY Rational\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
@@ -246,36 +248,37 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Mathematics.h ..\SDK\Include
-xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
-xcopy /DY Algebra\*.h ..\SDK\Include
-xcopy /DY Algebra\*.inl ..\SDK\Include
-xcopy /DY Approximation\*.h ..\SDK\Include
-xcopy /DY Base\*.h ..\SDK\Include
-xcopy /DY Base\*.inl ..\SDK\Include
-xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
-xcopy /DY Containment\*.h ..\SDK\Include
-xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
-xcopy /DY Distance\*.h ..\SDK\Include
-xcopy /DY Intersection\*.h ..\SDK\Include
-xcopy /DY Interpolation\*.h ..\SDK\Include
-xcopy /DY Meshes\*.h ..\SDK\Include
-xcopy /DY Meshes\*.inl ..\SDK\Include
-xcopy /DY Miscellaneous\*.h ..\SDK\Include
-xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.inl ..\SDK\Include
-xcopy /DY Objects3D\*.h ..\SDK\Include
-xcopy /DY Objects3D\*.inl ..\SDK\Include
-xcopy /DY Query\*.h ..\SDK\Include
-xcopy /DY Query\*.inl ..\SDK\Include
-xcopy /DY Rational\*.h ..\SDK\Include
-xcopy /DY Rational\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Mathematics.h ..\SDK\Include
+        xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
+        xcopy /DY Algebra\*.h ..\SDK\Include
+        xcopy /DY Algebra\*.inl ..\SDK\Include
+        xcopy /DY Approximation\*.h ..\SDK\Include
+        xcopy /DY Base\*.h ..\SDK\Include
+        xcopy /DY Base\*.inl ..\SDK\Include
+        xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
+        xcopy /DY Containment\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
+        xcopy /DY Distance\*.h ..\SDK\Include
+        xcopy /DY Intersection\*.h ..\SDK\Include
+        xcopy /DY Interpolation\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.inl ..\SDK\Include
+        xcopy /DY Miscellaneous\*.h ..\SDK\Include
+        xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.inl ..\SDK\Include
+        xcopy /DY Objects3D\*.h ..\SDK\Include
+        xcopy /DY Objects3D\*.inl ..\SDK\Include
+        xcopy /DY Query\*.h ..\SDK\Include
+        xcopy /DY Query\*.inl ..\SDK\Include
+        xcopy /DY Rational\*.h ..\SDK\Include
+        xcopy /DY Rational\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
@@ -300,36 +303,37 @@ xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platf
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Mathematics.h ..\SDK\Include
-xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
-xcopy /DY Algebra\*.h ..\SDK\Include
-xcopy /DY Algebra\*.inl ..\SDK\Include
-xcopy /DY Approximation\*.h ..\SDK\Include
-xcopy /DY Base\*.h ..\SDK\Include
-xcopy /DY Base\*.inl ..\SDK\Include
-xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
-xcopy /DY Containment\*.h ..\SDK\Include
-xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
-xcopy /DY Distance\*.h ..\SDK\Include
-xcopy /DY Intersection\*.h ..\SDK\Include
-xcopy /DY Interpolation\*.h ..\SDK\Include
-xcopy /DY Meshes\*.h ..\SDK\Include
-xcopy /DY Meshes\*.inl ..\SDK\Include
-xcopy /DY Miscellaneous\*.h ..\SDK\Include
-xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.inl ..\SDK\Include
-xcopy /DY Objects3D\*.h ..\SDK\Include
-xcopy /DY Objects3D\*.inl ..\SDK\Include
-xcopy /DY Query\*.h ..\SDK\Include
-xcopy /DY Query\*.inl ..\SDK\Include
-xcopy /DY Rational\*.h ..\SDK\Include
-xcopy /DY Rational\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Mathematics.h ..\SDK\Include
+        xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
+        xcopy /DY Algebra\*.h ..\SDK\Include
+        xcopy /DY Algebra\*.inl ..\SDK\Include
+        xcopy /DY Approximation\*.h ..\SDK\Include
+        xcopy /DY Base\*.h ..\SDK\Include
+        xcopy /DY Base\*.inl ..\SDK\Include
+        xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
+        xcopy /DY Containment\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
+        xcopy /DY Distance\*.h ..\SDK\Include
+        xcopy /DY Intersection\*.h ..\SDK\Include
+        xcopy /DY Interpolation\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.inl ..\SDK\Include
+        xcopy /DY Miscellaneous\*.h ..\SDK\Include
+        xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.inl ..\SDK\Include
+        xcopy /DY Objects3D\*.h ..\SDK\Include
+        xcopy /DY Objects3D\*.inl ..\SDK\Include
+        xcopy /DY Query\*.h ..\SDK\Include
+        xcopy /DY Query\*.inl ..\SDK\Include
+        xcopy /DY Rational\*.h ..\SDK\Include
+        xcopy /DY Rational\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
@@ -355,35 +359,36 @@ xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platf
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Mathematics.h ..\SDK\Include
-xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
-xcopy /DY Algebra\*.h ..\SDK\Include
-xcopy /DY Algebra\*.inl ..\SDK\Include
-xcopy /DY Approximation\*.h ..\SDK\Include
-xcopy /DY Base\*.h ..\SDK\Include
-xcopy /DY Base\*.inl ..\SDK\Include
-xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
-xcopy /DY Containment\*.h ..\SDK\Include
-xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
-xcopy /DY Distance\*.h ..\SDK\Include
-xcopy /DY Intersection\*.h ..\SDK\Include
-xcopy /DY Interpolation\*.h ..\SDK\Include
-xcopy /DY Meshes\*.h ..\SDK\Include
-xcopy /DY Meshes\*.inl ..\SDK\Include
-xcopy /DY Miscellaneous\*.h ..\SDK\Include
-xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.inl ..\SDK\Include
-xcopy /DY Objects3D\*.h ..\SDK\Include
-xcopy /DY Objects3D\*.inl ..\SDK\Include
-xcopy /DY Query\*.h ..\SDK\Include
-xcopy /DY Query\*.inl ..\SDK\Include
-xcopy /DY Rational\*.h ..\SDK\Include
-xcopy /DY Rational\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Mathematics.h ..\SDK\Include
+        xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
+        xcopy /DY Algebra\*.h ..\SDK\Include
+        xcopy /DY Algebra\*.inl ..\SDK\Include
+        xcopy /DY Approximation\*.h ..\SDK\Include
+        xcopy /DY Base\*.h ..\SDK\Include
+        xcopy /DY Base\*.inl ..\SDK\Include
+        xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
+        xcopy /DY Containment\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
+        xcopy /DY Distance\*.h ..\SDK\Include
+        xcopy /DY Intersection\*.h ..\SDK\Include
+        xcopy /DY Interpolation\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.inl ..\SDK\Include
+        xcopy /DY Miscellaneous\*.h ..\SDK\Include
+        xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.inl ..\SDK\Include
+        xcopy /DY Objects3D\*.h ..\SDK\Include
+        xcopy /DY Objects3D\*.inl ..\SDK\Include
+        xcopy /DY Query\*.h ..\SDK\Include
+        xcopy /DY Query\*.inl ..\SDK\Include
+        xcopy /DY Rational\*.h ..\SDK\Include
+        xcopy /DY Rational\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -404,35 +409,36 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Mathematics.h ..\SDK\Include
-xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
-xcopy /DY Algebra\*.h ..\SDK\Include
-xcopy /DY Algebra\*.inl ..\SDK\Include
-xcopy /DY Approximation\*.h ..\SDK\Include
-xcopy /DY Base\*.h ..\SDK\Include
-xcopy /DY Base\*.inl ..\SDK\Include
-xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
-xcopy /DY Containment\*.h ..\SDK\Include
-xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
-xcopy /DY Distance\*.h ..\SDK\Include
-xcopy /DY Intersection\*.h ..\SDK\Include
-xcopy /DY Interpolation\*.h ..\SDK\Include
-xcopy /DY Meshes\*.h ..\SDK\Include
-xcopy /DY Meshes\*.inl ..\SDK\Include
-xcopy /DY Miscellaneous\*.h ..\SDK\Include
-xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.inl ..\SDK\Include
-xcopy /DY Objects3D\*.h ..\SDK\Include
-xcopy /DY Objects3D\*.inl ..\SDK\Include
-xcopy /DY Query\*.h ..\SDK\Include
-xcopy /DY Query\*.inl ..\SDK\Include
-xcopy /DY Rational\*.h ..\SDK\Include
-xcopy /DY Rational\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Mathematics.h ..\SDK\Include
+        xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
+        xcopy /DY Algebra\*.h ..\SDK\Include
+        xcopy /DY Algebra\*.inl ..\SDK\Include
+        xcopy /DY Approximation\*.h ..\SDK\Include
+        xcopy /DY Base\*.h ..\SDK\Include
+        xcopy /DY Base\*.inl ..\SDK\Include
+        xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
+        xcopy /DY Containment\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
+        xcopy /DY Distance\*.h ..\SDK\Include
+        xcopy /DY Intersection\*.h ..\SDK\Include
+        xcopy /DY Interpolation\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.inl ..\SDK\Include
+        xcopy /DY Miscellaneous\*.h ..\SDK\Include
+        xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.inl ..\SDK\Include
+        xcopy /DY Objects3D\*.h ..\SDK\Include
+        xcopy /DY Objects3D\*.inl ..\SDK\Include
+        xcopy /DY Query\*.h ..\SDK\Include
+        xcopy /DY Query\*.inl ..\SDK\Include
+        xcopy /DY Rational\*.h ..\SDK\Include
+        xcopy /DY Rational\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
@@ -453,36 +459,37 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Mathematics.h ..\SDK\Include
-xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
-xcopy /DY Algebra\*.h ..\SDK\Include
-xcopy /DY Algebra\*.inl ..\SDK\Include
-xcopy /DY Approximation\*.h ..\SDK\Include
-xcopy /DY Base\*.h ..\SDK\Include
-xcopy /DY Base\*.inl ..\SDK\Include
-xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
-xcopy /DY Containment\*.h ..\SDK\Include
-xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
-xcopy /DY Distance\*.h ..\SDK\Include
-xcopy /DY Intersection\*.h ..\SDK\Include
-xcopy /DY Interpolation\*.h ..\SDK\Include
-xcopy /DY Meshes\*.h ..\SDK\Include
-xcopy /DY Meshes\*.inl ..\SDK\Include
-xcopy /DY Miscellaneous\*.h ..\SDK\Include
-xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.inl ..\SDK\Include
-xcopy /DY Objects3D\*.h ..\SDK\Include
-xcopy /DY Objects3D\*.inl ..\SDK\Include
-xcopy /DY Query\*.h ..\SDK\Include
-xcopy /DY Query\*.inl ..\SDK\Include
-xcopy /DY Rational\*.h ..\SDK\Include
-xcopy /DY Rational\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Mathematics.h ..\SDK\Include
+        xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
+        xcopy /DY Algebra\*.h ..\SDK\Include
+        xcopy /DY Algebra\*.inl ..\SDK\Include
+        xcopy /DY Approximation\*.h ..\SDK\Include
+        xcopy /DY Base\*.h ..\SDK\Include
+        xcopy /DY Base\*.inl ..\SDK\Include
+        xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
+        xcopy /DY Containment\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
+        xcopy /DY Distance\*.h ..\SDK\Include
+        xcopy /DY Intersection\*.h ..\SDK\Include
+        xcopy /DY Interpolation\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.inl ..\SDK\Include
+        xcopy /DY Miscellaneous\*.h ..\SDK\Include
+        xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.inl ..\SDK\Include
+        xcopy /DY Objects3D\*.h ..\SDK\Include
+        xcopy /DY Objects3D\*.inl ..\SDK\Include
+        xcopy /DY Query\*.h ..\SDK\Include
+        xcopy /DY Query\*.inl ..\SDK\Include
+        xcopy /DY Rational\*.h ..\SDK\Include
+        xcopy /DY Rational\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
@@ -507,36 +514,37 @@ xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platf
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Mathematics.h ..\SDK\Include
-xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
-xcopy /DY Algebra\*.h ..\SDK\Include
-xcopy /DY Algebra\*.inl ..\SDK\Include
-xcopy /DY Approximation\*.h ..\SDK\Include
-xcopy /DY Base\*.h ..\SDK\Include
-xcopy /DY Base\*.inl ..\SDK\Include
-xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
-xcopy /DY Containment\*.h ..\SDK\Include
-xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
-xcopy /DY Distance\*.h ..\SDK\Include
-xcopy /DY Intersection\*.h ..\SDK\Include
-xcopy /DY Interpolation\*.h ..\SDK\Include
-xcopy /DY Meshes\*.h ..\SDK\Include
-xcopy /DY Meshes\*.inl ..\SDK\Include
-xcopy /DY Miscellaneous\*.h ..\SDK\Include
-xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.h ..\SDK\Include
-xcopy /DY Objects2D\*.inl ..\SDK\Include
-xcopy /DY Objects3D\*.h ..\SDK\Include
-xcopy /DY Objects3D\*.inl ..\SDK\Include
-xcopy /DY Query\*.h ..\SDK\Include
-xcopy /DY Query\*.inl ..\SDK\Include
-xcopy /DY Rational\*.h ..\SDK\Include
-xcopy /DY Rational\*.inl ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Mathematics.h ..\SDK\Include
+        xcopy /DY Wm5MathematicsLIB.h ..\SDK\Include
+        xcopy /DY Algebra\*.h ..\SDK\Include
+        xcopy /DY Algebra\*.inl ..\SDK\Include
+        xcopy /DY Approximation\*.h ..\SDK\Include
+        xcopy /DY Base\*.h ..\SDK\Include
+        xcopy /DY Base\*.inl ..\SDK\Include
+        xcopy /DY ComputationalGeometry\*.h ..\SDK\Include
+        xcopy /DY Containment\*.h ..\SDK\Include
+        xcopy /DY CurvesSurfacesVolumes\*.h ..\SDK\Include
+        xcopy /DY Distance\*.h ..\SDK\Include
+        xcopy /DY Intersection\*.h ..\SDK\Include
+        xcopy /DY Interpolation\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.h ..\SDK\Include
+        xcopy /DY Meshes\*.inl ..\SDK\Include
+        xcopy /DY Miscellaneous\*.h ..\SDK\Include
+        xcopy /DY NumericalAnalysis\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.h ..\SDK\Include
+        xcopy /DY Objects2D\*.inl ..\SDK\Include
+        xcopy /DY Objects3D\*.h ..\SDK\Include
+        xcopy /DY Objects3D\*.inl ..\SDK\Include
+        xcopy /DY Query\*.h ..\SDK\Include
+        xcopy /DY Query\*.inl ..\SDK\Include
+        xcopy /DY Rational\*.h ..\SDK\Include
+        xcopy /DY Rational\*.inl ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <AdditionalLibraryDirectories>..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>

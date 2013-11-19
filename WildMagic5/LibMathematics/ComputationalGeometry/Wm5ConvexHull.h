@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/01)
+// File Version: 5.0.2 (2013/05/12)
 
 #ifndef WM5CONVEXHULL_H
 #define WM5CONVEXHULL_H
@@ -48,16 +48,16 @@ public:
     //   SQ = 2
     //   I = array of two indices
     // The segment has end points
-    //   vertex[0] = V[I[2*i+0]]
-    //   vertex[1] = V[I[2*i+1]]
+    //   vertex[0] = V[I[0]]
+    //   vertex[1] = V[I[1]]
 
     // Dimension d = 2.
     //   SQ = number of convex polygon edges
-    //   I  = array of into V that represent the convex polygon edges
+    //   I  = array of indices into V that represent the convex polygon edges
     //        (SQ total elements)
     // The i-th edge has vertices
-    //   vertex[0] = V[I[2*i+0]]
-    //   vertex[1] = V[I[2*i+1]]
+    //   vertex[0] = V[I[i]]
+    //   vertex[1] = V[I[(i+1) % SQ]]
 
     // Dimension d = 3.
     //   SQ = number of convex polyhedron triangular faces

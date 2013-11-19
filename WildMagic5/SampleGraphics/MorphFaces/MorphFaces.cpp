@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.1.0 (2010/04/14)
+// File Version: 5.1.1 (2013/07/14)
 
 #include "MorphFaces.h"
 
@@ -191,7 +191,7 @@ void MorphFaces::CreateMorphResult ()
 
     VertexFormat* vformat = VertexFormat::Create(3,
         VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,
-        VertexFormat::AU_NORMAL, VertexFormat::AT_FLOAT3, 0,
+        VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT3, 1,  // normals
         VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT2, 0);
     int vstride = vformat->GetStride();
 
@@ -206,7 +206,7 @@ void MorphFaces::CreateMorphResult ()
         inFile >> tcoord[0];
         inFile >> tcoord[1];
         vba.Position<Float3>(i) = Float3(0.0f, 0.0f, 0.0f);
-        vba.Normal<Float3>(i) = Float3(0.0f, 0.0f, 0.0f);
+        vba.TCoord<Float3>(1, i) = Float3(0.0f, 0.0f, 0.0f);
         vba.TCoord<Float2>(0, i) = tcoord;
     }
     for (int j = 0; j < 4; ++j)

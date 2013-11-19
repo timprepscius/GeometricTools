@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/01)
+// File Version: 5.0.2 (2012/10/31)
 
 #ifndef WM5BSPLINESURFACEFIT_H
 #define WM5BSPLINESURFACEFIT_H
@@ -23,8 +23,8 @@ class WM5_MATHEMATICS_ITEM BSplineSurfaceFit
 public:
     // Construction and destruction.  The preconditions for calling the
     // constructor are
-    //   1 <= degree0 && degree0 < numControls0 <= numSamples0
-    //   1 <= degree1 && degree1 < numControls1 <= numSamples1
+    //   1 <= degree0 && degree0 + 1 < numControls0 <= numSamples0
+    //   1 <= degree1 && degree1 + 1 < numControls1 <= numSamples1
     BSplineSurfaceFit (int degree0, int numControls0, int numSamples0,
         int degree1, int numControls1, int numSamples1,
         Vector3<Real>** samples);

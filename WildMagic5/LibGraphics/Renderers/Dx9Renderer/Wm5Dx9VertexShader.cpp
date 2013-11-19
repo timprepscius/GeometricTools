@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/02)
+// File Version: 5.0.2 (2013/01/03)
 
 #include "Wm5GraphicsPCH.h"
 #include "Wm5Dx9VertexShader.h"
@@ -106,7 +106,7 @@ void PdrVertexShader::Disable (Renderer* renderer,
     activeVShader->Release();
 #endif
 
-    int profile = PixelShader::GetProfile();
+    int profile = VertexShader::GetProfile();
     DisableTextures(renderer, vshader, profile, parameters,
         renderer->mData->mMaxVShaderImages, D3DVERTEXTEXTURESAMPLER0);
 

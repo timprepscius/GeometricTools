@@ -1,0 +1,1231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Shader Files">
+      <UniqueIdentifier>{fdbec20d-4d20-455b-942c-62441bdf2fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files">
+      <UniqueIdentifier>{477fde57-9b62-44f6-8ab3-5875f501d592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Color32">
+      <UniqueIdentifier>{6df77967-6f80-4618-a26b-55e084e91795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Color64">
+      <UniqueIdentifier>{45fbd99a-2dab-436c-b650-b0e1e830e61c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Color128">
+      <UniqueIdentifier>{ad0fdec1-66ce-4bc1-a15b-a28b91e0978c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Height32">
+      <UniqueIdentifier>{d254d7e0-c961-450d-9932-ac059e373522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Height64">
+      <UniqueIdentifier>{7ed7c995-6d22-4b57-be49-827311d028ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\Height128">
+      <UniqueIdentifier>{0e8e159b-80fd-4fe3-97a4-29841c449996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data Files\OriginalBmp">
+      <UniqueIdentifier>{df311d43-fa08-4587-ad3b-248fe96db096}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Terrains.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Terrains.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\BaseMulDetailFogExpSqr.fx">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="Shaders\BaseMulDetailFogExpSqr.wmfx">
+      <Filter>Shader Files</Filter>
+    </None>
+    <None Include="Data\Color32\color.0.0.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.0.1.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.0.2.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.0.3.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.0.4.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.0.5.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.0.6.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.0.7.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.1.0.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.1.1.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.1.2.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.1.3.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.1.4.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.1.5.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.1.6.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.1.7.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.2.0.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.2.1.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.2.2.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.2.3.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.2.4.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.2.5.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.2.6.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.2.7.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.3.0.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.3.1.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.3.2.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.3.3.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.3.4.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.3.5.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.3.6.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.3.7.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.4.0.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.4.1.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.4.2.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.4.3.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.4.4.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.4.5.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.4.6.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.4.7.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.5.0.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.5.1.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.5.2.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.5.3.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.5.4.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.5.5.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.5.6.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.5.7.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.6.0.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.6.1.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.6.2.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.6.3.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.6.4.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.6.5.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.6.6.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.6.7.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.7.0.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.7.1.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.7.2.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.7.3.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.7.4.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.7.5.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.7.6.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color32\color.7.7.wmtf">
+      <Filter>Data Files\Color32</Filter>
+    </None>
+    <None Include="Data\Color64\color.0.0.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.0.1.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.0.2.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.0.3.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.0.4.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.0.5.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.0.6.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.0.7.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.1.0.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.1.1.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.1.2.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.1.3.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.1.4.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.1.5.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.1.6.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.1.7.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.2.0.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.2.1.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.2.2.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.2.3.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.2.4.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.2.5.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.2.6.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.2.7.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.3.0.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.3.1.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.3.2.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.3.3.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.3.4.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.3.5.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.3.6.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.3.7.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.4.0.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.4.1.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.4.2.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.4.3.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.4.4.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.4.5.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.4.6.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.4.7.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.5.0.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.5.1.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.5.2.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.5.3.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.5.4.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.5.5.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.5.6.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.5.7.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.6.0.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.6.1.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.6.2.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.6.3.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.6.4.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.6.5.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.6.6.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.6.7.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.7.0.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.7.1.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.7.2.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.7.3.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.7.4.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.7.5.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.7.6.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color64\color.7.7.wmtf">
+      <Filter>Data Files\Color64</Filter>
+    </None>
+    <None Include="Data\Color128\color.0.0.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.0.1.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.0.2.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.0.3.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.0.4.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.0.5.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.0.6.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.0.7.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.1.0.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.1.1.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.1.2.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.1.3.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.1.4.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.1.5.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.1.6.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.1.7.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.2.0.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.2.1.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.2.2.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.2.3.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.2.4.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.2.5.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.2.6.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.2.7.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.3.0.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.3.1.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.3.2.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.3.3.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.3.4.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.3.5.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.3.6.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.3.7.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.4.0.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.4.1.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.4.2.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.4.3.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.4.4.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.4.5.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.4.6.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.4.7.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.5.0.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.5.1.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.5.2.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.5.3.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.5.4.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.5.5.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.5.6.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.5.7.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.6.0.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.6.1.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.6.2.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.6.3.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.6.4.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.6.5.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.6.6.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.6.7.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.7.0.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.7.1.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.7.2.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.7.3.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.7.4.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.7.5.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.7.6.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Color128\color.7.7.wmtf">
+      <Filter>Data Files\Color128</Filter>
+    </None>
+    <None Include="Data\Height32\height.0.0.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.0.1.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.0.2.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.0.3.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.0.4.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.0.5.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.0.6.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.0.7.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.1.0.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.1.1.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.1.2.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.1.3.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.1.4.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.1.5.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.1.6.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.1.7.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.2.0.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.2.1.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.2.2.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.2.3.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.2.4.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.2.5.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.2.6.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.2.7.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.3.0.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.3.1.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.3.2.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.3.3.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.3.4.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.3.5.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.3.6.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.3.7.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.4.0.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.4.1.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.4.2.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.4.3.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.4.4.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.4.5.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.4.6.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.4.7.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.5.0.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.5.1.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.5.2.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.5.3.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.5.4.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.5.5.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.5.6.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.5.7.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.6.0.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.6.1.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.6.2.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.6.3.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.6.4.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.6.5.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.6.6.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.6.7.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.7.0.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.7.1.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.7.2.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.7.3.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.7.4.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.7.5.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.7.6.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.7.7.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height32\height.wmhf">
+      <Filter>Data Files\Height32</Filter>
+    </None>
+    <None Include="Data\Height64\height.0.0.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.0.1.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.0.2.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.0.3.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.0.4.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.0.5.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.0.6.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.0.7.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.1.0.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.1.1.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.1.2.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.1.3.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.1.4.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.1.5.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.1.6.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.1.7.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.2.0.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.2.1.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.2.2.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.2.3.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.2.4.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.2.5.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.2.6.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.2.7.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.3.0.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.3.1.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.3.2.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.3.3.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.3.4.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.3.5.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.3.6.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.3.7.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.4.0.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.4.1.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.4.2.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.4.3.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.4.4.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.4.5.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.4.6.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.4.7.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.5.0.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.5.1.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.5.2.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.5.3.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.5.4.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.5.5.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.5.6.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.5.7.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.6.0.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.6.1.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.6.2.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.6.3.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.6.4.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.6.5.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.6.6.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.6.7.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.7.0.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.7.1.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.7.2.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.7.3.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.7.4.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.7.5.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.7.6.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.7.7.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height64\height.wmhf">
+      <Filter>Data Files\Height64</Filter>
+    </None>
+    <None Include="Data\Height128\height.0.0.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.0.1.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.0.2.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.0.3.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.0.4.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.0.5.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.0.6.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.0.7.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.1.0.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.1.1.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.1.2.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.1.3.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.1.4.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.1.5.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.1.6.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.1.7.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.2.0.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.2.1.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.2.2.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.2.3.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.2.4.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.2.5.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.2.6.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.2.7.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.3.0.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.3.1.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.3.2.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.3.3.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.3.4.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.3.5.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.3.6.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.3.7.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.4.0.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.4.1.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.4.2.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.4.3.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.4.4.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.4.5.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.4.6.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.4.7.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.5.0.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.5.1.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.5.2.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.5.3.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.5.4.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.5.5.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.5.6.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.5.7.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.6.0.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.6.1.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.6.2.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.6.3.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.6.4.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.6.5.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.6.6.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.6.7.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.7.0.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.7.1.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.7.2.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.7.3.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.7.4.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.7.5.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.7.6.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.7.7.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\Height128\height.wmhf">
+      <Filter>Data Files\Height128</Filter>
+    </None>
+    <None Include="Data\OriginalBmp\Color.bmp">
+      <Filter>Data Files\OriginalBmp</Filter>
+    </None>
+    <None Include="Data\OriginalBmp\Height.bmp">
+      <Filter>Data Files\OriginalBmp</Filter>
+    </None>
+  </ItemGroup>
+</Project>

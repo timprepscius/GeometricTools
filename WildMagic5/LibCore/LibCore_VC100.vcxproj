@@ -149,23 +149,24 @@
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Core.h ..\SDK\Include
-xcopy /DY Wm5CoreLIB.h ..\SDK\Include
-xcopy /DY Assert\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY InputOutput\*.h ..\SDK\Include
-xcopy /DY InputOutput\*.inl ..\SDK\Include
-xcopy /DY Memory\*.h ..\SDK\Include
-xcopy /DY Memory\*.inl ..\SDK\Include
-xcopy /DY ObjectSystems\*.h ..\SDK\Include
-xcopy /DY ObjectSystems\*.inl ..\SDK\Include
-xcopy /DY Threading\*.h ..\SDK\Include
-xcopy /DY Time\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Core.h ..\SDK\Include
+        xcopy /DY Wm5CoreLIB.h ..\SDK\Include
+        xcopy /DY Assert\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY InputOutput\*.h ..\SDK\Include
+        xcopy /DY InputOutput\*.inl ..\SDK\Include
+        xcopy /DY Memory\*.h ..\SDK\Include
+        xcopy /DY Memory\*.inl ..\SDK\Include
+        xcopy /DY ObjectSystems\*.h ..\SDK\Include
+        xcopy /DY ObjectSystems\*.inl ..\SDK\Include
+        xcopy /DY Threading\*.h ..\SDK\Include
+        xcopy /DY Time\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
@@ -201,9 +202,9 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
         xcopy /DY ObjectSystems\*.inl ..\SDK\Include
         xcopy /DY Threading\*.h ..\SDK\Include
         xcopy /DY Time\*.h ..\SDK\Include
-        mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-        xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-        xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
       </Command>
     </PostBuildEvent>
     <Link>
@@ -243,8 +244,8 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
         xcopy /DY ObjectSystems\*.inl ..\SDK\Include
         xcopy /DY Threading\*.h ..\SDK\Include
         xcopy /DY Time\*.h ..\SDK\Include
-        mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-        xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
       </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -281,9 +282,9 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
         xcopy /DY ObjectSystems\*.inl ..\SDK\Include
         xcopy /DY Threading\*.h ..\SDK\Include
         xcopy /DY Time\*.h ..\SDK\Include
-        mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-        xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-        xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
       </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -304,23 +305,24 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Core.h ..\SDK\Include
-xcopy /DY Wm5CoreLIB.h ..\SDK\Include
-xcopy /DY Assert\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY InputOutput\*.h ..\SDK\Include
-xcopy /DY InputOutput\*.inl ..\SDK\Include
-xcopy /DY Memory\*.h ..\SDK\Include
-xcopy /DY Memory\*.inl ..\SDK\Include
-xcopy /DY ObjectSystems\*.h ..\SDK\Include
-xcopy /DY ObjectSystems\*.inl ..\SDK\Include
-xcopy /DY Threading\*.h ..\SDK\Include
-xcopy /DY Time\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Core.h ..\SDK\Include
+        xcopy /DY Wm5CoreLIB.h ..\SDK\Include
+        xcopy /DY Assert\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY InputOutput\*.h ..\SDK\Include
+        xcopy /DY InputOutput\*.inl ..\SDK\Include
+        xcopy /DY Memory\*.h ..\SDK\Include
+        xcopy /DY Memory\*.inl ..\SDK\Include
+        xcopy /DY ObjectSystems\*.h ..\SDK\Include
+        xcopy /DY ObjectSystems\*.inl ..\SDK\Include
+        xcopy /DY Threading\*.h ..\SDK\Include
+        xcopy /DY Time\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
@@ -340,24 +342,25 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Core.h ..\SDK\Include
-xcopy /DY Wm5CoreLIB.h ..\SDK\Include
-xcopy /DY Assert\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY InputOutput\*.h ..\SDK\Include
-xcopy /DY InputOutput\*.inl ..\SDK\Include
-xcopy /DY Memory\*.h ..\SDK\Include
-xcopy /DY Memory\*.inl ..\SDK\Include
-xcopy /DY ObjectSystems\*.h ..\SDK\Include
-xcopy /DY ObjectSystems\*.inl ..\SDK\Include
-xcopy /DY Threading\*.h ..\SDK\Include
-xcopy /DY Time\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Core.h ..\SDK\Include
+        xcopy /DY Wm5CoreLIB.h ..\SDK\Include
+        xcopy /DY Assert\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY InputOutput\*.h ..\SDK\Include
+        xcopy /DY InputOutput\*.inl ..\SDK\Include
+        xcopy /DY Memory\*.h ..\SDK\Include
+        xcopy /DY Memory\*.inl ..\SDK\Include
+        xcopy /DY ObjectSystems\*.h ..\SDK\Include
+        xcopy /DY ObjectSystems\*.inl ..\SDK\Include
+        xcopy /DY Threading\*.h ..\SDK\Include
+        xcopy /DY Time\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -381,23 +384,24 @@ xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platf
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Core.h ..\SDK\Include
-xcopy /DY Wm5CoreLIB.h ..\SDK\Include
-xcopy /DY Assert\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY InputOutput\*.h ..\SDK\Include
-xcopy /DY InputOutput\*.inl ..\SDK\Include
-xcopy /DY Memory\*.h ..\SDK\Include
-xcopy /DY Memory\*.inl ..\SDK\Include
-xcopy /DY ObjectSystems\*.h ..\SDK\Include
-xcopy /DY ObjectSystems\*.inl ..\SDK\Include
-xcopy /DY Threading\*.h ..\SDK\Include
-xcopy /DY Time\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Core.h ..\SDK\Include
+        xcopy /DY Wm5CoreLIB.h ..\SDK\Include
+        xcopy /DY Assert\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY InputOutput\*.h ..\SDK\Include
+        xcopy /DY InputOutput\*.inl ..\SDK\Include
+        xcopy /DY Memory\*.h ..\SDK\Include
+        xcopy /DY Memory\*.inl ..\SDK\Include
+        xcopy /DY ObjectSystems\*.h ..\SDK\Include
+        xcopy /DY ObjectSystems\*.inl ..\SDK\Include
+        xcopy /DY Threading\*.h ..\SDK\Include
+        xcopy /DY Time\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
@@ -418,24 +422,25 @@ xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Config
       <OutputFile>$(TargetPath)</OutputFile>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir ..\SDK\Include
-xcopy /DY Wm5Core.h ..\SDK\Include
-xcopy /DY Wm5CoreLIB.h ..\SDK\Include
-xcopy /DY Assert\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.h ..\SDK\Include
-xcopy /DY DataTypes\*.inl ..\SDK\Include
-xcopy /DY InputOutput\*.h ..\SDK\Include
-xcopy /DY InputOutput\*.inl ..\SDK\Include
-xcopy /DY Memory\*.h ..\SDK\Include
-xcopy /DY Memory\*.inl ..\SDK\Include
-xcopy /DY ObjectSystems\*.h ..\SDK\Include
-xcopy /DY ObjectSystems\*.inl ..\SDK\Include
-xcopy /DY Threading\*.h ..\SDK\Include
-xcopy /DY Time\*.h ..\SDK\Include
-mkdir ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(TargetPath)" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-xcopy /DY "$(OutDir)$(TargetName).lib" ..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)
-</Command>
+      <Command>
+        mkdir ..\SDK\Include
+        xcopy /DY Wm5Core.h ..\SDK\Include
+        xcopy /DY Wm5CoreLIB.h ..\SDK\Include
+        xcopy /DY Assert\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.h ..\SDK\Include
+        xcopy /DY DataTypes\*.inl ..\SDK\Include
+        xcopy /DY InputOutput\*.h ..\SDK\Include
+        xcopy /DY InputOutput\*.inl ..\SDK\Include
+        xcopy /DY Memory\*.h ..\SDK\Include
+        xcopy /DY Memory\*.inl ..\SDK\Include
+        xcopy /DY ObjectSystems\*.h ..\SDK\Include
+        xcopy /DY ObjectSystems\*.inl ..\SDK\Include
+        xcopy /DY Threading\*.h ..\SDK\Include
+        xcopy /DY Time\*.h ..\SDK\Include
+        mkdir "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(TargetPath)" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+        xcopy /DY "$(OutDir)$(TargetName).lib" "..\SDK\Library\$(PlatformToolset)\$(Platform)\$(Configuration)"
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

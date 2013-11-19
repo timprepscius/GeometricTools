@@ -1,10 +1,10 @@
 // Geometric Tools, LLC
-// Copyright (c) 1998-2012
+// Copyright (c) 1998-2013
 // Distributed under the Boost Software License, Version 1.0.
 // http://www.boost.org/LICENSE_1_0.txt
 // http://www.geometrictools.com/License/Boost/LICENSE_1_0.txt
 //
-// File Version: 5.0.1 (2010/10/01)
+// File Version: 5.0.2 (2012/11/03)
 
 #include "Wm5MathematicsPCH.h"
 #include "Wm5IntrSegment2Segment2.h"
@@ -17,7 +17,9 @@ IntrSegment2Segment2<Real>::IntrSegment2Segment2 (
     const Segment2<Real>& segment0, const Segment2<Real>& segment1)
     :
     mSegment0(&segment0),
-    mSegment1(&segment1)
+    mSegment1(&segment1),
+    mIntervalThreshold((Real)0),
+    mDotThreshold((Real)0)
 {
 }
 //----------------------------------------------------------------------------
@@ -43,8 +45,10 @@ bool IntrSegment2Segment2<Real>::Test ()
     if (mIntersectionType == IT_POINT)
     {
         // Test whether the line-line intersection is on the segments.
-        if (Math<Real>::FAbs(parameter[0]) <= mSegment0->Extent
-        &&  Math<Real>::FAbs(parameter[1]) <= mSegment1->Extent)
+        if (Math<Real>::FAbs(parameter[0]) <=
+            mSegment0->Extent + mIntervalThreshold
+        &&  Math<Real>::FAbs(parameter[1]) <=
+            mSegment1->Extent + mIntervalThreshold)
         {
             mQuantity = 1;
         }
@@ -76,8 +80,10 @@ bool IntrSegment2Segment2<Real>::Find ()
     if (mIntersectionType == IT_POINT)
     {
         // Test whether the line-line intersection is on the segments.
-        if (Math<Real>::FAbs(parameter[0]) <= mSegment0->Extent
-        &&  Math<Real>::FAbs(parameter[1]) <= mSegment1->Extent)
+        if (Math<Real>::FAbs(parameter[0]) <=
+            mSegment0->Extent + mIntervalThreshold
+        &&  Math<Real>::FAbs(parameter[1]) <=
+            mSegment1->Extent + mIntervalThreshold)
         {
             mQuantity = 1;
             mPoint = mSegment0->Center + parameter[0]*mSegment0->Direction;
@@ -113,6 +119,42 @@ const Vector2<Real>& IntrSegment2Segment2<Real>::GetPoint () const
 }
 //----------------------------------------------------------------------------
 template <typename Real>
+void IntrSegment2Segment2<Real>::SetIntervalThreshold (Real intervalThreshold)
+{
+    if (intervalThreshold >= (Real)0)
+    {
+        mIntervalThreshold = intervalThreshold;
+        return;
+    }
+
+    assertion(false, "Interval threshold must be nonnegative.");
+}
+//----------------------------------------------------------------------------
+template <typename Real>
+Real IntrSegment2Segment2<Real>::GetIntervalThreshold () const
+{
+    return mIntervalThreshold;
+}
+//----------------------------------------------------------------------------
+template <typename Real>
+void IntrSegment2Segment2<Real>::SetDotThreshold (Real dotThreshold)
+{
+    if (dotThreshold >= (Real)0)
+    {
+        mDotThreshold = dotThreshold;
+        return;
+    }
+
+    assertion(false, "Dot threshold must be nonnegative.");
+}
+//----------------------------------------------------------------------------
+template <typename Real>
+Real IntrSegment2Segment2<Real>::GetDotThreshold () const
+{
+    return mDotThreshold;
+}
+//----------------------------------------------------------------------------
+template <typename Real>
 int IntrSegment2Segment2<Real>::Classify (Real* s, Vector2<Real>* diff,
     Vector2<Real>* diffN)
 {
@@ -131,7 +173,7 @@ int IntrSegment2Segment2<Real>::Classify (Real* s, Vector2<Real>* diff,
     }
 
     Real D0DotPerpD1 = mSegment0->Direction.DotPerp(mSegment1->Direction);
-    if (Math<Real>::FAbs(D0DotPerpD1) > Math<Real>::ZERO_TOLERANCE)
+    if (Math<Real>::FAbs(D0DotPerpD1) > mDotThreshold)
     {
         // Lines intersect in a single point.
         if (s)
@@ -153,7 +195,7 @@ int IntrSegment2Segment2<Real>::Classify (Real* s, Vector2<Real>* diff,
     }
 
     Real diffNDotPerpD1 = originDiff.DotPerp(mSegment1->Direction);
-    if (Math<Real>::FAbs(diffNDotPerpD1) <= Math<Real>::ZERO_TOLERANCE)
+    if (Math<Real>::FAbs(diffNDotPerpD1) <= mDotThreshold)
     {
         // Lines are colinear.
         return IT_SEGMENT;

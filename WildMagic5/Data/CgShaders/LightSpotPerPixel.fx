@@ -1,7 +1,7 @@
 void v_LightSpotPerPixel
 (
     in float3 modelPosition : POSITION,
-    in float3 modelNormal : NORMAL,
+    in float3 modelNormal : TEXCOORD1,
     out float4 clipPosition : POSITION,
     out float3 vertexPosition : TEXCOORD0,
     out float3 vertexNormal : TEXCOORD1,
