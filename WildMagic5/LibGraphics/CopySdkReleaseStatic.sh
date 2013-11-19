@@ -44,5 +44,8 @@ endif
 if (${XCODE_VERSION_MAJOR} == "0400") then
     cp -fp "${BUILT_PRODUCTS_DIR}"/libWm5GlutGraphics.a ../SDK/Library/Release/libWm5GlutGraphics.a
 endif
+if (${XCODE_VERSION_MAJOR} == "0500") then
+    cp -fp "${BUILT_PRODUCTS_DIR}"/libWm5GlutGraphics.a ../SDK/Library/Release/libWm5GlutGraphics.a
+endif
 
 ranlib ../SDK/Library/Release/libWm5GlutGraphics.a

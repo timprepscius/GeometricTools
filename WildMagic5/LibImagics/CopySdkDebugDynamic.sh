@@ -28,3 +28,6 @@ endif
 if (${XCODE_VERSION_MAJOR} == "0400") then
     cp -fp "${BUILT_PRODUCTS_DIR}"/libWm5Imagicsd.dylib ../SDK/Library/DebugDLL/libWm5Imagicsd.dylib
 endif
+if (${XCODE_VERSION_MAJOR} == "0500") then
+    cp -fp "${BUILT_PRODUCTS_DIR}"/libWm5Imagicsd.dylib ../SDK/Library/DebugDLL/libWm5Imagicsd.dylib
+endif

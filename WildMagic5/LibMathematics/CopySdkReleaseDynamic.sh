@@ -28,3 +28,6 @@ endif
 if (${XCODE_VERSION_MAJOR} == "0400") then
     cp -fp "${BUILT_PRODUCTS_DIR}"/libWm5Mathematics.dylib ../SDK/Library/ReleaseDLL/libWm5Mathematics.dylib
 endif
+if (${XCODE_VERSION_MAJOR} == "0500") then
+    cp -fp "${BUILT_PRODUCTS_DIR}"/libWm5Mathematics.dylib ../SDK/Library/ReleaseDLL/libWm5Mathematics.dylib
+endif

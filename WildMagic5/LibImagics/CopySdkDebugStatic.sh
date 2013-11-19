@@ -28,5 +28,8 @@ endif
 if (${XCODE_VERSION_MAJOR} == "0400") then
     cp -fp "${BUILT_PRODUCTS_DIR}"/libWm5Imagicsd.a ../SDK/Library/Debug/libWm5Imagicsd.a
 endif
+if (${XCODE_VERSION_MAJOR} == "0500") then
+    cp -fp "${BUILT_PRODUCTS_DIR}"/libWm5Imagicsd.a ../SDK/Library/Debug/libWm5Imagicsd.a
+endif
 
 ranlib ../SDK/Library/Debug/libWm5Imagicsd.a
